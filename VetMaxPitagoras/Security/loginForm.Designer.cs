@@ -35,8 +35,12 @@
             // 
             // textBox1
             // 
+<<<<<<< HEAD
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(113, 73);
+=======
+            this.textBox1.Location = new System.Drawing.Point(118, 73);
+>>>>>>> 62eb702127e498d2d8fb6c38a44be5ec44c24d9e
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;

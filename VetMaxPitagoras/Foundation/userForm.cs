@@ -24,6 +24,7 @@ namespace VetMaxPitagoras.Foundation
         {
             var authService = new AuthService(new UserRepository());
             var userToInsert = new User();
+<<<<<<< HEAD
             userToInsert.UserName = txtNome.Text;
             userToInsert.Password = txtSenha.Text;
             authService.AddNewUser(userToInsert);
@@ -48,5 +49,11 @@ namespace VetMaxPitagoras.Foundation
         {
 
         }
+=======
+            userToInsert.UserName = textBox1.Text;
+            userToInsert.Password = textBox2.Text;
+            authService.AddNewUser(userToInsert);
+        }
+>>>>>>> 62eb702127e498d2d8fb6c38a44be5ec44c24d9e
     }
 }
