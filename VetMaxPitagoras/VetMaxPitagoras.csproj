@@ -78,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Security\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
@@ -113,6 +114,9 @@
       <Project>{e37a0ae8-cc07-4877-88f9-38035a55f8d6}</Project>
       <Name>VetMaxPitagoras.Infrastructure.Security</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-dog.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
