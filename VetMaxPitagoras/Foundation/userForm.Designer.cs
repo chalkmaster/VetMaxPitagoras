@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbNomeUsuario = new System.Windows.Forms.Label();
@@ -138,42 +137,11 @@
             this.txtConSenha.Name = "txtConSenha";
             this.txtConSenha.Size = new System.Drawing.Size(154, 20);
             this.txtConSenha.TabIndex = 7;
-=======
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(348, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(111, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(111, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
->>>>>>> 62eb702127e498d2d8fb6c38a44be5ec44c24d9e
             // 
             // userForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(996, 580);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "userForm";
@@ -182,22 +150,11 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-=======
-            this.ClientSize = new System.Drawing.Size(549, 279);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "userForm";
-            this.Text = "newUserForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
->>>>>>> 62eb702127e498d2d8fb6c38a44be5ec44c24d9e
 
         }
 
         #endregion
 
-<<<<<<< HEAD
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lbNomeUsuario;
@@ -206,10 +163,5 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtConSenha;
-=======
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
->>>>>>> 62eb702127e498d2d8fb6c38a44be5ec44c24d9e
     }
 }
