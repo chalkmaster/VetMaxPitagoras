@@ -20,13 +20,24 @@ namespace VetMaxPitagoras.Foundation
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            var authService = new AuthService(new UserRepository());
-            var userToInsert = new User();
-            userToInsert.UserName = textBox1.Text;
-            userToInsert.Password = textBox2.Text;
-            authService.AddNewUser(userToInsert);
+            if (txtSenha.Text != txtConfSenha.Text){
+                MessageBox.Show("A senhas digitadas tem que ser identicas");
+            }
+            else {
+                var authService = new AuthService(new UserRepository());
+                var userToInsert = new User();
+                userToInsert.UserName = txtNome.Text;
+                userToInsert.Password = txtSenha.Text;
+                authService.AddNewUser(userToInsert);
+                MessageBox.Show("cad");
+            }
         }
+
+        private void userForm_Load(object sender, EventArgs e)
+        {
+
+        } 
     }
 }
