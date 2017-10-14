@@ -42,5 +42,10 @@ namespace VetMaxPitagoras
             animalRegister.WindowState = FormWindowState.Maximized;
             animalRegister.Show();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
