@@ -34,5 +34,21 @@ namespace VetMaxPitagoras
             userRegister.WindowState = FormWindowState.Maximized;
             userRegister.Show();
         }
+
+        private void animaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var userAnimal = new AnimaisForm();
+            userAnimal.MdiParent = this;
+            userAnimal.WindowState = FormWindowState.Maximized;
+            userAnimal.Show();
+        }
+
+        private void animaisCadastradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ListaAnimais = new ListaAnimaisForm1();
+            ListaAnimais.MdiParent = this;
+            ListaAnimais.WindowState = FormWindowState.Maximized;
+            ListaAnimais.Show();
+        }
     }
 }

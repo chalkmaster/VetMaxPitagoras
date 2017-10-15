@@ -44,11 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimaisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimaisForm.Designer.cs">
+      <DependentUpon>AnimaisForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Foundation\userForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Foundation\userForm.Designer.cs">
       <DependentUpon>userForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaAnimaisForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaAnimaisForm1.Designer.cs">
+      <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
@@ -64,8 +76,14 @@
     <Compile Include="Security\loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnimaisForm.resx">
+      <DependentUpon>AnimaisForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaAnimaisForm1.resx">
+      <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
@@ -80,6 +98,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Security\loginForm.aa-DJ.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Security\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
