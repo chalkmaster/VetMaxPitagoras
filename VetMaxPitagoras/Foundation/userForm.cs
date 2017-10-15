@@ -28,5 +28,10 @@ namespace VetMaxPitagoras.Foundation
             userToInsert.Password = textBox2.Text;
             authService.AddNewUser(userToInsert);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
