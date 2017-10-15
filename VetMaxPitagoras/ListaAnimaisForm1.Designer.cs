@@ -37,6 +37,8 @@
             this.ColunaPeso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColunaVacinas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColunaSintomas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,16 +57,15 @@
             this.ColunaPeso,
             this.ColunaVacinas,
             this.ColunaSintomas});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 34);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(551, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(551, 215);
             this.dataGridView1.TabIndex = 1;
             // 
             // ColunaAnimal
             // 
             this.ColunaAnimal.HeaderText = "Nome do Animal";
             this.ColunaAnimal.Name = "ColunaAnimal";
-            this.ColunaAnimal.Width = 72;
             // 
             // ColunaEspecie
             // 
@@ -108,11 +109,31 @@
             this.ColunaSintomas.Name = "ColunaSintomas";
             this.ColunaSintomas.Width = 75;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(102, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Atualizar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(226, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Excluir";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // ListaAnimaisForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 261);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListaAnimaisForm1";
             this.Text = "ListaAnimaisForm1";
@@ -132,5 +153,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaPeso;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaVacinas;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaSintomas;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
