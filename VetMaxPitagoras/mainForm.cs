@@ -31,7 +31,7 @@ namespace VetMaxPitagoras
         {
             var userRegister = new userForm();
             userRegister.MdiParent = this;
-            userRegister.WindowState = FormWindowState.Maximized;
+            userRegister.WindowState = FormWindowState.Normal;
             userRegister.Show();
         }
 

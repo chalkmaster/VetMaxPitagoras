@@ -17,10 +17,6 @@ namespace VetMaxPitagoras.Foundation
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void animalForm_Load(object sender, EventArgs e)
         {
