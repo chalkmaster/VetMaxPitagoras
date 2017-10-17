@@ -32,6 +32,10 @@ namespace VetMaxPitagoras
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dgv_dadosCadastroCliente = new System.Windows.Forms.DataGridView();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.Column_Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,10 +45,6 @@ namespace VetMaxPitagoras
             this.Column_Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dadosCadastroCliente)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +57,7 @@ namespace VetMaxPitagoras
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1004, 209);
             this.dataGridView1.TabIndex = 0;
@@ -83,61 +83,6 @@ namespace VetMaxPitagoras
             this.dgv_dadosCadastroCliente.Name = "dgv_dadosCadastroCliente";
             this.dgv_dadosCadastroCliente.Size = new System.Drawing.Size(1000, 155);
             this.dgv_dadosCadastroCliente.TabIndex = 7;
-            // 
-            // Column_Nome
-            // 
-            this.Column_Nome.HeaderText = "Nome";
-            this.Column_Nome.Name = "Column_Nome";
-            this.Column_Nome.Width = 210;
-            // 
-            // Column_Sexo
-            // 
-            this.Column_Sexo.HeaderText = "Sexo";
-            this.Column_Sexo.Name = "Column_Sexo";
-            this.Column_Sexo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column_Sexo.Width = 40;
-            // 
-            // Column_Cpf
-            // 
-            this.Column_Cpf.HeaderText = "Cpf";
-            this.Column_Cpf.Name = "Column_Cpf";
-            this.Column_Cpf.Width = 120;
-            // 
-            // Column_Fone
-            // 
-            this.Column_Fone.HeaderText = "Fone";
-            this.Column_Fone.Name = "Column_Fone";
-            this.Column_Fone.Width = 90;
-            // 
-            // Column_Celular
-            // 
-            this.Column_Celular.HeaderText = "Celular";
-            this.Column_Celular.Name = "Column_Celular";
-            this.Column_Celular.Width = 90;
-            // 
-            // Column_Endereco
-            // 
-            this.Column_Endereco.HeaderText = "Endereço";
-            this.Column_Endereco.Name = "Column_Endereco";
-            this.Column_Endereco.Width = 125;
-            // 
-            // Column_Numero
-            // 
-            this.Column_Numero.HeaderText = "Numero";
-            this.Column_Numero.Name = "Column_Numero";
-            this.Column_Numero.Width = 45;
-            // 
-            // Column_Complemento
-            // 
-            this.Column_Complemento.HeaderText = "Compl.";
-            this.Column_Complemento.Name = "Column_Complemento";
-            this.Column_Complemento.Width = 80;
-            // 
-            // Column_Cidade
-            // 
-            this.Column_Cidade.HeaderText = "Cidade";
-            this.Column_Cidade.Name = "Column_Cidade";
-            this.Column_Cidade.Width = 160;
             // 
             // btnExcluir
             // 
@@ -178,6 +123,61 @@ namespace VetMaxPitagoras
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // Column_Nome
+            // 
+            this.Column_Nome.HeaderText = "Nome";
+            this.Column_Nome.Name = "Column_Nome";
+            this.Column_Nome.Width = 210;
+            // 
+            // Column_Sexo
+            // 
+            this.Column_Sexo.HeaderText = "Sexo";
+            this.Column_Sexo.Name = "Column_Sexo";
+            this.Column_Sexo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column_Sexo.Width = 50;
+            // 
+            // Column_Cpf
+            // 
+            this.Column_Cpf.HeaderText = "Cpf";
+            this.Column_Cpf.Name = "Column_Cpf";
+            this.Column_Cpf.Width = 190;
+            // 
+            // Column_Fone
+            // 
+            this.Column_Fone.HeaderText = "Fone";
+            this.Column_Fone.Name = "Column_Fone";
+            this.Column_Fone.Width = 90;
+            // 
+            // Column_Celular
+            // 
+            this.Column_Celular.HeaderText = "Celular";
+            this.Column_Celular.Name = "Column_Celular";
+            this.Column_Celular.Width = 90;
+            // 
+            // Column_Endereco
+            // 
+            this.Column_Endereco.HeaderText = "Endereço";
+            this.Column_Endereco.Name = "Column_Endereco";
+            this.Column_Endereco.Width = 125;
+            // 
+            // Column_Numero
+            // 
+            this.Column_Numero.HeaderText = "Numero";
+            this.Column_Numero.Name = "Column_Numero";
+            this.Column_Numero.Width = 45;
+            // 
+            // Column_Complemento
+            // 
+            this.Column_Complemento.HeaderText = "Compl.";
+            this.Column_Complemento.Name = "Column_Complemento";
+            this.Column_Complemento.Width = 80;
+            // 
+            // Column_Cidade
+            // 
+            this.Column_Cidade.HeaderText = "Cidade";
+            this.Column_Cidade.Name = "Column_Cidade";
+            this.Column_Cidade.Width = 400;
+            // 
             // ListaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +201,10 @@ namespace VetMaxPitagoras
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dgv_dadosCadastroCliente;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Sexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Cpf;
@@ -210,10 +214,6 @@ namespace VetMaxPitagoras
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Complemento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Cidade;
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Button btnAtualizar;
-        private System.Windows.Forms.Button btnCancelar;
 
         public EventHandler button4_Click { get; private set; }
     }

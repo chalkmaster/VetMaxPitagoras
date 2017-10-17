@@ -29,7 +29,10 @@ namespace VetMaxPitagoras
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-
+            for(int x=0;x<2;x++)
+            {
+                
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -37,8 +40,9 @@ namespace VetMaxPitagoras
             try
             {
                 // Este método apaga a linha selecionada
-                int dadosIndex= dgv_dadosCadastroCliente.CurrentRow.Index;
-                dgv_dadosCadastroCliente.Rows.RemoveAt(dadosIndex);
+                 int dadosIndex= dgv_dadosCadastroCliente.CurrentRow.Index;
+                 dgv_dadosCadastroCliente.Rows.RemoveAt(dadosIndex);
+                
 
             }
             catch

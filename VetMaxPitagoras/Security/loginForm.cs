@@ -37,7 +37,7 @@ namespace VetMaxPitagoras.Security
             {
                 var tela = new mainForm();
                 tela.Show();
-                this.Hide();
+               // this.Hide();
                 MessageBox.Show("Logado com sucesso");
                 
             } else

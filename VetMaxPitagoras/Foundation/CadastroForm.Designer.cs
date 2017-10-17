@@ -58,8 +58,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(52, 144);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(88, 20);
@@ -67,8 +68,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(52, 174);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
@@ -77,9 +79,9 @@
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(282, 177);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(262, 172);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 23);
             this.button1.TabIndex = 0;
@@ -107,9 +109,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.btnSair);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
@@ -143,7 +143,9 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(371, 177);
+            this.btnSair.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSair.AutoSize = true;
+            this.btnSair.Location = new System.Drawing.Point(351, 172);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(83, 23);
             this.btnSair.TabIndex = 18;
@@ -180,6 +182,9 @@
             // 
             // txCidade
             // 
+            this.txCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txCidade.Location = new System.Drawing.Point(57, 102);
             this.txCidade.Name = "txCidade";
             this.txCidade.Size = new System.Drawing.Size(216, 20);
@@ -187,6 +192,9 @@
             // 
             // txComplemento
             // 
+            this.txComplemento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txComplemento.Location = new System.Drawing.Point(444, 75);
             this.txComplemento.Name = "txComplemento";
             this.txComplemento.Size = new System.Drawing.Size(94, 20);
@@ -194,6 +202,9 @@
             // 
             // txNumero
             // 
+            this.txNumero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txNumero.Location = new System.Drawing.Point(300, 76);
             this.txNumero.Name = "txNumero";
             this.txNumero.Size = new System.Drawing.Size(45, 20);
@@ -210,6 +221,9 @@
             // 
             // txEndereco
             // 
+            this.txEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txEndereco.Location = new System.Drawing.Point(75, 76);
             this.txEndereco.Name = "txEndereco";
             this.txEndereco.Size = new System.Drawing.Size(198, 20);
@@ -235,6 +249,9 @@
             // 
             // txCelular
             // 
+            this.txCelular.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txCelular.Location = new System.Drawing.Point(216, 50);
             this.txCelular.Mask = "(999) 00000-0000";
             this.txCelular.Name = "txCelular";
@@ -243,6 +260,9 @@
             // 
             // txFone
             // 
+            this.txFone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txFone.Location = new System.Drawing.Point(52, 49);
             this.txFone.Mask = "(999) 0000-0000";
             this.txFone.Name = "txFone";
@@ -251,6 +271,9 @@
             // 
             // txCpf
             // 
+            this.txCpf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txCpf.Location = new System.Drawing.Point(405, 22);
             this.txCpf.Mask = "000.000.000-00";
             this.txCpf.Name = "txCpf";
@@ -277,6 +300,9 @@
             // 
             // txSexo
             // 
+            this.txSexo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txSexo.Location = new System.Drawing.Point(324, 22);
             this.txSexo.Name = "txSexo";
             this.txSexo.Size = new System.Drawing.Size(41, 20);
@@ -293,6 +319,9 @@
             // 
             // txNome
             // 
+            this.txNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txNome.Location = new System.Drawing.Point(52, 22);
             this.txNome.Name = "txNome";
             this.txNome.Size = new System.Drawing.Size(229, 20);
@@ -305,6 +334,7 @@
             this.ClientSize = new System.Drawing.Size(558, 270);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Cliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);

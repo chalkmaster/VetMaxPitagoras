@@ -22,7 +22,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // string[] dadosCadastro = { txNome.Text, txSexo.Text, txCpf.Text, txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
+             string[] dadosCadastro = { txNome.Text, txSexo.Text, txCpf.Text, txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
 
 
             var authService = new AuthService(new UserRepository());
@@ -30,6 +30,8 @@ namespace VetMaxPitagoras.Foundation
             userToInsert.UserName = textBox1.Text;
             userToInsert.Password = textBox2.Text;
             authService.AddNewUser(userToInsert);
+
+            
             
             Limpar_dados();
             MessageBox.Show("Cadastro efetuado com sucesso");
