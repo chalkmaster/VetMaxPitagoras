@@ -1,6 +1,6 @@
 ﻿namespace VetMaxPitagoras.Foundation
 {
-    partial class userForm
+    partial class FrmCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSair = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.txSexo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txNome = new System.Windows.Forms.TextBox();
-            this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +140,16 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastro do Cliente";
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(371, 177);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(83, 23);
+            this.btnSair.TabIndex = 18;
+            this.btnSair.Text = "SAIR";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // label11
             // 
@@ -288,23 +298,13 @@
             this.txNome.Size = new System.Drawing.Size(229, 20);
             this.txNome.TabIndex = 0;
             // 
-            // btnSair
-            // 
-            this.btnSair.Location = new System.Drawing.Point(371, 177);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(83, 23);
-            this.btnSair.TabIndex = 18;
-            this.btnSair.Text = "SAIR";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // userForm
+            // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 270);
             this.Controls.Add(this.groupBox1);
-            this.Name = "userForm";
+            this.Name = "FrmCadastro";
             this.Text = "Cadastro Cliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);

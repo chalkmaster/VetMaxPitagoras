@@ -26,10 +26,10 @@ namespace VetMaxPitagoras
             login.WindowState = FormWindowState.Maximized;
             login.Show();
         }
-
+        
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var userRegister = new userForm();
+            var userRegister = new FrmCadastro();
             userRegister.MdiParent = this;
             userRegister.WindowState = FormWindowState.Maximized;
             userRegister.Show();

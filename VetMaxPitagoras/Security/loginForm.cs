@@ -37,7 +37,7 @@ namespace VetMaxPitagoras.Security
             {
                 var tela = new mainForm();
                 tela.Show();
-                this.Close();
+                this.Hide();
                 MessageBox.Show("Logado com sucesso");
                 
             } else
@@ -56,7 +56,7 @@ namespace VetMaxPitagoras.Security
             Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }

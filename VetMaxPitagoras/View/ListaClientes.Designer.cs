@@ -41,8 +41,8 @@ namespace VetMaxPitagoras
             this.Column_Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -139,23 +139,24 @@ namespace VetMaxPitagoras
             this.Column_Cidade.Name = "Column_Cidade";
             this.Column_Cidade.Width = 160;
             // 
-            // button1
+            // btnExcluir
             // 
-            this.button1.Location = new System.Drawing.Point(357, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "EXCLUIR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExcluir.Location = new System.Drawing.Point(357, 27);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // button2
+            // btnAlterar
             // 
-            this.button2.Location = new System.Drawing.Point(438, 27);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "ALTERAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAlterar.Location = new System.Drawing.Point(438, 27);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnAlterar.TabIndex = 9;
+            this.btnAlterar.Text = "ALTERAR";
+            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
             // btnAtualizar
             // 
@@ -165,6 +166,7 @@ namespace VetMaxPitagoras
             this.btnAtualizar.TabIndex = 10;
             this.btnAtualizar.Text = "ATUALIZAR";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnCancelar
             // 
@@ -183,8 +185,8 @@ namespace VetMaxPitagoras
             this.ClientSize = new System.Drawing.Size(1045, 293);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.dgv_dadosCadastroCliente);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListaClientes";
@@ -208,8 +210,8 @@ namespace VetMaxPitagoras
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Complemento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Cidade;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnCancelar;
 

@@ -26,5 +26,25 @@ namespace VetMaxPitagoras
         {
             this.Close();
         }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Este método apaga a linha selecionada
+                int dadosIndex= dgv_dadosCadastroCliente.CurrentRow.Index;
+                dgv_dadosCadastroCliente.Rows.RemoveAt(dadosIndex);
+
+            }
+            catch
+            {
+                MessageBox.Show("Por favor selecione uma linha ! ");
+            }
+        }
     }
 }

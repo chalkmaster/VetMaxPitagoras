@@ -50,22 +50,22 @@
     <Compile Include="AnimaisForm.Designer.cs">
       <DependentUpon>AnimaisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Foundation\userForm.cs">
+    <Compile Include="Foundation\CadastroForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Foundation\userForm.Designer.cs">
-      <DependentUpon>userForm.cs</DependentUpon>
+    <Compile Include="Foundation\CadastroForm.Designer.cs">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaAnimaisForm1.cs">
+    <Compile Include="View\ListaAnimaisForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaAnimaisForm1.Designer.cs">
+    <Compile Include="View\ListaAnimaisForm1.Designer.cs">
       <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaClientes.cs">
+    <Compile Include="View\ListaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaClientes.Designer.cs">
+    <Compile Include="View\ListaClientes.Designer.cs">
       <DependentUpon>ListaClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="mainForm.cs">
@@ -85,13 +85,13 @@
     <EmbeddedResource Include="AnimaisForm.resx">
       <DependentUpon>AnimaisForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Foundation\userForm.resx">
-      <DependentUpon>userForm.cs</DependentUpon>
+    <EmbeddedResource Include="Foundation\CadastroForm.resx">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaAnimaisForm1.resx">
+    <EmbeddedResource Include="View\ListaAnimaisForm1.resx">
       <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaClientes.resx">
+    <EmbeddedResource Include="View\ListaClientes.resx">
       <DependentUpon>ListaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
