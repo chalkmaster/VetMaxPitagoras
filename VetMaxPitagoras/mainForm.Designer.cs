@@ -62,14 +62,14 @@
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem
             // 
             this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
-            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.animaisToolStripMenuItem.Text = "Animais";
             this.animaisToolStripMenuItem.Click += new System.EventHandler(this.animaisToolStripMenuItem_Click);
             // 
@@ -89,7 +89,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(659, 386);
+            this.btnSair.Location = new System.Drawing.Point(663, 429);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 2;
