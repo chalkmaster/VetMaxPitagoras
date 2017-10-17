@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 109</value>
+    <value>55, 109</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 20</value>
@@ -148,7 +148,7 @@
     <value>None</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 145</value>
+    <value>55, 145</value>
   </data>
   <data name="textBox2.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
@@ -1459,16 +1459,16 @@
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 116</value>
+    <value>9, 112</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>43, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Nome</value>
+    <value>Usuario</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -1489,7 +1489,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 152</value>
+    <value>12, 148</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -1526,9 +1526,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>284, 218</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login do Sistema</value>
