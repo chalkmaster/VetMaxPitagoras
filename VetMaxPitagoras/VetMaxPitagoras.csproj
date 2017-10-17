@@ -62,6 +62,12 @@
     <Compile Include="Foundation\historicoAtendimento.Designer.cs">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Foundation\Prontuário de Atendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foundation\Prontuário de Atendimento.Designer.cs">
+      <DependentUpon>Prontuário de Atendimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Foundation\userForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\historicoAtendimento.resx">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foundation\Prontuário de Atendimento.resx">
+      <DependentUpon>Prontuário de Atendimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
