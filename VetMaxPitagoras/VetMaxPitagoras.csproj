@@ -50,6 +50,12 @@
     <Compile Include="Foundation\animalForm.Designer.cs">
       <DependentUpon>animalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Foundation\historicoAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foundation\historicoAtendimento.Designer.cs">
+      <DependentUpon>historicoAtendimento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Foundation\userForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <EmbeddedResource Include="Foundation\animalForm.resx">
       <DependentUpon>animalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foundation\historicoAtendimento.resx">
+      <DependentUpon>historicoAtendimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>

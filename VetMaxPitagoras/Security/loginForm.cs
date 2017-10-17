@@ -35,7 +35,7 @@ namespace VetMaxPitagoras.Security
 
             if (_authService.TryAuthenticate(userToAuthenticate))
             {
-                MessageBox.Show("Logado com sucesso teste");
+                MessageBox.Show("Logado com sucesso");
             } else
             {
                 MessageBox.Show("Usuário ou senha inválidos");
