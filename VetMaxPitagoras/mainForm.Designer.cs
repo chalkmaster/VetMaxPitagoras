@@ -72,7 +72,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(0, 172);
+            this.btnSair.Location = new System.Drawing.Point(32, 184);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 2;
