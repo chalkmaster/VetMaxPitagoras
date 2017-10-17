@@ -36,6 +36,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSair = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.funcionárioDaClínicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,8 @@
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem,
-            this.animaisToolStripMenuItem});
+            this.animaisToolStripMenuItem,
+            this.funcionárioDaClínicaToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -97,6 +99,13 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // funcionárioDaClínicaToolStripMenuItem
+            // 
+            this.funcionárioDaClínicaToolStripMenuItem.Name = "funcionárioDaClínicaToolStripMenuItem";
+            this.funcionárioDaClínicaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.funcionárioDaClínicaToolStripMenuItem.Text = "Funcionário da Clínica";
+            this.funcionárioDaClínicaToolStripMenuItem.Click += new System.EventHandler(this.funcionárioDaClínicaToolStripMenuItem_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,6 +138,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ToolStripMenuItem pesquisaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem funcionárioDaClínicaToolStripMenuItem;
     }
 }
 
