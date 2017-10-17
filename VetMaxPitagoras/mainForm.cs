@@ -50,5 +50,12 @@ namespace VetMaxPitagoras
             ListaAnimais.WindowState = FormWindowState.Maximized;
             ListaAnimais.Show();
         }
+
+        private void clientesCadastradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ListaClientesCadastrados = new ListaClientes();
+            ListaClientesCadastrados.MdiParent = this;
+            ListaClientesCadastrados.Show();
+        }
     }
 }

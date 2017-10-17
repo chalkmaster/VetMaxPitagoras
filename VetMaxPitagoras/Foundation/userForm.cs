@@ -27,11 +27,24 @@ namespace VetMaxPitagoras.Foundation
             userToInsert.UserName = textBox1.Text;
             userToInsert.Password = textBox2.Text;
             authService.AddNewUser(userToInsert);
+            MessageBox.Show("Cadastro efetuado com sucesso");
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

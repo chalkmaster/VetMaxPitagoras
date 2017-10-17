@@ -34,6 +34,7 @@
             this.animaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animaisCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,20 +62,21 @@
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
             this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.usuáriosToolStripMenuItem.Text = "Usuários";
+            this.usuáriosToolStripMenuItem.Text = "Clientes";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem
             // 
             this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
-            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.animaisToolStripMenuItem.Text = "Animais";
             this.animaisToolStripMenuItem.Click += new System.EventHandler(this.animaisToolStripMenuItem_Click);
             // 
             // listaToolStripMenuItem
             // 
             this.listaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.animaisCadastradosToolStripMenuItem});
+            this.animaisCadastradosToolStripMenuItem,
+            this.clientesCadastradosToolStripMenuItem});
             this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
             this.listaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.listaToolStripMenuItem.Text = "Lista";
@@ -85,6 +87,13 @@
             this.animaisCadastradosToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.animaisCadastradosToolStripMenuItem.Text = "Animais Cadastrados";
             this.animaisCadastradosToolStripMenuItem.Click += new System.EventHandler(this.animaisCadastradosToolStripMenuItem_Click);
+            // 
+            // clientesCadastradosToolStripMenuItem
+            // 
+            this.clientesCadastradosToolStripMenuItem.Name = "clientesCadastradosToolStripMenuItem";
+            this.clientesCadastradosToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.clientesCadastradosToolStripMenuItem.Text = "Clientes Cadastrados";
+            this.clientesCadastradosToolStripMenuItem.Click += new System.EventHandler(this.clientesCadastradosToolStripMenuItem_Click);
             // 
             // mainForm
             // 
@@ -112,6 +121,7 @@
         private System.Windows.Forms.ToolStripMenuItem animaisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem animaisCadastradosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesCadastradosToolStripMenuItem;
     }
 }
 

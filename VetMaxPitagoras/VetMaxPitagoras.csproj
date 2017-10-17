@@ -62,6 +62,12 @@
     <Compile Include="ListaAnimaisForm1.Designer.cs">
       <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaClientes.Designer.cs">
+      <DependentUpon>ListaClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListaAnimaisForm1.resx">
       <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaClientes.resx">
+      <DependentUpon>ListaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
