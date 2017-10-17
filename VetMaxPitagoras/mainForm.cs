@@ -22,14 +22,14 @@ namespace VetMaxPitagoras
         private void mainForm_Load(object sender, EventArgs e)
         {
             var login = new loginForm();
-            login.MdiParent = this;
+           // login.MdiParent = this;
             login.WindowState = FormWindowState.Maximized;
             login.Show();
         }
-
+        
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var userRegister = new userForm();
+            var userRegister = new FrmCadastro();
             userRegister.MdiParent = this;
             userRegister.WindowState = FormWindowState.Maximized;
             userRegister.Show();
@@ -49,6 +49,13 @@ namespace VetMaxPitagoras
             ListaAnimais.MdiParent = this;
             ListaAnimais.WindowState = FormWindowState.Maximized;
             ListaAnimais.Show();
+        }
+
+        private void clientesCadastradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ListaClientesCadastrados = new ListaClientes();
+            ListaClientesCadastrados.MdiParent = this;
+            ListaClientesCadastrados.Show();
         }
     }
 }

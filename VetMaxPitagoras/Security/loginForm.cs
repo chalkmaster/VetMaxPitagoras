@@ -35,7 +35,11 @@ namespace VetMaxPitagoras.Security
 
             if (_authService.TryAuthenticate(userToAuthenticate))
             {
+                var tela = new mainForm();
+                tela.Show();
+               // this.Hide();
                 MessageBox.Show("Logado com sucesso");
+                
             } else
             {
                 MessageBox.Show("Usuário ou senha inválidos");
@@ -50,6 +54,11 @@ namespace VetMaxPitagoras.Security
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
