@@ -14,7 +14,7 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
 
         public Raca FindByRaca(string raca)
         {
-            return GetMemoryDatabase().FirstOrDefault(raca => raca.Nome.ToLower().Equals(raca.ToString().ToLower()));
+            return GetMemoryDatabase().FirstOrDefault(rs => rs.Nome.ToLower().Equals(raca.ToString().ToLower()));
         }
 
         protected override List<Raca> GetMemoryDatabase()
