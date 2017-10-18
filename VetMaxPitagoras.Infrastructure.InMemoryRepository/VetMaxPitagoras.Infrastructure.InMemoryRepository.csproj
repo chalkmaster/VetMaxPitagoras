@@ -43,11 +43,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Security\AnimalRepository.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Security\EspecieRepository.cs" />
     <Compile Include="Security\RacaRepository.cs" />
->>>>>>> original
     <Compile Include="Security\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
