@@ -41,9 +41,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Animal.cs" />
+<<<<<<< HEAD
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IAnimalRepository.cs" />
+=======
+    <Compile Include="Entities\Especie.cs" />
+    <Compile Include="Entities\Raca.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IAnimalRepository.cs" />
+    <Compile Include="Repository\IEspecieRepository.cs" />
+    <Compile Include="Repository\IRacaRepository.cs" />
+>>>>>>> original
     <Compile Include="Repository\IUserRepository.cs" />
     <Compile Include="Services\AuthService.cs" />
   </ItemGroup>
