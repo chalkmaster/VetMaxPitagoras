@@ -52,7 +52,7 @@
             // 
             // txtLogar
             // 
-            this.txtLogar.Location = new System.Drawing.Point(170, 164);
+            this.txtLogar.Location = new System.Drawing.Point(214, 192);
             this.txtLogar.Name = "txtLogar";
             this.txtLogar.Size = new System.Drawing.Size(75, 23);
             this.txtLogar.TabIndex = 2;
