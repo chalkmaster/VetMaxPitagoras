@@ -1,4 +1,4 @@
-﻿using System;
+﻿/* using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +12,10 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
     {
         private static List<Raca> _db;
 
-        public Raca FindByRaca(string raca)
+       public Raca FindByRaca(string raca)
         {
             return GetMemoryDatabase().FirstOrDefault(raca => raca.Nome.ToLower().Equals(raca.ToString().ToLower()));
-        }
+        } 
 
         protected override List<Raca> GetMemoryDatabase()
         {
@@ -23,3 +23,4 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
         }
     }
 }
+*/
