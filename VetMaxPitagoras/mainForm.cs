@@ -47,5 +47,13 @@ namespace VetMaxPitagoras
         {
             Close();
         }
+
+        private void funcionárioDaClínicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var funcionarioRegister = new frmcadastrarfuncionario();
+            funcionarioRegister.MdiParent = this;
+            funcionarioRegister.WindowState = FormWindowState.Maximized;
+            funcionarioRegister.Show();
+        }
     }
 }

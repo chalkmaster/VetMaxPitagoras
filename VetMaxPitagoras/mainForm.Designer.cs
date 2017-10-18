@@ -32,6 +32,7 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funcionárioDaClínicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSair = new System.Windows.Forms.Button();
@@ -54,7 +55,8 @@
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem,
-            this.animaisToolStripMenuItem});
+            this.animaisToolStripMenuItem,
+            this.funcionárioDaClínicaToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -62,16 +64,23 @@
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem
             // 
             this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
-            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.animaisToolStripMenuItem.Text = "Animais";
             this.animaisToolStripMenuItem.Click += new System.EventHandler(this.animaisToolStripMenuItem_Click);
+            // 
+            // funcionárioDaClínicaToolStripMenuItem
+            // 
+            this.funcionárioDaClínicaToolStripMenuItem.Name = "funcionárioDaClínicaToolStripMenuItem";
+            this.funcionárioDaClínicaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.funcionárioDaClínicaToolStripMenuItem.Text = "Funcionário da Clínica";
+            this.funcionárioDaClínicaToolStripMenuItem.Click += new System.EventHandler(this.funcionárioDaClínicaToolStripMenuItem_Click);
             // 
             // pesquisaToolStripMenuItem
             // 
@@ -89,7 +98,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(663, 429);
+            this.btnSair.Location = new System.Drawing.Point(294, 275);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 2;
@@ -129,6 +138,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ToolStripMenuItem pesquisaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem funcionárioDaClínicaToolStripMenuItem;
     }
 }
 
