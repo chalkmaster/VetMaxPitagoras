@@ -41,11 +41,10 @@ namespace VetMaxPitagoras.Foundation
 
             var animais = animalRepository.FindAll();
 
-            dataCadAnimal.Rows.Clear();
-            dataCadAnimal.Refresh();
-            foreach (Animal animalDataGrid in animais){
-                string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça, animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
-               this.dataCadAnimal.Rows.Add(dados);
+            foreach(Animal animalDataGrid in animais){
+                string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
+                     animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
+                this.dataCadAnimal.Rows.Add(dados);
             }
 
         }
