@@ -62,7 +62,7 @@
             // lbRaça
             // 
             this.lbRaça.AutoSize = true;
-            this.lbRaça.Location = new System.Drawing.Point(267, 44);
+            this.lbRaça.Location = new System.Drawing.Point(322, 44);
             this.lbRaça.Name = "lbRaça";
             this.lbRaça.Size = new System.Drawing.Size(36, 13);
             this.lbRaça.TabIndex = 1;
@@ -71,7 +71,7 @@
             // lbTipo
             // 
             this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(337, 117);
+            this.lbTipo.Location = new System.Drawing.Point(327, 79);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(31, 13);
             this.lbTipo.TabIndex = 2;
@@ -88,21 +88,21 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(60, 37);
+            this.txtNome.Location = new System.Drawing.Point(127, 37);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 5;
             // 
             // txtRaca
             // 
-            this.txtRaca.Location = new System.Drawing.Point(309, 37);
+            this.txtRaca.Location = new System.Drawing.Point(374, 37);
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(174, 20);
             this.txtRaca.TabIndex = 6;
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(374, 114);
+            this.txtTipo.Location = new System.Drawing.Point(374, 76);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(174, 20);
             this.txtTipo.TabIndex = 7;
@@ -116,14 +116,14 @@
             // 
             // txtNomeDoDono
             // 
-            this.txtNomeDoDono.Location = new System.Drawing.Point(101, 76);
+            this.txtNomeDoDono.Location = new System.Drawing.Point(127, 76);
             this.txtNomeDoDono.Name = "txtNomeDoDono";
             this.txtNomeDoDono.Size = new System.Drawing.Size(174, 20);
             this.txtNomeDoDono.TabIndex = 9;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(200, 166);
+            this.btnCadastrar.Location = new System.Drawing.Point(127, 171);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 10;
