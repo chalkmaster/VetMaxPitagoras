@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VetMaxPitagoras.Foundation
 {
-    public partial class Prontuário_de_Atendimento : Form
+    public partial class ProntuarioAtendimento : Form
     {
-        public Prontuário_de_Atendimento()
+        public ProntuarioAtendimento()
         {
             InitializeComponent();
         }
