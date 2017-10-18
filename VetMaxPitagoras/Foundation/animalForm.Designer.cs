@@ -40,9 +40,14 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
             this.telefoneDono = new System.Windows.Forms.Label();
-            this.gridCadastroAnimal = new System.Windows.Forms.TableLayoutPanel();
+            this.dataCadAnimal = new System.Windows.Forms.DataGridView();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.raca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grupoCadAnimal.SuspendLayout();
-            this.gridCadastroAnimal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
             this.SuspendLayout();
             // 
             // lbNome
@@ -57,7 +62,7 @@
             // lbRaça
             // 
             this.lbRaça.AutoSize = true;
-            this.lbRaça.Location = new System.Drawing.Point(18, 84);
+            this.lbRaça.Location = new System.Drawing.Point(322, 44);
             this.lbRaça.Name = "lbRaça";
             this.lbRaça.Size = new System.Drawing.Size(36, 13);
             this.lbRaça.TabIndex = 1;
@@ -66,7 +71,7 @@
             // lbTipo
             // 
             this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(18, 192);
+            this.lbTipo.Location = new System.Drawing.Point(327, 79);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(31, 13);
             this.lbTipo.TabIndex = 2;
@@ -75,7 +80,7 @@
             // lbNomeDono
             // 
             this.lbNomeDono.AutoSize = true;
-            this.lbNomeDono.Location = new System.Drawing.Point(16, 121);
+            this.lbNomeDono.Location = new System.Drawing.Point(13, 79);
             this.lbNomeDono.Name = "lbNomeDono";
             this.lbNomeDono.Size = new System.Drawing.Size(82, 13);
             this.lbNomeDono.TabIndex = 4;
@@ -83,42 +88,42 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(129, 37);
+            this.txtNome.Location = new System.Drawing.Point(127, 37);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 5;
             // 
             // txtRaca
             // 
-            this.txtRaca.Location = new System.Drawing.Point(129, 77);
+            this.txtRaca.Location = new System.Drawing.Point(374, 37);
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(174, 20);
             this.txtRaca.TabIndex = 6;
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(129, 185);
+            this.txtTipo.Location = new System.Drawing.Point(374, 76);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(174, 20);
             this.txtTipo.TabIndex = 7;
             // 
             // txtTelefoneDoDono
             // 
-            this.txtTelefoneDoDono.Location = new System.Drawing.Point(129, 150);
+            this.txtTelefoneDoDono.Location = new System.Drawing.Point(127, 110);
             this.txtTelefoneDoDono.Name = "txtTelefoneDoDono";
             this.txtTelefoneDoDono.Size = new System.Drawing.Size(174, 20);
             this.txtTelefoneDoDono.TabIndex = 8;
             // 
             // txtNomeDoDono
             // 
-            this.txtNomeDoDono.Location = new System.Drawing.Point(129, 114);
+            this.txtNomeDoDono.Location = new System.Drawing.Point(127, 76);
             this.txtNomeDoDono.Name = "txtNomeDoDono";
             this.txtNomeDoDono.Size = new System.Drawing.Size(174, 20);
             this.txtNomeDoDono.TabIndex = 9;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(228, 235);
+            this.btnCadastrar.Location = new System.Drawing.Point(127, 171);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 10;
@@ -141,9 +146,9 @@
             this.grupoCadAnimal.Controls.Add(this.txtRaca);
             this.grupoCadAnimal.Controls.Add(this.txtTelefoneDoDono);
             this.grupoCadAnimal.Controls.Add(this.txtTipo);
-            this.grupoCadAnimal.Location = new System.Drawing.Point(329, 153);
+            this.grupoCadAnimal.Location = new System.Drawing.Point(12, 12);
             this.grupoCadAnimal.Name = "grupoCadAnimal";
-            this.grupoCadAnimal.Size = new System.Drawing.Size(320, 341);
+            this.grupoCadAnimal.Size = new System.Drawing.Size(609, 210);
             this.grupoCadAnimal.TabIndex = 11;
             this.grupoCadAnimal.TabStop = false;
             this.grupoCadAnimal.Text = "Cadastro de animal";
@@ -151,40 +156,64 @@
             // telefoneDono
             // 
             this.telefoneDono.AutoSize = true;
-            this.telefoneDono.Location = new System.Drawing.Point(16, 157);
+            this.telefoneDono.Location = new System.Drawing.Point(14, 117);
             this.telefoneDono.Name = "telefoneDono";
             this.telefoneDono.Size = new System.Drawing.Size(99, 13);
             this.telefoneDono.TabIndex = 12;
             this.telefoneDono.Text = "Telefone do Dono :";
             // 
-            // gridCadastroAnimal
+            // dataCadAnimal
             // 
-            this.gridCadastroAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gridCadastroAnimal.BackColor = System.Drawing.SystemColors.Control;
-            this.gridCadastroAnimal.ColumnCount = 3;
-            this.gridCadastroAnimal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.gridCadastroAnimal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.gridCadastroAnimal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.gridCadastroAnimal.Controls.Add(this.grupoCadAnimal, 1, 0);
-            this.gridCadastroAnimal.Location = new System.Drawing.Point(0, 1);
-            this.gridCadastroAnimal.Name = "gridCadastroAnimal";
-            this.gridCadastroAnimal.RowCount = 1;
-            this.gridCadastroAnimal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gridCadastroAnimal.Size = new System.Drawing.Size(980, 647);
-            this.gridCadastroAnimal.TabIndex = 12;
+            this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nome,
+            this.raca,
+            this.nomeDono,
+            this.telDono,
+            this.tipoTel});
+            this.dataCadAnimal.Location = new System.Drawing.Point(12, 228);
+            this.dataCadAnimal.Name = "dataCadAnimal";
+            this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
+            this.dataCadAnimal.TabIndex = 12;
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome";
+            this.nome.Name = "nome";
+            // 
+            // raca
+            // 
+            this.raca.HeaderText = "Raça";
+            this.raca.Name = "raca";
+            // 
+            // nomeDono
+            // 
+            this.nomeDono.HeaderText = "Nome do dono";
+            this.nomeDono.Name = "nomeDono";
+            // 
+            // telDono
+            // 
+            this.telDono.HeaderText = "Telefone do dono";
+            this.telDono.Name = "telDono";
+            // 
+            // tipoTel
+            // 
+            this.tipoTel.HeaderText = "Tipo";
+            this.tipoTel.Name = "tipoTel";
             // 
             // animalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 648);
-            this.Controls.Add(this.gridCadastroAnimal);
+            this.ClientSize = new System.Drawing.Size(636, 648);
+            this.Controls.Add(this.dataCadAnimal);
+            this.Controls.Add(this.grupoCadAnimal);
             this.Name = "animalForm";
             this.Text = "animalForm";
             this.Load += new System.EventHandler(this.animalForm_Load);
             this.grupoCadAnimal.ResumeLayout(false);
             this.grupoCadAnimal.PerformLayout();
-            this.gridCadastroAnimal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,6 +235,11 @@
         private System.Windows.Forms.Button btnCadastrar;
 
         private System.Windows.Forms.GroupBox grupoCadAnimal;
-        private System.Windows.Forms.TableLayoutPanel gridCadastroAnimal; 
+        private System.Windows.Forms.DataGridView dataCadAnimal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn raca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telDono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
     }
 }

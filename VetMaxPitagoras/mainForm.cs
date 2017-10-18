@@ -21,7 +21,7 @@ namespace VetMaxPitagoras
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            var login = new loginForm();
+            var login = new frmLogin();
             login.MdiParent = this;
             login.WindowState = FormWindowState.Maximized;
             login.Show();
