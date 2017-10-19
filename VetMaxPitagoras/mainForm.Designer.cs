@@ -48,6 +48,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1032, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // cadastroToolStripMenuItem
             // 
@@ -62,14 +63,14 @@
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.usuáriosToolStripMenuItem.Text = "Clientes";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem
             // 
             this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
-            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.animaisToolStripMenuItem.Text = "Animais";
             this.animaisToolStripMenuItem.Click += new System.EventHandler(this.animaisToolStripMenuItem_Click);
             // 
@@ -118,12 +119,12 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem animaisToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem animaisCadastradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesCadastradosToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listaToolStripMenuItem;
     }
 }
 

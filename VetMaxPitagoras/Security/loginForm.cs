@@ -20,6 +20,11 @@ namespace VetMaxPitagoras.Security
         public loginForm()
         {
             InitializeComponent();
+             var authServicePadrao = new AuthService(new UserRepository());
+            var userPadrao = new User();
+            userPadrao.UserName = "a";
+            userPadrao.Password = "a";
+            authServicePadrao.AddNewUser(userPadrao); // ESTES SÃO LOGIN E SENHA PADRÃO
         }
 
         private void loginForm_Load(object sender, EventArgs e)
@@ -39,6 +44,9 @@ namespace VetMaxPitagoras.Security
                 //tela.Show(); //RETIREI ESTE SHOW PARA CORREÇÃO DA TELA DE LOGIN
                 this.Hide();
                 MessageBox.Show("Logado com sucesso");
+
+                mainForm.mdiobj.cadastroToolStripMenuItem.Enabled = true;//aki habilita o item cadastro
+                mainForm.mdiobj.listaToolStripMenuItem.Enabled = true; // aki habilita o item lista
                 
             } else
             {
