@@ -36,14 +36,15 @@ namespace VetMaxPitagoras.Security
             if (_authService.TryAuthenticate(userToAuthenticate))
             {
                 var tela = new mainForm();
-                tela.Show();
-               // this.Hide();
+                //tela.Show(); //RETIREI ESTE SHOW PARA CORREÇÃO DA TELA DE LOGIN
+                this.Hide();
                 MessageBox.Show("Logado com sucesso");
                 
             } else
             {
                 MessageBox.Show("Usuário ou senha inválidos");
             }
+           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
