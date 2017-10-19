@@ -100,7 +100,13 @@
             // 
             // errorProvider1
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.btnSair.Location = new System.Drawing.Point(685, 358);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 2;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // mainForm
             // 
