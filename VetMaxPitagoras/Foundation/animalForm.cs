@@ -29,7 +29,7 @@ namespace VetMaxPitagoras.Foundation
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
-            Animal animal = new Animal();
+           /* Animal animal = new Animal();
             animal.Nome = this.txtNome.Text;
             animal.NomeDono = this.txtNomeDoDono.Text;
             animal.Raça = this.txtRaca.Text;
@@ -45,7 +45,7 @@ namespace VetMaxPitagoras.Foundation
                 string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
                      animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
                 this.dataCadAnimal.Rows.Add(dados);
-            }
+            }*/
 
         }
     }
