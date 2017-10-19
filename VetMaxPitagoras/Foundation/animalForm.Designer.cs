@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lbNome = new System.Windows.Forms.Label();
+            this.lbNomeDoAnimal = new System.Windows.Forms.Label();
             this.lbRaça = new System.Windows.Forms.Label();
             this.lbTipo = new System.Windows.Forms.Label();
             this.lbNomeDono = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtRaca = new System.Windows.Forms.TextBox();
             this.txtTipo = new System.Windows.Forms.TextBox();
-            this.txtTelefoneDoDono = new System.Windows.Forms.TextBox();
             this.txtNomeDoDono = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
@@ -48,19 +47,21 @@
             this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.validacaoAnimalCampos = new System.Windows.Forms.ErrorProvider(this.components);
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.btnSair = new System.Windows.Forms.Button();
             this.grupoCadAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.validacaoAnimalCampos)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbNome
+            // lbNomeDoAnimal
             // 
-            this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(16, 44);
-            this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(38, 13);
-            this.lbNome.TabIndex = 0;
-            this.lbNome.Text = "Nome:";
+            this.lbNomeDoAnimal.AutoSize = true;
+            this.lbNomeDoAnimal.Location = new System.Drawing.Point(16, 44);
+            this.lbNomeDoAnimal.Name = "lbNomeDoAnimal";
+            this.lbNomeDoAnimal.Size = new System.Drawing.Size(87, 13);
+            this.lbNomeDoAnimal.TabIndex = 0;
+            this.lbNomeDoAnimal.Text = "Nome do Animal:";
             // 
             // lbRaça
             // 
@@ -93,30 +94,23 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(127, 37);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(174, 20);
+            this.txtNome.Size = new System.Drawing.Size(97, 20);
             this.txtNome.TabIndex = 5;
             // 
             // txtRaca
             // 
             this.txtRaca.Location = new System.Drawing.Point(374, 37);
             this.txtRaca.Name = "txtRaca";
-            this.txtRaca.Size = new System.Drawing.Size(174, 20);
+            this.txtRaca.Size = new System.Drawing.Size(97, 20);
             this.txtRaca.TabIndex = 6;
             // 
             // txtTipo
             // 
             this.txtTipo.Location = new System.Drawing.Point(374, 76);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(174, 20);
+            this.txtTipo.Size = new System.Drawing.Size(97, 20);
             this.txtTipo.TabIndex = 7;
             this.txtTipo.Validating += new System.ComponentModel.CancelEventHandler(this.txtTipo_Validating);
-            // 
-            // txtTelefoneDoDono
-            // 
-            this.txtTelefoneDoDono.Location = new System.Drawing.Point(127, 110);
-            this.txtTelefoneDoDono.Name = "txtTelefoneDoDono";
-            this.txtTelefoneDoDono.Size = new System.Drawing.Size(174, 20);
-            this.txtTelefoneDoDono.TabIndex = 8;
             // 
             // txtNomeDoDono
             // 
@@ -127,9 +121,9 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(127, 171);
+            this.btnCadastrar.Location = new System.Drawing.Point(214, 168);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(87, 26);
             this.btnCadastrar.TabIndex = 10;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -139,16 +133,17 @@
             // 
             this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
+            this.grupoCadAnimal.Controls.Add(this.btnSair);
+            this.grupoCadAnimal.Controls.Add(this.maskedTextBox1);
             this.grupoCadAnimal.Controls.Add(this.txtNome);
             this.grupoCadAnimal.Controls.Add(this.telefoneDono);
             this.grupoCadAnimal.Controls.Add(this.lbNomeDono);
             this.grupoCadAnimal.Controls.Add(this.btnCadastrar);
             this.grupoCadAnimal.Controls.Add(this.lbTipo);
-            this.grupoCadAnimal.Controls.Add(this.lbNome);
+            this.grupoCadAnimal.Controls.Add(this.lbNomeDoAnimal);
             this.grupoCadAnimal.Controls.Add(this.txtNomeDoDono);
             this.grupoCadAnimal.Controls.Add(this.lbRaça);
             this.grupoCadAnimal.Controls.Add(this.txtRaca);
-            this.grupoCadAnimal.Controls.Add(this.txtTelefoneDoDono);
             this.grupoCadAnimal.Controls.Add(this.txtTipo);
             this.grupoCadAnimal.Location = new System.Drawing.Point(179, 12);
             this.grupoCadAnimal.Name = "grupoCadAnimal";
@@ -162,9 +157,9 @@
             this.telefoneDono.AutoSize = true;
             this.telefoneDono.Location = new System.Drawing.Point(14, 117);
             this.telefoneDono.Name = "telefoneDono";
-            this.telefoneDono.Size = new System.Drawing.Size(99, 13);
+            this.telefoneDono.Size = new System.Drawing.Size(52, 13);
             this.telefoneDono.TabIndex = 12;
-            this.telefoneDono.Text = "Telefone do Dono :";
+            this.telefoneDono.Text = "Telefone:";
             // 
             // dataCadAnimal
             // 
@@ -177,10 +172,11 @@
             this.nomeDono,
             this.telDono,
             this.tipoTel});
-            this.dataCadAnimal.Location = new System.Drawing.Point(179, 241);
+            this.dataCadAnimal.Location = new System.Drawing.Point(60, 228);
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
             this.dataCadAnimal.TabIndex = 12;
+            this.dataCadAnimal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCadAnimal_CellContentClick);
             // 
             // nome
             // 
@@ -211,11 +207,28 @@
             // 
             this.validacaoAnimalCampos.ContainerControl = this;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(127, 117);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(87, 20);
+            this.maskedTextBox1.TabIndex = 13;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(330, 168);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(87, 26);
+            this.btnSair.TabIndex = 14;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            // 
             // animalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 948);
+            this.ClientSize = new System.Drawing.Size(971, 742);
             this.Controls.Add(this.dataCadAnimal);
             this.Controls.Add(this.grupoCadAnimal);
             this.Name = "animalForm";
@@ -231,7 +244,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbNome;
+        private System.Windows.Forms.Label lbNomeDoAnimal;
         private System.Windows.Forms.Label lbRaça;
         private System.Windows.Forms.Label lbTipo;
         private System.Windows.Forms.Label telefoneDono;
@@ -240,7 +253,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtRaca;
         private System.Windows.Forms.TextBox txtTipo;
-        private System.Windows.Forms.TextBox txtTelefoneDoDono;
         private System.Windows.Forms.TextBox txtNomeDoDono;
 
         private System.Windows.Forms.Button btnCadastrar;
@@ -253,5 +265,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telDono;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
         private System.Windows.Forms.ErrorProvider validacaoAnimalCampos;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

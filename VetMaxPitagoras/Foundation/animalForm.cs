@@ -91,6 +91,11 @@ namespace VetMaxPitagoras.Foundation
                 validacaoAnimalCampos.SetError (txtTipo, null);
             }
         }
+
+        private void dataCadAnimal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
     
