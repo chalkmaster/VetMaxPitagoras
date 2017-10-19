@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbNome = new System.Windows.Forms.Label();
             this.lbRaça = new System.Windows.Forms.Label();
             this.lbTipo = new System.Windows.Forms.Label();
@@ -46,8 +47,10 @@
             this.nomeDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.validacaoAnimalCampos = new System.Windows.Forms.ErrorProvider(this.components);
             this.grupoCadAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.validacaoAnimalCampos)).BeginInit();
             this.SuspendLayout();
             // 
             // lbNome
@@ -106,6 +109,7 @@
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(174, 20);
             this.txtTipo.TabIndex = 7;
+            this.txtTipo.Validating += new System.ComponentModel.CancelEventHandler(this.txtTipo_Validating);
             // 
             // txtTelefoneDoDono
             // 
@@ -133,7 +137,7 @@
             // 
             // grupoCadAnimal
             // 
-            this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
             this.grupoCadAnimal.Controls.Add(this.txtNome);
             this.grupoCadAnimal.Controls.Add(this.telefoneDono);
@@ -146,7 +150,7 @@
             this.grupoCadAnimal.Controls.Add(this.txtRaca);
             this.grupoCadAnimal.Controls.Add(this.txtTelefoneDoDono);
             this.grupoCadAnimal.Controls.Add(this.txtTipo);
-            this.grupoCadAnimal.Location = new System.Drawing.Point(12, 12);
+            this.grupoCadAnimal.Location = new System.Drawing.Point(179, 12);
             this.grupoCadAnimal.Name = "grupoCadAnimal";
             this.grupoCadAnimal.Size = new System.Drawing.Size(609, 210);
             this.grupoCadAnimal.TabIndex = 11;
@@ -164,6 +168,8 @@
             // 
             // dataCadAnimal
             // 
+            this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
@@ -171,7 +177,7 @@
             this.nomeDono,
             this.telDono,
             this.tipoTel});
-            this.dataCadAnimal.Location = new System.Drawing.Point(12, 228);
+            this.dataCadAnimal.Location = new System.Drawing.Point(179, 241);
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
             this.dataCadAnimal.TabIndex = 12;
@@ -201,11 +207,15 @@
             this.tipoTel.HeaderText = "Tipo";
             this.tipoTel.Name = "tipoTel";
             // 
+            // validacaoAnimalCampos
+            // 
+            this.validacaoAnimalCampos.ContainerControl = this;
+            // 
             // animalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 648);
+            this.ClientSize = new System.Drawing.Size(971, 948);
             this.Controls.Add(this.dataCadAnimal);
             this.Controls.Add(this.grupoCadAnimal);
             this.Name = "animalForm";
@@ -214,6 +224,7 @@
             this.grupoCadAnimal.ResumeLayout(false);
             this.grupoCadAnimal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.validacaoAnimalCampos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -241,5 +252,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDono;
         private System.Windows.Forms.DataGridViewTextBoxColumn telDono;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
+        private System.Windows.Forms.ErrorProvider validacaoAnimalCampos;
     }
 }

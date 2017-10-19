@@ -31,7 +31,7 @@ namespace VetMaxPitagoras
         {
             var userRegister = new userForm();
             userRegister.MdiParent = this;
-            userRegister.WindowState = FormWindowState.Normal;
+            userRegister.WindowState = FormWindowState.Maximized;
             userRegister.Show();
         }
 
@@ -43,10 +43,7 @@ namespace VetMaxPitagoras
             animalRegister.Show();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+       
 
         private void funcionárioDaClínicaToolStripMenuItem_Click(object sender, EventArgs e)
         {
