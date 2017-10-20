@@ -28,75 +28,99 @@ namespace VetMaxPitagoras.Foundation
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+
             animal.Nome = this.txtNome.Text;
             animal.NomeDono = this.txtNomeDoDono.Text;
             animal.Raça = this.txtRaca.Text;
             animal.TelefoneDono = this.txtTelefoneDoDono.Text;
             animal.TelefoneTipo = this.txtTipo.Text;
 
-            do
+            if (txtNome.Text.Trim() == string.Empty)
             {
-                if (txtNome.Text.Trim() == string.Empty)
-                {
-                    MessageBox.Show("Nome não foi preenchido", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtNome.Focus();
-                }
-                else if (txtNomeDoDono.Text.Trim() == string.Empty)
-                {
-                    MessageBox.Show("Nome do dono não foi preenchido", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtNome.Focus();
-                }
-                else if (txtRaca.Text.Trim() == string.Empty)
-                {
-                    MessageBox.Show("A raça não foi preenchido", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtNome.Focus();
-                }
-                else if (txtTelefoneDoDono.Text.Trim() == string.Empty) // vai mudar para aceitar tipo telefone.
-                {
-                    MessageBox.Show("O telefone não foi preenchido", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtNome.Focus();
-                }
-                else if (ValidateChildren(ValidationConstraints.Enabled))
-                {
-                    txtTipo.Enabled = true;
-                }
-                break;
+                validacaoAnimalCampos.SetError(txtNome, "Nome não foi preenchido");
+                txtNome.Focus();
+                return;
+                
+            }
            
-            }
-            while (txtTipo.Text == "") ;
-
-              
-            var animalRepository = new AnimalRepository();
-             animalRepository.Insert(animal);
-             var animais = animalRepository.FindAll();
-             foreach (Animal animalDataGrid in animais)
-             {
-                 string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
-                      animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
-                 this.dataCadAnimal.Rows.Add(dados);
-             }
-        }
-
-        private void txtTipo_Validating(object sender, CancelEventArgs e)
-        {
-            if(string.IsNullOrEmpty(txtTipo.Text))
+            else if (txtNomeDoDono.Text.Trim() == string.Empty)
             {
-                e.Cancel = true;
+                validacaoAnimalCampos.SetError(txtNomeDoDono, "Nome do dono não foi preenchido");
+                txtNomeDoDono.Focus();
+                return;
+            }
+            else if (txtRaca.Text.Trim() == string.Empty)
+            {
+                validacaoAnimalCampos.SetError(txtRaca, "A raça não foi preenchido");
+                txtRaca.Focus();
+                return;
+            }
+            else if (txtTelefoneDoDono.Text.Trim() == string.Empty) // vai mudar para aceitar tipo telefone.
+            {
+                txtTelefoneDoDono.Focus();
+                return;
+            }
+            else if (txtTipo.Text.Trim() == string.Empty)
+            {
+                validacaoAnimalCampos.SetError(txtRaca, "A raça não foi preenchido");
                 txtTipo.Focus();
-                validacaoAnimalCampos.SetError (txtTipo ,"Entre com tipo primeiro");
+                return;
             }
-            else
-            {
-                e.Cancel = false;
-                validacaoAnimalCampos.SetError (txtTipo, null);
-            }
+
+            var animalRepository = new AnimalRepository();
+                animalRepository.Insert(animal);
+                var animais = animalRepository.FindAll();
+                foreach (Animal animalDataGrid in animais)
+                {
+                    string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
+                          animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
+                    this.dataCadAnimal.Rows.Add(dados);
+                }
         }
 
-        private void dataCadAnimal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        // permitir somente letras
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNomeDoDono_KeyPress(object sender, KeyPressEventArgs e)
+        { 
+             if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
 
         }
+
+        private void txtRaca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+        // fim permitir somente letras
+
+        // aceitar somente numeros 
+        private void txtTelefoneDoDono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }
-    
-

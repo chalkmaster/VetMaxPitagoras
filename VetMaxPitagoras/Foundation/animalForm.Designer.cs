@@ -39,6 +39,8 @@
             this.txtNomeDoDono = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.txtTelefoneDoDono = new System.Windows.Forms.MaskedTextBox();
             this.telefoneDono = new System.Windows.Forms.Label();
             this.dataCadAnimal = new System.Windows.Forms.DataGridView();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +49,6 @@
             this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.validacaoAnimalCampos = new System.Windows.Forms.ErrorProvider(this.components);
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.btnSair = new System.Windows.Forms.Button();
             this.grupoCadAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.validacaoAnimalCampos)).BeginInit();
@@ -57,7 +57,7 @@
             // lbNomeDoAnimal
             // 
             this.lbNomeDoAnimal.AutoSize = true;
-            this.lbNomeDoAnimal.Location = new System.Drawing.Point(16, 44);
+            this.lbNomeDoAnimal.Location = new System.Drawing.Point(14, 44);
             this.lbNomeDoAnimal.Name = "lbNomeDoAnimal";
             this.lbNomeDoAnimal.Size = new System.Drawing.Size(87, 13);
             this.lbNomeDoAnimal.TabIndex = 0;
@@ -94,8 +94,9 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(127, 37);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(97, 20);
+            this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 5;
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // txtRaca
             // 
@@ -103,6 +104,7 @@
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(97, 20);
             this.txtRaca.TabIndex = 6;
+            this.txtRaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRaca_KeyPress);
             // 
             // txtTipo
             // 
@@ -110,7 +112,7 @@
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(97, 20);
             this.txtTipo.TabIndex = 7;
-            this.txtTipo.Validating += new System.ComponentModel.CancelEventHandler(this.txtTipo_Validating);
+            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTipo_KeyPress);
             // 
             // txtNomeDoDono
             // 
@@ -118,6 +120,7 @@
             this.txtNomeDoDono.Name = "txtNomeDoDono";
             this.txtNomeDoDono.Size = new System.Drawing.Size(174, 20);
             this.txtNomeDoDono.TabIndex = 9;
+            this.txtNomeDoDono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomeDoDono_KeyPress);
             // 
             // btnCadastrar
             // 
@@ -134,7 +137,7 @@
             this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
             this.grupoCadAnimal.Controls.Add(this.btnSair);
-            this.grupoCadAnimal.Controls.Add(this.maskedTextBox1);
+            this.grupoCadAnimal.Controls.Add(this.txtTelefoneDoDono);
             this.grupoCadAnimal.Controls.Add(this.txtNome);
             this.grupoCadAnimal.Controls.Add(this.telefoneDono);
             this.grupoCadAnimal.Controls.Add(this.lbNomeDono);
@@ -151,6 +154,24 @@
             this.grupoCadAnimal.TabIndex = 11;
             this.grupoCadAnimal.TabStop = false;
             this.grupoCadAnimal.Text = "Cadastro de animal";
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(330, 168);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(87, 26);
+            this.btnSair.TabIndex = 14;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            // 
+            // txtTelefoneDoDono
+            // 
+            this.txtTelefoneDoDono.Location = new System.Drawing.Point(127, 117);
+            this.txtTelefoneDoDono.Mask = "(99) 0000-0000";
+            this.txtTelefoneDoDono.Name = "txtTelefoneDoDono";
+            this.txtTelefoneDoDono.Size = new System.Drawing.Size(87, 20);
+            this.txtTelefoneDoDono.TabIndex = 13;
+            this.txtTelefoneDoDono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefoneDoDono_KeyPress);
             // 
             // telefoneDono
             // 
@@ -176,7 +197,6 @@
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
             this.dataCadAnimal.TabIndex = 12;
-            this.dataCadAnimal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCadAnimal_CellContentClick);
             // 
             // nome
             // 
@@ -205,24 +225,8 @@
             // 
             // validacaoAnimalCampos
             // 
+            this.validacaoAnimalCampos.BlinkRate = 100;
             this.validacaoAnimalCampos.ContainerControl = this;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(127, 117);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(87, 20);
-            this.maskedTextBox1.TabIndex = 13;
-            // 
-            // btnSair
-            // 
-            this.btnSair.Location = new System.Drawing.Point(330, 168);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(87, 26);
-            this.btnSair.TabIndex = 14;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
             // 
             // animalForm
             // 
@@ -266,6 +270,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
         private System.Windows.Forms.ErrorProvider validacaoAnimalCampos;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtTelefoneDoDono;
     }
 }
