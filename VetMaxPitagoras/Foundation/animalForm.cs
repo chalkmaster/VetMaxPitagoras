@@ -19,7 +19,6 @@ namespace VetMaxPitagoras.Foundation
         {
             InitializeComponent();
         }
-        Animal animal = new Animal();
 
         private void animalForm_Load(object sender, EventArgs e)
         {
@@ -29,11 +28,6 @@ namespace VetMaxPitagoras.Foundation
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
-            animal.Nome = this.txtNome.Text;
-            animal.NomeDono = this.txtNomeDoDono.Text;
-            animal.Raça = this.txtRaca.Text;
-            animal.TelefoneDono = this.txtTelefoneDoDono.Text;
-            animal.TelefoneTipo = this.txtTipo.Text;
 
             if (txtNome.Text.Trim() == string.Empty)
             {
@@ -67,15 +61,24 @@ namespace VetMaxPitagoras.Foundation
                 return;
             }
 
+            Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
-                animalRepository.Insert(animal);
-                var animais = animalRepository.FindAll();
-                foreach (Animal animalDataGrid in animais)
-                {
-                    string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
+            animal.Nome = this.txtNome.Text;
+            animal.NomeDono = this.txtNomeDoDono.Text;
+            animal.Raça = this.txtRaca.Text;
+            animal.TelefoneDono = this.txtTelefoneDoDono.Text;
+            animal.TelefoneTipo = this.txtTipo.Text;
+            animalRepository.Insert(animal);
+
+           var animais = animalRepository.FindAll();
+            dataCadAnimal.Rows.Clear();
+            dataCadAnimal.Refresh();
+            foreach (Animal animalDataGrid in animais)
+           {
+              string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
                           animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
-                    this.dataCadAnimal.Rows.Add(dados);
-                }
+              this.dataCadAnimal.Rows.Add(dados);
+           }
         }
 
         // permitir somente letras
