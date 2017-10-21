@@ -22,6 +22,8 @@ namespace VetMaxPitagoras.Foundation
 
         private void animalForm_Load(object sender, EventArgs e)
         {
+            var animalRepository = new AnimalRepository();
+            this.dataCadAnimal.DataSource = animalRepository.FindAll();
 
         }
 
@@ -60,7 +62,7 @@ namespace VetMaxPitagoras.Foundation
                 txtTipo.Focus();
                 return;
             }
-
+           
             Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
             animal.Nome = this.txtNome.Text;
@@ -69,16 +71,9 @@ namespace VetMaxPitagoras.Foundation
             animal.TelefoneDono = this.txtTelefoneDoDono.Text;
             animal.TelefoneTipo = this.txtTipo.Text;
             animalRepository.Insert(animal);
+            
+            this.dataCadAnimal.DataSource = animalRepository.FindAll();
 
-           var animais = animalRepository.FindAll();
-            dataCadAnimal.Rows.Clear();
-            dataCadAnimal.Refresh();
-            foreach (Animal animalDataGrid in animais)
-           {
-              string[] dados = { animalDataGrid.Nome, animalDataGrid.Raça,
-                          animalDataGrid.NomeDono, animalDataGrid.TelefoneDono, animalDataGrid.TelefoneTipo};
-              this.dataCadAnimal.Rows.Add(dados);
-           }
         }
 
         // permitir somente letras
@@ -125,5 +120,9 @@ namespace VetMaxPitagoras.Foundation
             }
         }
 
+        private void dataCadAnimal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

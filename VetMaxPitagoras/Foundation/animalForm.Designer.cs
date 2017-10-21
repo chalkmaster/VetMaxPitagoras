@@ -43,11 +43,6 @@
             this.txtTelefoneDoDono = new System.Windows.Forms.MaskedTextBox();
             this.telefoneDono = new System.Windows.Forms.Label();
             this.dataCadAnimal = new System.Windows.Forms.DataGridView();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.raca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.validacaoAnimalCampos = new System.Windows.Forms.ErrorProvider(this.components);
             this.grupoCadAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
@@ -187,41 +182,10 @@
             this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nome,
-            this.raca,
-            this.nomeDono,
-            this.telDono,
-            this.tipoTel});
             this.dataCadAnimal.Location = new System.Drawing.Point(60, 228);
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
             this.dataCadAnimal.TabIndex = 12;
-            // 
-            // nome
-            // 
-            this.nome.HeaderText = "Nome";
-            this.nome.Name = "nome";
-            // 
-            // raca
-            // 
-            this.raca.HeaderText = "Raça";
-            this.raca.Name = "raca";
-            // 
-            // nomeDono
-            // 
-            this.nomeDono.HeaderText = "Nome do dono";
-            this.nomeDono.Name = "nomeDono";
-            // 
-            // telDono
-            // 
-            this.telDono.HeaderText = "Telefone do dono";
-            this.telDono.Name = "telDono";
-            // 
-            // tipoTel
-            // 
-            this.tipoTel.HeaderText = "Tipo";
-            this.tipoTel.Name = "tipoTel";
             // 
             // validacaoAnimalCampos
             // 
@@ -263,11 +227,6 @@
 
         private System.Windows.Forms.GroupBox grupoCadAnimal;
         private System.Windows.Forms.DataGridView dataCadAnimal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn raca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telDono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
         private System.Windows.Forms.ErrorProvider validacaoAnimalCampos;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.MaskedTextBox txtTelefoneDoDono;

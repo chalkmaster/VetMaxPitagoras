@@ -121,6 +121,7 @@
     <EmbeddedResource Include="Security\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\VetMaxPitagoras.Infrastructure.InMemoryRepository.Security.AnimalRepository.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
