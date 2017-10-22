@@ -22,16 +22,10 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
         public string TelefoneDono { get; set; }
         public string TelefoneTipo { get; set; }
         // criado só para funcionar a validação de dados se necessario mude.  
-
-        Especie especie1 = new Especie();
-        especie1.Nome = "Cão";
-        especie.Raca = "Pastor Alemão";
+        
     }
 
-    List<Animal> myList = new List<Animal>()
-    {
-        new Animal = { Nome = }
-    }
+   
 
     
 }

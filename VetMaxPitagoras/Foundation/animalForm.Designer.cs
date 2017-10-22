@@ -182,7 +182,7 @@
             this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCadAnimal.Location = new System.Drawing.Point(60, 228);
+            this.dataCadAnimal.Location = new System.Drawing.Point(60, 219);
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
             this.dataCadAnimal.TabIndex = 12;
@@ -196,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 742);
+            this.ClientSize = new System.Drawing.Size(971, 733);
             this.Controls.Add(this.dataCadAnimal);
             this.Controls.Add(this.grupoCadAnimal);
             this.Name = "animalForm";
