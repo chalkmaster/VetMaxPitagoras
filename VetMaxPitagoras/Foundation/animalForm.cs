@@ -79,7 +79,7 @@ namespace VetMaxPitagoras.Foundation
         // permitir somente letras
         private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
                 e.Handled = true;
             }
@@ -87,7 +87,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void txtNomeDoDono_KeyPress(object sender, KeyPressEventArgs e)
         { 
-             if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+             if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
                 e.Handled = true;
             }
@@ -96,7 +96,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void txtRaca_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
                 e.Handled = true;
             }
@@ -104,7 +104,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void txtTipo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar)))
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
                 e.Handled = true;
             }
@@ -120,9 +120,6 @@ namespace VetMaxPitagoras.Foundation
             }
         }
 
-        private void dataCadAnimal_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+     
     }
 }
