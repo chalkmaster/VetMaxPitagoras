@@ -166,6 +166,21 @@ namespace VetMaxPitagoras.Foundation
                 validacaoAnimalCampos.Clear();
         }
 
+        private void txtRaca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grupoCadAnimal_Enter(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }
