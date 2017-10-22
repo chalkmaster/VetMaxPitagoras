@@ -38,11 +38,11 @@ namespace VetMaxPitagoras.Foundation
 
             Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
-            animal.Nome = this.txtNome.Text;
-            animal.NomeDono = this.txtNomeDoDono.Text;
-            animal.Raça = this.txtRaca.Text;
+            animal.Nome = this.txtNome.Text.Trim();
+            animal.NomeDono = this.txtNomeDoDono.Text.Trim();
+            animal.Raça = this.txtRaca.Text.Trim();
             animal.TelefoneDono = this.txtTelefoneDoDono.Text;
-            animal.TelefoneTipo = this.txtTipo.Text;
+            animal.TelefoneTipo = this.txtTipo.Text.Trim();
             animalRepository.Insert(animal);
             
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
