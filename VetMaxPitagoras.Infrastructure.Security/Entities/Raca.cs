@@ -10,6 +10,9 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
     public class Raca : Entity
     {
         //Nome da raça
-        public string Nome { get; set; }
+        public string NomeRaça { get; set; }
+        public string Cor { get; set; }
+
     }
+
 }
