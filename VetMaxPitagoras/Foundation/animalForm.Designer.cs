@@ -91,7 +91,9 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 5;
+            this.txtNome.Enter += new System.EventHandler(this.txtNome_Enter);
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
+            this.txtNome.Leave += new System.EventHandler(this.txtNome_Leave);
             // 
             // txtRaca
             // 
@@ -99,7 +101,9 @@
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(97, 20);
             this.txtRaca.TabIndex = 6;
+            this.txtRaca.Enter += new System.EventHandler(this.txtRaca_Enter);
             this.txtRaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRaca_KeyPress);
+            this.txtRaca.Leave += new System.EventHandler(this.txtRaca_Leave);
             // 
             // txtTipo
             // 
@@ -107,7 +111,9 @@
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(97, 20);
             this.txtTipo.TabIndex = 7;
+            this.txtTipo.Enter += new System.EventHandler(this.txtTipo_Enter);
             this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTipo_KeyPress);
+            this.txtTipo.Leave += new System.EventHandler(this.txtTipo_Leave);
             // 
             // txtNomeDoDono
             // 
@@ -115,7 +121,9 @@
             this.txtNomeDoDono.Name = "txtNomeDoDono";
             this.txtNomeDoDono.Size = new System.Drawing.Size(174, 20);
             this.txtNomeDoDono.TabIndex = 9;
+            this.txtNomeDoDono.Enter += new System.EventHandler(this.txtNomeDoDono_Enter);
             this.txtNomeDoDono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomeDoDono_KeyPress);
+            this.txtNomeDoDono.Leave += new System.EventHandler(this.txtNomeDoDono_Leave);
             // 
             // btnCadastrar
             // 
@@ -158,6 +166,7 @@
             this.btnSair.TabIndex = 14;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+           
             // 
             // txtTelefoneDoDono
             // 
@@ -190,6 +199,7 @@
             // validacaoAnimalCampos
             // 
             this.validacaoAnimalCampos.BlinkRate = 100;
+            this.validacaoAnimalCampos.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.validacaoAnimalCampos.ContainerControl = this;
             // 
             // animalForm

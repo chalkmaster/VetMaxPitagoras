@@ -29,40 +29,13 @@ namespace VetMaxPitagoras.Foundation
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty)|| 
+                (txtRaca.Text.Trim() == string.Empty) || (txtTelefoneDoDono.Text.Trim() == string.Empty)
+                || (txtTipo.Text.Trim() == string.Empty))
+            {
+                return;
+            }
 
-
-            if (txtNome.Text.Trim() == string.Empty)
-            {
-                validacaoAnimalCampos.SetError(txtNome, "Nome não foi preenchido");
-                txtNome.Focus();
-                return;
-                
-            }
-           
-            else if (txtNomeDoDono.Text.Trim() == string.Empty)
-            {
-                validacaoAnimalCampos.SetError(txtNomeDoDono, "Nome do dono não foi preenchido");
-                txtNomeDoDono.Focus();
-                return;
-            }
-            else if (txtRaca.Text.Trim() == string.Empty)
-            {
-                validacaoAnimalCampos.SetError(txtRaca, "A raça não foi preenchido");
-                txtRaca.Focus();
-                return;
-            }
-            else if (txtTelefoneDoDono.Text.Trim() == string.Empty) // vai mudar para aceitar tipo telefone.
-            {
-                txtTelefoneDoDono.Focus();
-                return;
-            }
-            else if (txtTipo.Text.Trim() == string.Empty)
-            {
-                validacaoAnimalCampos.SetError(txtRaca, "A raça não foi preenchido");
-                txtTipo.Focus();
-                return;
-            }
-           
             Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
             animal.Nome = this.txtNome.Text;
@@ -73,16 +46,17 @@ namespace VetMaxPitagoras.Foundation
             animalRepository.Insert(animal);
             
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
-
         }
 
-        // permitir somente letras
+        // permitir somente letras,backspace e tecla espaço.
         private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
         {
+           
             if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
                 e.Handled = true;
             }
+           
         }
 
         private void txtNomeDoDono_KeyPress(object sender, KeyPressEventArgs e)
@@ -109,7 +83,7 @@ namespace VetMaxPitagoras.Foundation
                 e.Handled = true;
             }
         }
-        // fim permitir somente letras
+        // fim permitir somente letras,backspace e tecla espaço.
 
         // aceitar somente numeros 
         private void txtTelefoneDoDono_KeyPress(object sender, KeyPressEventArgs e)
@@ -120,6 +94,78 @@ namespace VetMaxPitagoras.Foundation
             }
         }
 
-     
+        private void txtNome_Enter(object sender, EventArgs e) // quando clica ele muda a cor do textbox, precisa senão vai ficar so vermelho.
+        {
+            this.txtNome.Enter += new EventHandler(txtNome_Enter);
+            txtNome.BackColor = Color.WhiteSmoke;
+        }
+
+        private void txtNome_Leave(object sender, EventArgs e) // verifica se campo esta vazio se estiver muda de cor e mostra mensagem de erro senão estiver limpa o campo e o erro.
+        {
+            if(txtNome.Text.Trim() == string.Empty)
+            { 
+            this.txtNome.Leave += new EventHandler(txtNome_Leave);
+            txtNome.BackColor = System.Drawing.Color.DarkRed;
+            validacaoAnimalCampos.SetError(txtNome, "Digite o nome do animal e continue seu cadastro que o erro irá sair.");
+            }
+            else 
+                validacaoAnimalCampos.Clear();
+        }
+
+        private void txtNomeDoDono_Enter(object sender, EventArgs e)
+        {
+            this.txtNomeDoDono.Enter += new EventHandler(txtNomeDoDono_Enter);
+            txtNomeDoDono.BackColor = Color.WhiteSmoke;
+        }
+
+        private void txtNomeDoDono_Leave(object sender, EventArgs e)
+        {
+            if (txtNomeDoDono.Text.Trim() == string.Empty)
+            {
+                this.txtNomeDoDono.Leave += new EventHandler(txtNomeDoDono_Leave);
+                txtNomeDoDono.BackColor = System.Drawing.Color.DarkRed;
+                validacaoAnimalCampos.SetError(txtNomeDoDono, "Digite o nome do dono e continue seu cadastro que o erro irá sair.");
+            }
+            else
+                validacaoAnimalCampos.Clear();
+        }
+
+        private void txtRaca_Enter(object sender, EventArgs e)
+        {
+            this.txtRaca.Enter += new EventHandler(txtRaca_Enter);
+            txtRaca.BackColor = Color.WhiteSmoke;
+        }
+
+        private void txtRaca_Leave(object sender, EventArgs e)
+        {
+            if (txtRaca.Text.Trim() == string.Empty)
+            {
+                this.txtRaca.Leave += new EventHandler(txtRaca_Leave);
+                txtRaca.BackColor = System.Drawing.Color.DarkRed;
+                validacaoAnimalCampos.SetError(txtRaca, "Digite a raça do animal e continue seu cadastro que o erro irá sair.");
+            }
+            else
+                validacaoAnimalCampos.Clear();
+        }
+
+        private void txtTipo_Enter(object sender, EventArgs e)
+        {
+            this.txtTipo.Enter += new EventHandler(txtTipo_Enter);
+            txtTipo.BackColor = Color.WhiteSmoke;
+        }
+
+        private void txtTipo_Leave(object sender, EventArgs e)
+        {
+            if (txtTipo.Text.Trim() == string.Empty)
+            {
+                this.txtTipo.Leave += new EventHandler(txtTipo_Leave);
+                txtTipo.BackColor = System.Drawing.Color.DarkRed;
+                validacaoAnimalCampos.SetError(txtTipo, "Digite o Tipo e continue seu cadastro que o erro irá sair.");
+            }
+            else
+                validacaoAnimalCampos.Clear();
+        }
+
+       
     }
 }
