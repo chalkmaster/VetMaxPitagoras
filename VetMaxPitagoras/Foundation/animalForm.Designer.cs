@@ -58,9 +58,9 @@
             this.lbNomeDoAnimal.AutoSize = true;
             this.lbNomeDoAnimal.Location = new System.Drawing.Point(14, 44);
             this.lbNomeDoAnimal.Name = "lbNomeDoAnimal";
-            this.lbNomeDoAnimal.Size = new System.Drawing.Size(87, 13);
+            this.lbNomeDoAnimal.Size = new System.Drawing.Size(91, 13);
             this.lbNomeDoAnimal.TabIndex = 0;
-            this.lbNomeDoAnimal.Text = "Nome do Animal:";
+            this.lbNomeDoAnimal.Text = "*Nome do Animal:";
             // 
             // lbRaça
             // 
@@ -85,9 +85,9 @@
             this.lbNomeDono.AutoSize = true;
             this.lbNomeDono.Location = new System.Drawing.Point(13, 79);
             this.lbNomeDono.Name = "lbNomeDono";
-            this.lbNomeDono.Size = new System.Drawing.Size(82, 13);
+            this.lbNomeDono.Size = new System.Drawing.Size(86, 13);
             this.lbNomeDono.TabIndex = 4;
-            this.lbNomeDono.Text = "Nome do Dono:";
+            this.lbNomeDono.Text = "*Nome do Dono:";
             // 
             // txtNome
             // 
@@ -196,9 +196,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 162);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Tempo de Vida:";
+            this.label1.Text = "Idade do Animal:";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btnSair
             // 
@@ -206,7 +207,7 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(87, 26);
             this.btnSair.TabIndex = 14;
-            this.btnSair.Text = "Sair";
+            this.btnSair.Text = "Voltar";
             this.btnSair.UseVisualStyleBackColor = true;
             // 
             // txtTelefoneDoDono
