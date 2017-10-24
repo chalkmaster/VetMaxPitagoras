@@ -41,6 +41,7 @@
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
             this.telefoneDono = new System.Windows.Forms.Label();
             this.gridCadastroAnimal = new System.Windows.Forms.TableLayoutPanel();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.grupoCadAnimal.SuspendLayout();
             this.gridCadastroAnimal.SuspendLayout();
             this.SuspendLayout();
@@ -118,7 +119,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(228, 235);
+            this.btnCadastrar.Location = new System.Drawing.Point(163, 239);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 10;
@@ -130,6 +131,7 @@
             // 
             this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
+            this.grupoCadAnimal.Controls.Add(this.btnExcluir);
             this.grupoCadAnimal.Controls.Add(this.txtNome);
             this.grupoCadAnimal.Controls.Add(this.telefoneDono);
             this.grupoCadAnimal.Controls.Add(this.lbNomeDono);
@@ -173,6 +175,16 @@
             this.gridCadastroAnimal.Size = new System.Drawing.Size(980, 647);
             this.gridCadastroAnimal.TabIndex = 12;
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(239, 239);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 13;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // animalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +218,7 @@
         private System.Windows.Forms.Button btnCadastrar;
 
         private System.Windows.Forms.GroupBox grupoCadAnimal;
-        private System.Windows.Forms.TableLayoutPanel gridCadastroAnimal; 
+        private System.Windows.Forms.TableLayoutPanel gridCadastroAnimal;
+        private System.Windows.Forms.Button btnExcluir; 
     }
 }
