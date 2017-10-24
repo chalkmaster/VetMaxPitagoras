@@ -29,13 +29,8 @@ namespace VetMaxPitagoras.Foundation
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty)|| 
-                (txtRaca.Text.Trim() == string.Empty) || (txtTelefoneDoDono.Text.Trim() == string.Empty)
-                || (txtTipo.Text.Trim() == string.Empty))
-            {
-                return;
-            }
-
+            MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");  
+           
             Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
             animal.Nome = this.txtNome.Text.Trim();
@@ -44,8 +39,22 @@ namespace VetMaxPitagoras.Foundation
             animal.TelefoneDono = this.txtTelefoneDoDono.Text;
             animal.TelefoneTipo = this.txtTipo.Text.Trim();
             animalRepository.Insert(animal);
-            
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
+            if (animal.Nome != "" && animal.NomeDono != "" && animal.TelefoneDono != "")
+            {
+                if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty) ||
+                 (txtRaca.Text.Trim() == string.Empty) || (txtTelefoneDoDono.Text.Trim() == string.Empty)
+                 || (txtTipo.Text.Trim() == string.Empty))
+                {
+                    return;
+                }
+               
+            }
+            else
+            {
+                MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");           
+            }
+           
         }
 
         // permitir somente letras,backspace e tecla espaço.
@@ -58,8 +67,7 @@ namespace VetMaxPitagoras.Foundation
             }
            
         }
-
-        private void txtNomeDoDono_KeyPress(object sender, KeyPressEventArgs e)
+         private void txtNomeDoDono_KeyPress(object sender, KeyPressEventArgs e)
         { 
              if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
