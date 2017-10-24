@@ -163,7 +163,9 @@
             // 
             // dataCadAnimal
             // 
-            this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dataCadAnimal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -172,7 +174,7 @@
             this.nomeDono,
             this.telDono,
             this.tipoTel});
-            this.dataCadAnimal.Location = new System.Drawing.Point(60, 228);
+            this.dataCadAnimal.Location = new System.Drawing.Point(98, 228);
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(605, 381);
             this.dataCadAnimal.TabIndex = 12;
