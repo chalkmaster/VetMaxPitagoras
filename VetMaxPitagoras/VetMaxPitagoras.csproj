@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,11 +63,11 @@
     <Compile Include="Foundation\historicoAtendimento.Designer.cs">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Foundation\Prontuário de Atendimento.cs">
+    <Compile Include="Foundation\prontuarioDeAtendimento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Foundation\Prontuário de Atendimento.Designer.cs">
-      <DependentUpon>Prontuário de Atendimento.cs</DependentUpon>
+    <Compile Include="Foundation\prontuarioDeAtendimento.Designer.cs">
+      <DependentUpon>prontuarioDeAtendimento.cs</DependentUpon>
     </Compile>
     <Compile Include="Foundation\userForm.cs">
       <SubType>Form</SubType>
@@ -99,8 +100,8 @@
     <EmbeddedResource Include="Foundation\historicoAtendimento.resx">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Foundation\Prontuário de Atendimento.resx">
-      <DependentUpon>Prontuário de Atendimento.cs</DependentUpon>
+    <EmbeddedResource Include="Foundation\prontuarioDeAtendimento.resx">
+      <DependentUpon>prontuarioDeAtendimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
@@ -121,6 +122,7 @@
     <EmbeddedResource Include="Security\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\VetMaxPitagoras.Infrastructure.InMemoryRepository.Security.AnimalRepository.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

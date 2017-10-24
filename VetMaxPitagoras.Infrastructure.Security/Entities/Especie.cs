@@ -11,9 +11,5 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
     {
         //nome da especie
         public string Nome { get; set; }
-        public string Especies { get; set; }
-    
     }
-
-    
 }
