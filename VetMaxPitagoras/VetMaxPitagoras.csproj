@@ -56,6 +56,12 @@
     <Compile Include="Foundation\userForm.Designer.cs">
       <DependentUpon>userForm.cs</DependentUpon>
     </Compile>
+        <Compile Include="Foundation\CadastroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foundation\CadastroForm.Designer.cs">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaAnimaisForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <EmbeddedResource Include="AnimaisForm.resx">
       <DependentUpon>AnimaisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foundation\CadastroForm.resx">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
