@@ -43,8 +43,9 @@
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -57,8 +58,9 @@
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
@@ -66,6 +68,7 @@
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.BackAlpha = 10;
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox1.Name = "textBox1";
             // 
             // textBox2
@@ -73,6 +76,7 @@
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.BackAlpha = 10;
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox2.Name = "textBox2";
             // 
             // linkEsqueciSenha
@@ -95,14 +99,12 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Name = "label2";
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Name = "label3";
             // 
             // loginForm
