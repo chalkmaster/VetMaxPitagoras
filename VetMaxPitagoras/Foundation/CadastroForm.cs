@@ -18,16 +18,11 @@ namespace VetMaxPitagoras.Foundation
         public FrmCadastro()
         {
             InitializeComponent();
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
              string[] dadosCadastro = { txNome.Text,txCpf.Text,txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
-=======
-            string[] dadosCadastro = { txNome.Text, txSexo.Text, txCpf.Text, txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
->>>>>>> b58eb46232aa8669f06b22cb76e08d9d5659ddd3
 
 
             var authService = new AuthService(new UserRepository());
