@@ -18,12 +18,15 @@ namespace VetMaxPitagoras.Foundation
         public FrmCadastro()
         {
             InitializeComponent();
-           
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            string[] dadosCadastro = { txNome.Text, txSexo.Text, txCpf.Text, txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
+//<<<<<<< HEAD
+             string[] dadosCadastro = { txNome.Text,txCpf.Text,txFone.Text,rdBtn_Masc.Text,rdBtn_Fem.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
+//=======
+          // string[] dadosCadastro = { txNome.Text, txSexo.Text, txCpf.Text, txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
+//>>>>>>> 015e3f1fdc92c6520dd932902392654fea6741c1
 
 
             var authService = new AuthService(new UserRepository());
@@ -67,7 +70,14 @@ namespace VetMaxPitagoras.Foundation
             txCidade.ResetText();
             textBox1.ResetText();
             textBox2.ResetText();
+            rdBtn_Fem.ResetText();
+            rdBtn_Masc.ResetText();
             
+        }
+
+        private void rdBtn_Fem_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

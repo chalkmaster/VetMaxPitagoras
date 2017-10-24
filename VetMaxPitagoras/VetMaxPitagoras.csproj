@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AlphaBlendTextBox">
-      <HintPath>..\..\..\..\Desktop\Charles\AVA_[Análise_Sistemas]Thiago\fundos\textbox.transparente\AlphaBlendTextBox.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,12 +56,6 @@
     <Compile Include="Foundation\userForm.Designer.cs">
       <DependentUpon>userForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Foundation\CadastroForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Foundation\CadastroForm.Designer.cs">
-      <DependentUpon>CadastroForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListaAnimaisForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,9 +78,6 @@
     </Compile>
     <EmbeddedResource Include="AnimaisForm.resx">
       <DependentUpon>AnimaisForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Foundation\CadastroForm.resx">
-      <DependentUpon>CadastroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>

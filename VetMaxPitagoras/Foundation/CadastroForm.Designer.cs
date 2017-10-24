@@ -48,11 +48,11 @@ namespace VetMaxPitagoras.Foundation
             this.txCelular = new System.Windows.Forms.MaskedTextBox();
             this.txFone = new System.Windows.Forms.MaskedTextBox();
             this.txCpf = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txSexo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txNome = new System.Windows.Forms.TextBox();
+            this.rdBtn_Masc = new System.Windows.Forms.RadioButton();
+            this.rdBtn_Fem = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,6 +110,8 @@ namespace VetMaxPitagoras.Foundation
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.rdBtn_Fem);
+            this.groupBox1.Controls.Add(this.rdBtn_Masc);
             this.groupBox1.Controls.Add(this.btnSair);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
@@ -129,9 +131,7 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox1.Controls.Add(this.txCelular);
             this.groupBox1.Controls.Add(this.txFone);
             this.groupBox1.Controls.Add(this.txCpf);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txSexo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txNome);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -274,39 +274,20 @@ namespace VetMaxPitagoras.Foundation
             this.txCpf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txCpf.Location = new System.Drawing.Point(405, 22);
+            this.txCpf.Location = new System.Drawing.Point(444, 21);
             this.txCpf.Mask = "000.000.000-00";
             this.txCpf.Name = "txCpf";
             this.txCpf.Size = new System.Drawing.Size(89, 20);
             this.txCpf.TabIndex = 5;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(287, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "SEXO";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(368, 26);
+            this.label4.Location = new System.Drawing.Point(407, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "CPF";
-            // 
-            // txSexo
-            // 
-            this.txSexo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txSexo.Location = new System.Drawing.Point(324, 22);
-            this.txSexo.Name = "txSexo";
-            this.txSexo.Size = new System.Drawing.Size(41, 20);
-            this.txSexo.TabIndex = 2;
             // 
             // label3
             // 
@@ -326,6 +307,29 @@ namespace VetMaxPitagoras.Foundation
             this.txNome.Name = "txNome";
             this.txNome.Size = new System.Drawing.Size(229, 20);
             this.txNome.TabIndex = 0;
+            // 
+            // rdBtn_Masc
+            // 
+            this.rdBtn_Masc.AutoSize = true;
+            this.rdBtn_Masc.Location = new System.Drawing.Point(295, 23);
+            this.rdBtn_Masc.Name = "rdBtn_Masc";
+            this.rdBtn_Masc.Size = new System.Drawing.Size(51, 17);
+            this.rdBtn_Masc.TabIndex = 19;
+            this.rdBtn_Masc.TabStop = true;
+            this.rdBtn_Masc.Text = "Masc";
+            this.rdBtn_Masc.UseVisualStyleBackColor = true;
+            // 
+            // rdBtn_Fem
+            // 
+            this.rdBtn_Fem.AutoSize = true;
+            this.rdBtn_Fem.Location = new System.Drawing.Point(350, 23);
+            this.rdBtn_Fem.Name = "rdBtn_Fem";
+            this.rdBtn_Fem.Size = new System.Drawing.Size(45, 17);
+            this.rdBtn_Fem.TabIndex = 20;
+            this.rdBtn_Fem.TabStop = true;
+            this.rdBtn_Fem.Text = "Fem";
+            this.rdBtn_Fem.UseVisualStyleBackColor = true;
+            this.rdBtn_Fem.CheckedChanged += new System.EventHandler(this.rdBtn_Fem_CheckedChanged);
             // 
             // FrmCadastro
             // 
@@ -363,11 +367,11 @@ namespace VetMaxPitagoras.Foundation
         private System.Windows.Forms.MaskedTextBox txCelular;
         private System.Windows.Forms.MaskedTextBox txFone;
         private System.Windows.Forms.MaskedTextBox txCpf;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txSexo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txNome;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.RadioButton rdBtn_Fem;
+        private System.Windows.Forms.RadioButton rdBtn_Masc;
     }
 }
