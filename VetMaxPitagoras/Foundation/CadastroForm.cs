@@ -67,8 +67,7 @@ namespace VetMaxPitagoras.Foundation
             txCidade.ResetText();
             textBox1.ResetText();
             textBox2.ResetText();
-            rdBtn_fem.ResetText();
-            rdBtn_masc.ResetText();
+            
         }
     }
 }
