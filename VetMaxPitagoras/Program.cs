@@ -6,6 +6,8 @@ using System.Windows.Forms;
 
 namespace VetMaxPitagoras
 {
+    //Método enum para espécies de cães
+    //
     static class Program
     {
         enum Especies { CaesPastores, CaesPequenos, Terries, Dachshunds, Spitz, SabujosFarejadores, CaesApontadores, Retrievers, CaesCompanhia, LebreusEGalgos, Raca};
