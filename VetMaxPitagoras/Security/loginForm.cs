@@ -41,5 +41,15 @@ namespace VetMaxPitagoras.Security
                 MessageBox.Show("Usuário ou senha inválidos");
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

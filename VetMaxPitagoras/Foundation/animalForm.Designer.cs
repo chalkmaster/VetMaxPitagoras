@@ -130,7 +130,6 @@
             // 
             // grupoCadAnimal
             // 
-            this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
             this.grupoCadAnimal.Controls.Add(this.btnSair);
             this.grupoCadAnimal.Controls.Add(this.maskedTextBox1);
@@ -144,9 +143,9 @@
             this.grupoCadAnimal.Controls.Add(this.lbRaça);
             this.grupoCadAnimal.Controls.Add(this.txtRaca);
             this.grupoCadAnimal.Controls.Add(this.txtTipo);
-            this.grupoCadAnimal.Location = new System.Drawing.Point(179, 12);
+            this.grupoCadAnimal.Location = new System.Drawing.Point(26, 12);
             this.grupoCadAnimal.Name = "grupoCadAnimal";
-            this.grupoCadAnimal.Size = new System.Drawing.Size(609, 210);
+            this.grupoCadAnimal.Size = new System.Drawing.Size(664, 210);
             this.grupoCadAnimal.TabIndex = 11;
             this.grupoCadAnimal.TabStop = false;
             this.grupoCadAnimal.Text = "Cadastro de animal";
@@ -179,9 +178,6 @@
             // 
             // dataCadAnimal
             // 
-            this.dataCadAnimal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -190,9 +186,9 @@
             this.nomeDono,
             this.telDono,
             this.tipoTel});
-            this.dataCadAnimal.Location = new System.Drawing.Point(98, 228);
+            this.dataCadAnimal.Location = new System.Drawing.Point(26, 228);
             this.dataCadAnimal.Name = "dataCadAnimal";
-            this.dataCadAnimal.Size = new System.Drawing.Size(605, 372);
+            this.dataCadAnimal.Size = new System.Drawing.Size(664, 439);
             this.dataCadAnimal.TabIndex = 12;
             // 
             // nome
@@ -228,10 +224,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 733);
+            this.ClientSize = new System.Drawing.Size(712, 665);
             this.Controls.Add(this.dataCadAnimal);
             this.Controls.Add(this.grupoCadAnimal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "animalForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "animalForm";
             this.Load += new System.EventHandler(this.animalForm_Load);
             this.grupoCadAnimal.ResumeLayout(false);
