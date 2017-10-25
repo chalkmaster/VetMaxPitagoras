@@ -170,17 +170,12 @@
             // 
             // dataCadAnimal
             // 
-            this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nome,
-            this.raca,
-            this.nomeDono,
-            this.telDono,
-            this.tipoTel});
             this.dataCadAnimal.Location = new System.Drawing.Point(26, 228);
             this.dataCadAnimal.Name = "dataCadAnimal";
-            this.dataCadAnimal.Size = new System.Drawing.Size(664, 439);
+            this.dataCadAnimal.Size = new System.Drawing.Size(664, 381);
             this.dataCadAnimal.TabIndex = 12;
             // 
             // nome

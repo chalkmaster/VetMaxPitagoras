@@ -24,6 +24,7 @@ namespace VetMaxPitagoras
             var login = new loginForm();
             login.MdiParent = this;
             login.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             login.Show();
         }
 
