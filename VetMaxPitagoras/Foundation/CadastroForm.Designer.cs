@@ -34,6 +34,8 @@ namespace VetMaxPitagoras.Foundation
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdBtn_Fem = new System.Windows.Forms.RadioButton();
+            this.rdBtn_Masc = new System.Windows.Forms.RadioButton();
             this.btnSair = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@ namespace VetMaxPitagoras.Foundation
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txNome = new System.Windows.Forms.TextBox();
-            this.rdBtn_Masc = new System.Windows.Forms.RadioButton();
-            this.rdBtn_Fem = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +87,6 @@ namespace VetMaxPitagoras.Foundation
             this.button1.TabIndex = 0;
             this.button1.Text = "CADASTRAR";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -141,6 +140,29 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastro do Cliente";
             // 
+            // rdBtn_Fem
+            // 
+            this.rdBtn_Fem.AutoSize = true;
+            this.rdBtn_Fem.Location = new System.Drawing.Point(350, 23);
+            this.rdBtn_Fem.Name = "rdBtn_Fem";
+            this.rdBtn_Fem.Size = new System.Drawing.Size(45, 17);
+            this.rdBtn_Fem.TabIndex = 20;
+            this.rdBtn_Fem.TabStop = true;
+            this.rdBtn_Fem.Text = "Fem";
+            this.rdBtn_Fem.UseVisualStyleBackColor = true;
+            this.rdBtn_Fem.CheckedChanged += new System.EventHandler(this.rdBtn_Fem_CheckedChanged);
+            // 
+            // rdBtn_Masc
+            // 
+            this.rdBtn_Masc.AutoSize = true;
+            this.rdBtn_Masc.Location = new System.Drawing.Point(295, 23);
+            this.rdBtn_Masc.Name = "rdBtn_Masc";
+            this.rdBtn_Masc.Size = new System.Drawing.Size(51, 17);
+            this.rdBtn_Masc.TabIndex = 19;
+            this.rdBtn_Masc.TabStop = true;
+            this.rdBtn_Masc.Text = "Masc";
+            this.rdBtn_Masc.UseVisualStyleBackColor = true;
+            // 
             // btnSair
             // 
             this.btnSair.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -185,9 +207,9 @@ namespace VetMaxPitagoras.Foundation
             this.txCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txCidade.Location = new System.Drawing.Point(57, 102);
+            this.txCidade.Location = new System.Drawing.Point(75, 103);
             this.txCidade.Name = "txCidade";
-            this.txCidade.Size = new System.Drawing.Size(216, 20);
+            this.txCidade.Size = new System.Drawing.Size(198, 20);
             this.txCidade.TabIndex = 14;
             // 
             // txComplemento
@@ -307,29 +329,6 @@ namespace VetMaxPitagoras.Foundation
             this.txNome.Name = "txNome";
             this.txNome.Size = new System.Drawing.Size(229, 20);
             this.txNome.TabIndex = 0;
-            // 
-            // rdBtn_Masc
-            // 
-            this.rdBtn_Masc.AutoSize = true;
-            this.rdBtn_Masc.Location = new System.Drawing.Point(295, 23);
-            this.rdBtn_Masc.Name = "rdBtn_Masc";
-            this.rdBtn_Masc.Size = new System.Drawing.Size(51, 17);
-            this.rdBtn_Masc.TabIndex = 19;
-            this.rdBtn_Masc.TabStop = true;
-            this.rdBtn_Masc.Text = "Masc";
-            this.rdBtn_Masc.UseVisualStyleBackColor = true;
-            // 
-            // rdBtn_Fem
-            // 
-            this.rdBtn_Fem.AutoSize = true;
-            this.rdBtn_Fem.Location = new System.Drawing.Point(350, 23);
-            this.rdBtn_Fem.Name = "rdBtn_Fem";
-            this.rdBtn_Fem.Size = new System.Drawing.Size(45, 17);
-            this.rdBtn_Fem.TabIndex = 20;
-            this.rdBtn_Fem.TabStop = true;
-            this.rdBtn_Fem.Text = "Fem";
-            this.rdBtn_Fem.UseVisualStyleBackColor = true;
-            this.rdBtn_Fem.CheckedChanged += new System.EventHandler(this.rdBtn_Fem_CheckedChanged);
             // 
             // FrmCadastro
             // 
