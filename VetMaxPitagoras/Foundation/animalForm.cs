@@ -29,33 +29,24 @@ namespace VetMaxPitagoras.Foundation
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");
-
-            Animal animal = new Animal();
-            var animalRepository = new AnimalRepository();
-            animal.Nome = this.txtNome.Text.Trim();
-            animal.NomeDono = this.txtNomeDoDono.Text.Trim();
-            animal.Raça = this.txtRaca.Text.Trim();
-            animal.TelefoneTipo = this.txtTipo.Text.Trim();
-            animalRepository.Insert(animal);
-            this.dataCadAnimal.DataSource = animalRepository.FindAll();
-            if (animal.Nome != "" && animal.NomeDono != "" && animal.TelefoneDono != "")
+            if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty) ||
+          (txtRaca.Text.Trim() == string.Empty) || (txtTipo.Text.Trim() == string.Empty))
             {
-                if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty) ||
-                 (txtRaca.Text.Trim() == string.Empty)
-                 || (txtTipo.Text.Trim() == string.Empty))
-                {
-                    return;
-                }
+                return;
+            }
 
-            }
-            else
-            {
-                MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");
-            }
+                Animal animal = new Animal();
+                var animalRepository = new AnimalRepository();
+                animal.Nome = this.txtNome.Text.Trim();
+                animal.NomeDono = this.txtNomeDoDono.Text.Trim();
+                animal.Raça = this.txtRaca.Text.Trim();
+                animal.TelefoneTipo = this.txtTipo.Text.Trim();
+                animalRepository.Insert(animal);
+                this.dataCadAnimal.DataSource = animalRepository.FindAll();
+           
 
         }
-
+       
         // permitir somente letras,backspace e tecla espaço.
         private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -172,22 +163,5 @@ namespace VetMaxPitagoras.Foundation
             else
                 validacaoAnimalCampos.Clear();
         }
-
-        private void txtRaca_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grupoCadAnimal_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

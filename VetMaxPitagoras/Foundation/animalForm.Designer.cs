@@ -94,22 +94,31 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(127, 37);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(97, 20);
+            this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 5;
+            this.txtNome.Enter += new System.EventHandler(this.txtNome_Enter);
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
+            this.txtNome.Leave += new System.EventHandler(this.txtNome_Leave);
             // 
             // txtRaca
             // 
             this.txtRaca.Location = new System.Drawing.Point(374, 37);
             this.txtRaca.Name = "txtRaca";
-            this.txtRaca.Size = new System.Drawing.Size(97, 20);
+            this.txtRaca.Size = new System.Drawing.Size(139, 20);
             this.txtRaca.TabIndex = 6;
+            this.txtRaca.Enter += new System.EventHandler(this.txtRaca_Enter);
+            this.txtRaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRaca_KeyPress);
+            this.txtRaca.Leave += new System.EventHandler(this.txtRaca_Leave);
             // 
             // txtTipo
             // 
             this.txtTipo.Location = new System.Drawing.Point(374, 76);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(97, 20);
+            this.txtTipo.Size = new System.Drawing.Size(139, 20);
             this.txtTipo.TabIndex = 7;
+            this.txtTipo.Enter += new System.EventHandler(this.txtTipo_Enter);
+            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTipo_KeyPress);
+            this.txtTipo.Leave += new System.EventHandler(this.txtTipo_Leave);
             // 
             // txtNomeDoDono
             // 
@@ -117,6 +126,9 @@
             this.txtNomeDoDono.Name = "txtNomeDoDono";
             this.txtNomeDoDono.Size = new System.Drawing.Size(174, 20);
             this.txtNomeDoDono.TabIndex = 9;
+            this.txtNomeDoDono.Enter += new System.EventHandler(this.txtNomeDoDono_Enter);
+            this.txtNomeDoDono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomeDoDono_KeyPress);
+            this.txtNomeDoDono.Leave += new System.EventHandler(this.txtNomeDoDono_Leave);
             // 
             // btnCadastrar
             // 
@@ -130,6 +142,7 @@
             // 
             // grupoCadAnimal
             // 
+            this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
             this.grupoCadAnimal.Controls.Add(this.btnSair);
             this.grupoCadAnimal.Controls.Add(this.maskedTextBox1);
@@ -178,7 +191,7 @@
             // 
             // dataCadAnimal
             // 
-            this.dataCadAnimal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataCadAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCadAnimal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
@@ -195,26 +208,31 @@
             // 
             this.nome.HeaderText = "Nome";
             this.nome.Name = "nome";
+            this.nome.Width = 124;
             // 
             // raca
             // 
             this.raca.HeaderText = "Raça";
             this.raca.Name = "raca";
+            this.raca.Width = 124;
             // 
             // nomeDono
             // 
             this.nomeDono.HeaderText = "Nome do dono";
             this.nomeDono.Name = "nomeDono";
+            this.nomeDono.Width = 125;
             // 
             // telDono
             // 
             this.telDono.HeaderText = "Telefone do dono";
             this.telDono.Name = "telDono";
+            this.telDono.Width = 124;
             // 
             // tipoTel
             // 
             this.tipoTel.HeaderText = "Tipo";
             this.tipoTel.Name = "tipoTel";
+            this.tipoTel.Width = 124;
             // 
             // validacaoAnimalCampos
             // 
