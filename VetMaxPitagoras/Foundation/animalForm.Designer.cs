@@ -40,8 +40,6 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
             this.btnSair = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.telefoneDono = new System.Windows.Forms.Label();
             this.dataCadAnimal = new System.Windows.Forms.DataGridView();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.raca = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -145,9 +143,7 @@
             this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
             this.grupoCadAnimal.Controls.Add(this.btnSair);
-            this.grupoCadAnimal.Controls.Add(this.maskedTextBox1);
             this.grupoCadAnimal.Controls.Add(this.txtNome);
-            this.grupoCadAnimal.Controls.Add(this.telefoneDono);
             this.grupoCadAnimal.Controls.Add(this.lbNomeDono);
             this.grupoCadAnimal.Controls.Add(this.btnCadastrar);
             this.grupoCadAnimal.Controls.Add(this.lbTipo);
@@ -171,23 +167,6 @@
             this.btnSair.TabIndex = 14;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(127, 117);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(87, 20);
-            this.maskedTextBox1.TabIndex = 13;
-            // 
-            // telefoneDono
-            // 
-            this.telefoneDono.AutoSize = true;
-            this.telefoneDono.Location = new System.Drawing.Point(14, 117);
-            this.telefoneDono.Name = "telefoneDono";
-            this.telefoneDono.Size = new System.Drawing.Size(52, 13);
-            this.telefoneDono.TabIndex = 12;
-            this.telefoneDono.Text = "Telefone:";
             // 
             // dataCadAnimal
             // 
@@ -264,7 +243,6 @@
         private System.Windows.Forms.Label lbNomeDoAnimal;
         private System.Windows.Forms.Label lbRaça;
         private System.Windows.Forms.Label lbTipo;
-        private System.Windows.Forms.Label telefoneDono;
         private System.Windows.Forms.Label lbNomeDono;
 
         private System.Windows.Forms.TextBox txtNome;
@@ -283,6 +261,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
         private System.Windows.Forms.ErrorProvider validacaoAnimalCampos;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

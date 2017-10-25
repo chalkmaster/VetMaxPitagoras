@@ -46,7 +46,10 @@ namespace VetMaxPitagoras.Foundation
            
 
         }
-       
+        private void validar(object sender, KeyPressEventArgs e)
+        {
+
+        }
         // permitir somente letras,backspace e tecla espaço.
         private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
         {
