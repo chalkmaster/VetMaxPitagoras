@@ -55,5 +55,18 @@ namespace VetMaxPitagoras
             funcionarioRegister.WindowState = FormWindowState.Maximized;
             funcionarioRegister.Show();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var login = new loginForm();
+            login.MdiParent = this;
+            login.WindowState = FormWindowState.Maximized;
+            login.Show();
+        }
     }
 }
