@@ -73,16 +73,16 @@
             // linkEsqueciSenha
             // 
             resources.ApplyResources(this.linkEsqueciSenha, "linkEsqueciSenha");
-            this.linkEsqueciSenha.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.linkEsqueciSenha.LinkColor = System.Drawing.Color.ForestGreen;
+            this.linkEsqueciSenha.BackColor = System.Drawing.Color.Transparent;
+            this.linkEsqueciSenha.LinkColor = System.Drawing.Color.Blue;
             this.linkEsqueciSenha.Name = "linkEsqueciSenha";
             this.linkEsqueciSenha.TabStop = true;
             // 
             // linkCadastrar
             // 
             resources.ApplyResources(this.linkCadastrar, "linkCadastrar");
-            this.linkCadastrar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.linkCadastrar.LinkColor = System.Drawing.Color.ForestGreen;
+            this.linkCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.linkCadastrar.LinkColor = System.Drawing.Color.Blue;
             this.linkCadastrar.Name = "linkCadastrar";
             this.linkCadastrar.TabStop = true;
             // 
@@ -110,6 +110,7 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
@@ -119,7 +120,6 @@
             this.panel1.Controls.Add(this.linkEsqueciSenha);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // panel2
@@ -133,6 +133,7 @@
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Name = "label4";
             // 
             // pictureBox1
