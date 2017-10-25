@@ -15,6 +15,7 @@ namespace VetMaxPitagoras.Infrastructure.Security.Services
         public EspecieService(IEspecieRepository especieRepository)
         {
             _repositorio = especieRepository;
+
         }
 
         public List<Especie> GetEspecies()
