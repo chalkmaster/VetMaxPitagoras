@@ -32,8 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new ZBobb.AlphaBlendTextBox();
-            this.textBox2 = new ZBobb.AlphaBlendTextBox();
             this.linkEsqueciSenha = new System.Windows.Forms.LinkLabel();
             this.linkCadastrar = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,22 +60,7 @@
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.BackAlpha = 10;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Name = "textBox1";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.BackAlpha = 10;
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox2.Name = "textBox2";
+            
             // 
             // linkEsqueciSenha
             // 
@@ -116,8 +99,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.linkCadastrar);
             this.Controls.Add(this.linkEsqueciSenha);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -132,8 +114,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private ZBobb.AlphaBlendTextBox textBox1;
-        private ZBobb.AlphaBlendTextBox textBox2;
         private System.Windows.Forms.LinkLabel linkEsqueciSenha;
         private System.Windows.Forms.LinkLabel linkCadastrar;
         private System.Windows.Forms.Label label2;
