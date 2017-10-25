@@ -33,15 +33,15 @@
             this.lbTipo = new System.Windows.Forms.Label();
             this.lbNomeDono = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtRaca = new System.Windows.Forms.TextBox();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtTelefoneDoDono = new System.Windows.Forms.TextBox();
             this.txtNomeDoDono = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.telefoneDono = new System.Windows.Forms.Label();
             this.gridCadastroAnimal = new System.Windows.Forms.TableLayoutPanel();
-            this.btnExcluir = new System.Windows.Forms.Button();
+            this.cbxRaca = new System.Windows.Forms.ComboBox();
             this.grupoCadAnimal.SuspendLayout();
             this.gridCadastroAnimal.SuspendLayout();
             this.SuspendLayout();
@@ -89,13 +89,6 @@
             this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 5;
             // 
-            // txtRaca
-            // 
-            this.txtRaca.Location = new System.Drawing.Point(129, 77);
-            this.txtRaca.Name = "txtRaca";
-            this.txtRaca.Size = new System.Drawing.Size(174, 20);
-            this.txtRaca.TabIndex = 6;
-            // 
             // txtTipo
             // 
             this.txtTipo.Location = new System.Drawing.Point(129, 185);
@@ -131,6 +124,7 @@
             // 
             this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
+            this.grupoCadAnimal.Controls.Add(this.cbxRaca);
             this.grupoCadAnimal.Controls.Add(this.btnExcluir);
             this.grupoCadAnimal.Controls.Add(this.txtNome);
             this.grupoCadAnimal.Controls.Add(this.telefoneDono);
@@ -140,7 +134,6 @@
             this.grupoCadAnimal.Controls.Add(this.lbNome);
             this.grupoCadAnimal.Controls.Add(this.txtNomeDoDono);
             this.grupoCadAnimal.Controls.Add(this.lbRaça);
-            this.grupoCadAnimal.Controls.Add(this.txtRaca);
             this.grupoCadAnimal.Controls.Add(this.txtTelefoneDoDono);
             this.grupoCadAnimal.Controls.Add(this.txtTipo);
             this.grupoCadAnimal.Location = new System.Drawing.Point(329, 153);
@@ -149,6 +142,16 @@
             this.grupoCadAnimal.TabIndex = 11;
             this.grupoCadAnimal.TabStop = false;
             this.grupoCadAnimal.Text = "Cadastro de animal";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(239, 239);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 13;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // telefoneDono
             // 
@@ -175,15 +178,13 @@
             this.gridCadastroAnimal.Size = new System.Drawing.Size(980, 647);
             this.gridCadastroAnimal.TabIndex = 12;
             // 
-            // btnExcluir
+            // cbxRaca
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(239, 239);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 13;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.cbxRaca.FormattingEnabled = true;
+            this.cbxRaca.Location = new System.Drawing.Point(129, 76);
+            this.cbxRaca.Name = "cbxRaca";
+            this.cbxRaca.Size = new System.Drawing.Size(174, 21);
+            this.cbxRaca.TabIndex = 14;
             // 
             // animalForm
             // 
@@ -210,7 +211,6 @@
         private System.Windows.Forms.Label lbNomeDono;
 
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtRaca;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.TextBox txtTelefoneDoDono;
         private System.Windows.Forms.TextBox txtNomeDoDono;
@@ -219,6 +219,7 @@
 
         private System.Windows.Forms.GroupBox grupoCadAnimal;
         private System.Windows.Forms.TableLayoutPanel gridCadastroAnimal;
-        private System.Windows.Forms.Button btnExcluir; 
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.ComboBox cbxRaca;
     }
 }

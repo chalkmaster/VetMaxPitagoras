@@ -1,6 +1,6 @@
 ﻿namespace VetMaxPitagoras.Security
 {
-    partial class frmLogin
+    partial class loginForm
     {
         /// <summary>
         /// Required designer variable.

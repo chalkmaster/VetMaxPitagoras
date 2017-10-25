@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VetMaxPitagoras.Infrastructure.Security.Services;
+using VetMaxPitagoras.Infrastructure.Security.Entities;
+using VetMaxPitagoras.Infrastructure.InMemoryRepository.Security;
 
 namespace VetMaxPitagoras.Foundation
 {
@@ -20,7 +23,20 @@ namespace VetMaxPitagoras.Foundation
 
         private void animalForm_Load(object sender, EventArgs e)
         {
+            RacaService racaService = new RacaService(new RacaRepository());
+            //carrega especies
+            try
+            {
+                List<Raca> racas = racaService.GetRacas();
 
+                racas.ForEach(delegate (Raca r) {
+                    cbxRaca.Items.Add(r.NomeRaça);
+                });
+            }
+            finally
+            {
+                racaService = null;
+            }
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -32,5 +48,7 @@ namespace VetMaxPitagoras.Foundation
         {
 
         }
+
+        
     }
 }

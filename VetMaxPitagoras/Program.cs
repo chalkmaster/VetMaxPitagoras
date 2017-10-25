@@ -10,11 +10,13 @@ namespace VetMaxPitagoras
     //
     static class Program
     {
+        /*
         enum Especies { CaesPastores, CaesPequenos, Terries, Dachshunds, Spitz, SabujosFarejadores, CaesApontadores, Retrievers, CaesCompanhia, LebreusEGalgos, Raca};
-       
+       */
         [STAThread]
         static void Main()
         {
+            /*
             Especies myEspecie = Especies.Raca;
 
             Console.WriteLine("Especies.CaesPastores = {Cães pastores e Boeiros}", Especies.CaesPastores.ToString("A"));
@@ -63,7 +65,7 @@ namespace VetMaxPitagoras
             Console.WriteLine("myEspecie.ToString(\"l\") = Lebréus ou Galgos", myEspecie.ToString("l"));
             Console.WriteLine("myEspecie.ToString(\"L\") = Lebréus ou Galgos", myEspecie.ToString("L"));
 
-
+    */
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new mainForm());
