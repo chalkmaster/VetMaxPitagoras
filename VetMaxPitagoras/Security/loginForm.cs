@@ -14,10 +14,10 @@ using VetMaxPitagoras.Infrastructure.Security.Services;
 
 namespace VetMaxPitagoras.Security
 {
-    public partial class frmLogin : Form
+    public partial class loginForm : Form
     {
         private AuthService _authService;
-        public frmLogin()
+        public loginForm()
         {
             InitializeComponent();
         }
@@ -30,8 +30,8 @@ namespace VetMaxPitagoras.Security
         private void button1_Click(object sender, EventArgs e)
         {
             var userToAuthenticate = new User();
-            userToAuthenticate.UserName = txtLogin.Text;
-            userToAuthenticate.Password = txtSenha.Text;
+            userToAuthenticate.UserName = textBox1.Text;
+            userToAuthenticate.Password = textBox2.Text;
 
             if (_authService.TryAuthenticate(userToAuthenticate))
             {

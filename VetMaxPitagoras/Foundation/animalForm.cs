@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using VetMaxPitagoras.Infrastructure.InMemoryRepository.Security;
-using VetMaxPitagoras.Infrastructure.Security.Entities;
-using VetMaxPitagoras.Infrastructure.Security.Services;
 
 namespace VetMaxPitagoras.Foundation
 {
@@ -20,6 +17,7 @@ namespace VetMaxPitagoras.Foundation
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void animalForm_Load(object sender, EventArgs e)
         {
             var animalRepository = new AnimalRepository();
@@ -159,34 +157,22 @@ namespace VetMaxPitagoras.Foundation
             this.txtTipo.Enter += new EventHandler(txtTipo_Enter);
             txtTipo.BackColor = Color.WhiteSmoke;
         }
+=======
+>>>>>>> 68ff2e8d1bf849f48768c15de953210a5b13a79e
 
-        private void txtTipo_Leave(object sender, EventArgs e)
-        {
-            if (txtTipo.Text.Trim() == string.Empty)
-            {
-                this.txtTipo.Leave += new EventHandler(txtTipo_Leave);
-                txtTipo.BackColor = System.Drawing.Color.DarkRed;
-                validacaoAnimalCampos.SetError(txtTipo, "Digite o Tipo e continue seu cadastro que o erro irá sair.");
-            }
-            else
-                validacaoAnimalCampos.Clear();
-        }
-
-        private void txtRaca_TextChanged(object sender, EventArgs e)
+        private void animalForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void grupoCadAnimal_Enter(object sender, EventArgs e)
+        private void btnExcluir_Click(object sender, EventArgs e)
         {
 
         }
-
-       
     }
 }
