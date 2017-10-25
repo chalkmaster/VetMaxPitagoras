@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VetMaxPitagoras.Infrastructure.InMemoryRepository.Security;
 using VetMaxPitagoras.Infrastructure.Security.Entities;
+using VetMaxPitagoras.Infrastructure.Security.Services;
 
 namespace VetMaxPitagoras.Foundation
 {
@@ -23,13 +24,35 @@ namespace VetMaxPitagoras.Foundation
         {
             var animalRepository = new AnimalRepository();
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
+            CarregarComboRacas();
+        }
 
+        private void CarregarComboRacas()
+        {
+            RacaService racaService = null;
+            List<Raca> racas = null;
+            try
+            {
+                racaService = new RacaService(new RacaRepository());
+                racas = racaService.GetRacas();
+                racas.ForEach(delegate(Raca r) {
+                    cbxRaca.Items.Add(r.NomeRaça);
+                });
+
+            }
+            finally
+            {
+                racaService = null;
+                racas = null;
+            }
+            
+            
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty) ||
-           (txtRaca.Text.Trim() == string.Empty) || (txtTipo.Text.Trim() == string.Empty))
+           (cbxRaca.Text.Trim() == string.Empty) || (txtTipo.Text.Trim() == string.Empty))
             {
                 return;
             }
@@ -38,7 +61,7 @@ namespace VetMaxPitagoras.Foundation
             var animalRepository = new AnimalRepository();
             animal.Nome = this.txtNome.Text;
             animal.NomeDono = this.txtNomeDoDono.Text;
-            animal.Raça = this.txtRaca.Text;
+            animal.Raça = this.cbxRaca.Text;
             animal.TelefoneTipo = this.txtTipo.Text;
             animalRepository.Insert(animal);
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
@@ -130,17 +153,17 @@ namespace VetMaxPitagoras.Foundation
 
         private void txtRaca_Enter(object sender, EventArgs e)
         {
-            this.txtRaca.Enter += new EventHandler(txtRaca_Enter);
-            txtRaca.BackColor = Color.White;
+            this.cbxRaca.Enter += new EventHandler(txtRaca_Enter);
+            cbxRaca.BackColor = Color.White;
         }
 
         private void txtRaca_Leave(object sender, EventArgs e)
         {
-            if (txtRaca.Text.Trim() == string.Empty)
+            if (cbxRaca.Text.Trim() == string.Empty)
             {
-                this.txtRaca.Leave += new EventHandler(txtRaca_Leave);
-                txtRaca.BackColor = System.Drawing.Color.DarkRed;
-                validacaoAnimalCampos.SetError(txtRaca, "Campo Obrigátorio");
+                this.cbxRaca.Leave += new EventHandler(txtRaca_Leave);
+                cbxRaca.BackColor = System.Drawing.Color.DarkRed;
+                validacaoAnimalCampos.SetError(cbxRaca, "Campo Obrigátorio");
             }
             else
                 validacaoAnimalCampos.Clear();
@@ -162,6 +185,11 @@ namespace VetMaxPitagoras.Foundation
             }
             else
                 validacaoAnimalCampos.Clear();
+        }
+
+        private void grupoCadAnimal_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

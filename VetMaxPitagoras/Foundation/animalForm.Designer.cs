@@ -34,7 +34,6 @@
             this.lbTipo = new System.Windows.Forms.Label();
             this.lbNomeDono = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtRaca = new System.Windows.Forms.TextBox();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtNomeDoDono = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.validacaoAnimalCampos = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbxRaca = new System.Windows.Forms.ComboBox();
             this.grupoCadAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.validacaoAnimalCampos)).BeginInit();
@@ -98,16 +98,6 @@
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             this.txtNome.Leave += new System.EventHandler(this.txtNome_Leave);
             // 
-            // txtRaca
-            // 
-            this.txtRaca.Location = new System.Drawing.Point(374, 37);
-            this.txtRaca.Name = "txtRaca";
-            this.txtRaca.Size = new System.Drawing.Size(139, 20);
-            this.txtRaca.TabIndex = 6;
-            this.txtRaca.Enter += new System.EventHandler(this.txtRaca_Enter);
-            this.txtRaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRaca_KeyPress);
-            this.txtRaca.Leave += new System.EventHandler(this.txtRaca_Leave);
-            // 
             // txtTipo
             // 
             this.txtTipo.Location = new System.Drawing.Point(374, 76);
@@ -142,6 +132,7 @@
             // 
             this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
+            this.grupoCadAnimal.Controls.Add(this.cbxRaca);
             this.grupoCadAnimal.Controls.Add(this.btnSair);
             this.grupoCadAnimal.Controls.Add(this.txtNome);
             this.grupoCadAnimal.Controls.Add(this.lbNomeDono);
@@ -150,7 +141,6 @@
             this.grupoCadAnimal.Controls.Add(this.lbNomeDoAnimal);
             this.grupoCadAnimal.Controls.Add(this.txtNomeDoDono);
             this.grupoCadAnimal.Controls.Add(this.lbRaça);
-            this.grupoCadAnimal.Controls.Add(this.txtRaca);
             this.grupoCadAnimal.Controls.Add(this.txtTipo);
             this.grupoCadAnimal.Location = new System.Drawing.Point(26, 12);
             this.grupoCadAnimal.Name = "grupoCadAnimal";
@@ -158,6 +148,7 @@
             this.grupoCadAnimal.TabIndex = 11;
             this.grupoCadAnimal.TabStop = false;
             this.grupoCadAnimal.Text = "Cadastro de animal";
+            this.grupoCadAnimal.Enter += new System.EventHandler(this.grupoCadAnimal_Enter);
             // 
             // btnSair
             // 
@@ -212,6 +203,14 @@
             // 
             this.validacaoAnimalCampos.ContainerControl = this;
             // 
+            // cbxRaca
+            // 
+            this.cbxRaca.FormattingEnabled = true;
+            this.cbxRaca.Location = new System.Drawing.Point(374, 36);
+            this.cbxRaca.Name = "cbxRaca";
+            this.cbxRaca.Size = new System.Drawing.Size(203, 21);
+            this.cbxRaca.TabIndex = 15;
+            // 
             // animalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,7 +240,6 @@
         private System.Windows.Forms.Label lbNomeDono;
 
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtRaca;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.TextBox txtNomeDoDono;
 
@@ -256,5 +254,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoTel;
         private System.Windows.Forms.ErrorProvider validacaoAnimalCampos;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.ComboBox cbxRaca;
     }
 }
