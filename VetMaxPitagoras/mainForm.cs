@@ -14,6 +14,7 @@ namespace VetMaxPitagoras
 {
     public partial class mainForm : Form
     {
+        public static mainForm mdiobj; // este mdiobj manipula o menustrips
         public mainForm()
         {
             InitializeComponent();
@@ -21,10 +22,15 @@ namespace VetMaxPitagoras
 
         private void mainForm_Load(object sender, EventArgs e)
         {
+            cadastroToolStripMenuItem.Enabled = false; // aki desabilita o intem cadastro 
+            listaToolStripMenuItem.Enabled = false; // aki desabilita o intem lista
+           
+
             var login = new loginForm();
             login.MdiParent = this;
             login.WindowState = FormWindowState.Maximized;
             login.Show();
+            mdiobj = this;
         }
 
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
