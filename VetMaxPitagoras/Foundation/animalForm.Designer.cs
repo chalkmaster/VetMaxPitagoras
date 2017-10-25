@@ -199,7 +199,7 @@
             this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Idade do Animal:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+           // this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btnSair
             // 

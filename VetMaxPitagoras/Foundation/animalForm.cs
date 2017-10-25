@@ -29,8 +29,6 @@ namespace VetMaxPitagoras.Foundation
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");  
-           
             Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
             animal.Nome = this.txtNome.Text.Trim();
@@ -38,21 +36,21 @@ namespace VetMaxPitagoras.Foundation
             animal.Raça = this.txtRaca.Text.Trim();
             animal.TelefoneDono = this.txtTelefoneDoDono.Text;
             animal.TelefoneTipo = this.txtTipo.Text.Trim();
-            animalRepository.Insert(animal);
-            this.dataCadAnimal.DataSource = animalRepository.FindAll();
-            if (animal.Nome != "" && animal.NomeDono != "" && animal.TelefoneDono != "")
+
+            CampoObrigatorio();
+        }
+           public void CampoObrigatorio()
+        {
+            Animal animal = new Animal();
+            var animalRepository = new AnimalRepository();
+            if (txtNome.Text != "" && txtNomeDoDono.Text != "" && txtRaca.Text != "" && txtTelefoneDoDono.Text != "" && txtTipo.Text != "")
             {
-                if ((txtNome.Text.Trim() == string.Empty) || (txtNomeDoDono.Text.Trim() == string.Empty) ||
-                 (txtRaca.Text.Trim() == string.Empty) || (txtTelefoneDoDono.Text.Trim() == string.Empty)
-                 || (txtTipo.Text.Trim() == string.Empty))
-                {
-                    return;
-                }
-               
+                animalRepository.Insert(animal);
+                this.dataCadAnimal.DataSource = animalRepository.FindAll();
             }
             else
             {
-                MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");           
+                MessageBox.Show("Os campos Nome, Nome do Dono e Telefone do Dono, são Obrigatórios");
             }
            
         }
