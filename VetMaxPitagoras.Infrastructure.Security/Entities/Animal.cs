@@ -9,7 +9,6 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
 {
     public class Animal : Entity
     {
-        
         public string Nome { get; set; }     
         public Especie Especie { get; set; }
         public Raca Raca { get; set; }
@@ -21,11 +20,12 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
         public string Raça { get; set; }
         public string TelefoneDono { get; set; }
         public string TelefoneTipo { get; set; }
+
+        
+        }
         // criado só para funcionar a validação de dados se necessario mude.  
         
     }
 
    
 
-    
-}
