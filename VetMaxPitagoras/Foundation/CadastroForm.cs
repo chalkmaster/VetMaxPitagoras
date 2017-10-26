@@ -79,5 +79,11 @@ namespace VetMaxPitagoras.Foundation
         {
 
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            string[] dadosCadastro = { txNome.Text, rdBtn_Masc.Text, rdBtn_Fem.Text, txCpf.Text, txFone.Text, txCelular.Text, txEndereco.Text, txNumero.Text, txComplemento.Text, txCidade.Text };
+            
+        }
     }
 }
