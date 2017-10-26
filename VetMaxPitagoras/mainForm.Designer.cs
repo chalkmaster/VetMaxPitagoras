@@ -34,6 +34,7 @@
             this.animaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animaisCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuárioSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem,
-            this.animaisToolStripMenuItem});
+            this.animaisToolStripMenuItem,
+            this.usuárioSistemaToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -60,8 +62,8 @@
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.usuáriosToolStripMenuItem.Text = "Usuários Sistema";
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.usuáriosToolStripMenuItem.Text = "Clientes";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem
@@ -85,6 +87,13 @@
             this.animaisCadastradosToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.animaisCadastradosToolStripMenuItem.Text = "Animais Cadastrados";
             this.animaisCadastradosToolStripMenuItem.Click += new System.EventHandler(this.animaisCadastradosToolStripMenuItem_Click);
+            // 
+            // usuárioSistemaToolStripMenuItem
+            // 
+            this.usuárioSistemaToolStripMenuItem.Name = "usuárioSistemaToolStripMenuItem";
+            this.usuárioSistemaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.usuárioSistemaToolStripMenuItem.Text = "Usuário Sistema";
+            this.usuárioSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuárioSistemaToolStripMenuItem_Click);
             // 
             // mainForm
             // 
@@ -112,6 +121,7 @@
         public System.Windows.Forms.MenuStrip menuStrip1;
         public System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem listaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuárioSistemaToolStripMenuItem;
     }
 }
 

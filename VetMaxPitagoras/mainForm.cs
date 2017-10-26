@@ -35,10 +35,8 @@ namespace VetMaxPitagoras
 
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var userRegister = new userForm();
-            userRegister.MdiParent = this;
-            userRegister.WindowState = FormWindowState.Maximized;
-            userRegister.Show();
+            var CadastroCliente = new FrmCadastro();
+            
         }
 
         private void animaisToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,6 +53,14 @@ namespace VetMaxPitagoras
             ListaAnimais.MdiParent = this;
             ListaAnimais.WindowState = FormWindowState.Maximized;
             ListaAnimais.Show();
+        }
+
+        private void usuárioSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var userRegister = new userForm();
+            userRegister.MdiParent = this;
+            userRegister.WindowState = FormWindowState.Maximized;
+            userRegister.Show();
         }
     }
 }

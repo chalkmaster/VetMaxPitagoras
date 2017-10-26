@@ -68,5 +68,12 @@ namespace VetMaxPitagoras.Security
         {
 
         }
+
+        private void linkCadastrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var CadastroUsuario = new mainForm();
+            CadastroUsuario.Show();
+
+        }
     }
 }
