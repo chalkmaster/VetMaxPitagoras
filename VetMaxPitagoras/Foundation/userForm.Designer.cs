@@ -122,6 +122,7 @@
             this.ClientSize = new System.Drawing.Size(349, 319);
             this.Controls.Add(this.groupBox1);
             this.Name = "userForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

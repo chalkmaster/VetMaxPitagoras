@@ -107,9 +107,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Security\loginForm.aa-DJ.resx">
-      <DependentUpon>loginForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Security\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
