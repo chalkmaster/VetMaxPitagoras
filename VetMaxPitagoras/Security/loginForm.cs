@@ -29,6 +29,7 @@ namespace VetMaxPitagoras.Security
 
         private void loginForm_Load(object sender, EventArgs e)
         {
+            timer1_Tick(e, e);
             _authService = new AuthService(new UserRepository());
         }
 
@@ -74,6 +75,12 @@ namespace VetMaxPitagoras.Security
             var CadastroUsuario = new mainForm();
             CadastroUsuario.Show();
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dataHora = DateTime.Now;
+            lbDataHora.Text = " Data: " + dataHora.ToShortDateString() + " Hora: " + dataHora.ToLongTimeString();
         }
     }
 }
