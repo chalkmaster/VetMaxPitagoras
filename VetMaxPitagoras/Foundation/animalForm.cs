@@ -25,6 +25,7 @@ namespace VetMaxPitagoras.Foundation
             var animalRepository = new AnimalRepository();
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
             CarregarComboRacas();
+            CarregarComboEspecies();
         }
 
         private void CarregarComboRacas()
@@ -45,9 +46,31 @@ namespace VetMaxPitagoras.Foundation
                 racaService = null;
                 racas = null;
             }
-            
-            
+                   
         }
+
+        private void CarregarComboEspecies()
+        {
+            EspecieService especieService = null;
+            List<Especie> especies = null;
+            try
+            {
+                especieService = new EspecieService(new EspecieRepository());
+               especies = especieService.GetEspecies();
+                especies.ForEach(delegate(Especie e)
+                {
+                    cbxEspecie.Items.Add(e.Nome);
+                });
+
+            }
+            finally
+            {
+                especieService = null;
+                especies = null;
+            }
+
+        }
+
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -62,6 +85,7 @@ namespace VetMaxPitagoras.Foundation
             animal.Nome = this.txtNome.Text;
             animal.NomeDono = this.txtNomeDoDono.Text;
             animal.Raça = this.cbxRaca.Text;
+            animal.Espécie = this.cbxEspecie.Text;
             animal.TelefoneTipo = this.txtTipo.Text;
             animalRepository.Insert(animal);
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
@@ -90,6 +114,14 @@ namespace VetMaxPitagoras.Foundation
         }
 
         private void txtRaca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtEspecie_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar)))
             {
@@ -168,6 +200,25 @@ namespace VetMaxPitagoras.Foundation
             else
                 validacaoAnimalCampos.Clear();
         }
+
+        private void txtEspecie_Enter(object sender, EventArgs e)
+        {
+            this.cbxEspecie.Enter += new EventHandler(txtEspecie_Enter);
+            cbxEspecie.BackColor = Color.White;
+        }
+
+        private void txtEspecie_Leave(object sender, EventArgs e)
+        {
+            if (cbxEspecie.Text.Trim() == string.Empty)
+            {
+                this.cbxEspecie.Leave += new EventHandler(txtEspecie_Leave);
+                cbxEspecie.BackColor = System.Drawing.Color.DarkRed;
+                validacaoAnimalCampos.SetError(cbxEspecie, "Campo Obrigátorio");
+            }
+            else
+                validacaoAnimalCampos.Clear();
+        }
+
 
         private void txtTipo_Enter(object sender, EventArgs e)
         {

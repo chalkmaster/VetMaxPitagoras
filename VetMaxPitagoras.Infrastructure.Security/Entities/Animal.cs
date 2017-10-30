@@ -18,6 +18,7 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
         //  criado só para funcionar a validação de dados se necessario mude.  
         public string NomeDono { get; set; }
         public string Raça { get; set; }
+        public string Espécie { get; set; }
         public string TelefoneDono { get; set; }
         public string TelefoneTipo { get; set; }
 
