@@ -32,9 +32,9 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuárioSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animaisCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuárioSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,9 +69,16 @@
             // animaisToolStripMenuItem
             // 
             this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
-            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.animaisToolStripMenuItem.Text = "Animais";
             this.animaisToolStripMenuItem.Click += new System.EventHandler(this.animaisToolStripMenuItem_Click);
+            // 
+            // usuárioSistemaToolStripMenuItem
+            // 
+            this.usuárioSistemaToolStripMenuItem.Name = "usuárioSistemaToolStripMenuItem";
+            this.usuárioSistemaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.usuárioSistemaToolStripMenuItem.Text = "Usuário Sistema";
+            this.usuárioSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuárioSistemaToolStripMenuItem_Click);
             // 
             // listaToolStripMenuItem
             // 
@@ -88,13 +95,6 @@
             this.animaisCadastradosToolStripMenuItem.Text = "Animais Cadastrados";
             this.animaisCadastradosToolStripMenuItem.Click += new System.EventHandler(this.animaisCadastradosToolStripMenuItem_Click);
             // 
-            // usuárioSistemaToolStripMenuItem
-            // 
-            this.usuárioSistemaToolStripMenuItem.Name = "usuárioSistemaToolStripMenuItem";
-            this.usuárioSistemaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.usuárioSistemaToolStripMenuItem.Text = "Usuário Sistema";
-            this.usuárioSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuárioSistemaToolStripMenuItem_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,7 +104,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainForm";
-            this.Text = "Zpet";
+            this.Text = "Pet_Services";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.menuStrip1.ResumeLayout(false);
