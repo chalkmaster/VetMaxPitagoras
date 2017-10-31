@@ -42,13 +42,7 @@ namespace VetMaxPitagoras
             
         }
 
-        private void animaisToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var userAnimal = new AnimaisForm();
-            userAnimal.MdiParent = this;
-            userAnimal.WindowState = FormWindowState.Maximized;
-            userAnimal.Show();
-        }
+        
 
        
         /*
