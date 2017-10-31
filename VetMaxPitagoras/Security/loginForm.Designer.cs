@@ -60,9 +60,9 @@
             // 
             this.txtLogar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.txtLogar.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtLogar.Location = new System.Drawing.Point(327, 159);
+            this.txtLogar.Location = new System.Drawing.Point(290, 159);
             this.txtLogar.Name = "txtLogar";
-            this.txtLogar.Size = new System.Drawing.Size(54, 23);
+            this.txtLogar.Size = new System.Drawing.Size(91, 34);
             this.txtLogar.TabIndex = 2;
             this.txtLogar.Text = "Entrar";
             this.txtLogar.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             // 
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSair.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnSair.Location = new System.Drawing.Point(270, 159);
+            this.btnSair.Location = new System.Drawing.Point(185, 159);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(51, 23);
+            this.btnSair.Size = new System.Drawing.Size(87, 31);
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
