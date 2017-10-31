@@ -55,7 +55,8 @@ namespace VetMaxPitagoras
             ListaAnimais.WindowState = FormWindowState.Maximized;
             ListaAnimais.Show();
         }
-
+        //NÃO EXISTE MAIS NO FORM
+        /*
         private void usuárioSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var userRegister = new userForm();
@@ -63,5 +64,6 @@ namespace VetMaxPitagoras
             userRegister.WindowState = FormWindowState.Maximized;
             userRegister.Show();
         }
+        */
     }
 }

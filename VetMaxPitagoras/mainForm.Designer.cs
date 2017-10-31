@@ -72,14 +72,9 @@
             this.animaisToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.animaisToolStripMenuItem.Text = "Animais";
             this.animaisToolStripMenuItem.Click += new System.EventHandler(this.animaisToolStripMenuItem_Click);
-            // 
-            // usuárioSistemaToolStripMenuItem
-            // 
-            this.usuárioSistemaToolStripMenuItem.Name = "usuárioSistemaToolStripMenuItem";
-            this.usuárioSistemaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.usuárioSistemaToolStripMenuItem.Text = "Usuário Sistema";
-            this.usuárioSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuárioSistemaToolStripMenuItem_Click);
-            // 
+            
+           
+         
             // listaToolStripMenuItem
             // 
             this.listaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
