@@ -62,12 +62,6 @@
     <Compile Include="Foundation\userForm.Designer.cs">
       <DependentUpon>userForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaAnimaisForm1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListaAnimaisForm1.Designer.cs">
-      <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
-    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,9 +84,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListaAnimaisForm1.resx">
-      <DependentUpon>ListaAnimaisForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
