@@ -118,29 +118,8 @@
             this.textBox4.Size = new System.Drawing.Size(388, 46);
             this.textBox4.TabIndex = 23;
             // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(337, 36);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(57, 17);
-            this.radioButton2.TabIndex = 22;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Femea";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(276, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 17);
-            this.radioButton1.TabIndex = 21;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Macho";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
+         
+          
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(276, 184);

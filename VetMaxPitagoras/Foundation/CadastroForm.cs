@@ -22,11 +22,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void Button1_Click(object sender, EventArgs e)
         {
-//
              //string[] dadosCadastro = { txNome.Text,txCpf.Text, txEndereco.Text, txCidade.Text };
-//
-          
-
 
             var authService = new AuthService(new UserRepository());
             var userToInsert = new User();
@@ -35,8 +31,6 @@ namespace VetMaxPitagoras.Foundation
             //userToInsert.Password = textBox2.Text;
             authService.AddNewUser(userToInsert);
 
-            
-            
             //Limpar_dados();
             MessageBox.Show("Cadastro efetuado com sucesso");
 
@@ -64,10 +58,7 @@ namespace VetMaxPitagoras.Foundation
             txNome.ResetText();
             txCpf.ResetText();
             txEndereco.ResetText();
-            txCidade.ResetText();
-            
-            
-            
+            txCidade.ResetText();  
         }
         */
         

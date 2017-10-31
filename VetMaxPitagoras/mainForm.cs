@@ -36,6 +36,7 @@ namespace VetMaxPitagoras
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var CadastroCliente = new FrmCadastro();
+
             CadastroCliente.Show();
             
         }
