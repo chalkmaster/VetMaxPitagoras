@@ -22,7 +22,7 @@ namespace VetMaxPitagoras
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            cadastroToolStripMenuItem.Enabled = false; // aki desabilita o intem cadastro 
+            cadastroToolStripMenuItem.Enabled = false; // aki desabilita o item cadastro 
             listaToolStripMenuItem.Enabled = false; // aki desabilita o intem lista
            
 
