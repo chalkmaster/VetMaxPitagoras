@@ -23,7 +23,7 @@ namespace VetMaxPitagoras.Foundation
         private void Button1_Click(object sender, EventArgs e)
         {
 //
-             string[] dadosCadastro = { txNome.Text,txCpf.Text, txEndereco.Text, txCidade.Text };
+             //string[] dadosCadastro = { txNome.Text,txCpf.Text, txEndereco.Text, txCidade.Text };
 //
           
 
@@ -37,7 +37,7 @@ namespace VetMaxPitagoras.Foundation
 
             
             
-            Limpar_dados();
+            //Limpar_dados();
             MessageBox.Show("Cadastro efetuado com sucesso");
 
             
@@ -58,6 +58,7 @@ namespace VetMaxPitagoras.Foundation
         {
             this.Close();
         }
+        /*
         private void Limpar_dados()
         {
             txNome.ResetText();
@@ -68,12 +69,12 @@ namespace VetMaxPitagoras.Foundation
             
             
         }
-
+        */
         
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            string[] dadosCadastro = { txNome.Text, txCpf.Text, txEndereco.Text, txCidade.Text };
+            //string[] dadosCadastro = { txNome.Text, txCpf.Text, txEndereco.Text, txCidade.Text };
             
         }
 
