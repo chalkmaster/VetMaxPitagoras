@@ -164,9 +164,9 @@
             // 
             // statusStrip1
             // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lbDataHora});
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
             // lbDataHora
