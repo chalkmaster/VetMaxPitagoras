@@ -389,6 +389,7 @@ namespace VetMaxPitagoras.Foundation
             // 
             // dgvDadosCliente
             // 
+            this.dgvDadosCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvDadosCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDadosCliente.Location = new System.Drawing.Point(6, 19);
             this.dgvDadosCliente.Name = "dgvDadosCliente";
@@ -397,6 +398,7 @@ namespace VetMaxPitagoras.Foundation
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox4.Controls.Add(this.txtNomePesquisa);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
