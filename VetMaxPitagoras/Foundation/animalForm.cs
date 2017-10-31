@@ -78,8 +78,7 @@ namespace VetMaxPitagoras.Foundation
            (cbxRaca.Text.Trim() == string.Empty) || (txtTipo.Text.Trim() == string.Empty))
             {
                 return;
-            }
-            
+            } 
             Animal animal = new Animal();
             var animalRepository = new AnimalRepository();
             animal.Nome = this.txtNome.Text;
