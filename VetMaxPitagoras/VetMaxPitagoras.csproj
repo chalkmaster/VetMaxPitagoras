@@ -57,6 +57,12 @@
     <Compile Include="Foundation\cadastrarFuncionario.Designer.cs">
       <DependentUpon>cadastrarFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Foundation\cadastrarVeterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foundation\cadastrarVeterinario.Designer.cs">
+      <DependentUpon>cadastrarVeterinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Foundation\historicoAtendimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\cadastrarFuncionario.resx">
       <DependentUpon>cadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foundation\cadastrarVeterinario.resx">
+      <DependentUpon>cadastrarVeterinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\historicoAtendimento.resx">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
