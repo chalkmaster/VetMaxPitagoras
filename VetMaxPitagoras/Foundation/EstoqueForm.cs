@@ -19,17 +19,14 @@ namespace VetMaxPitagoras.Foundation
 
         private void label2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -63,6 +60,16 @@ namespace VetMaxPitagoras.Foundation
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
         {
 
         }
