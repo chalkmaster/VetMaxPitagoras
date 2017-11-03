@@ -50,6 +50,12 @@
     <Compile Include="Foundation\CadastroForm.Designer.cs">
       <DependentUpon>CadastroForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Foundation\EstoqueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foundation\EstoqueForm.Designer.cs">
+      <DependentUpon>EstoqueForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <EmbeddedResource Include="Foundation\CadastroForm.resx">
       <DependentUpon>CadastroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foundation\EstoqueForm.resx">
+      <DependentUpon>EstoqueForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
