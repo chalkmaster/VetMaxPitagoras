@@ -43,5 +43,10 @@ namespace VetMaxPitagoras.Foundation
         {
             Close();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            textBox10.Clear();
+        }
     }
 }

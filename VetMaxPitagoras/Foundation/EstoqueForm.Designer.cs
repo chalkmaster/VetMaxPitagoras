@@ -152,8 +152,9 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(50, 23);
+            this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(361, 20);
+            this.textBox10.Size = new System.Drawing.Size(361, 23);
             this.textBox10.TabIndex = 1;
             // 
             // label11
@@ -578,6 +579,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Limpar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button5
             // 
