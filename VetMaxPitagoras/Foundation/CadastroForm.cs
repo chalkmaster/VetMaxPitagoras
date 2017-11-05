@@ -69,6 +69,33 @@ namespace VetMaxPitagoras.Foundation
             
         }
 
-        
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            txtNomePesquisa.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            txtNomeCliente.Clear();
+            maskedTextBoxCpfCliente.Clear();
+            maskedTextBoxNascimentoCliente.Clear();
+            maskedTextBoxIdentidadeCliente.Clear();
+            txtEnderecoCliente.Clear();
+            txtCidadeCliente.Clear();
+            maskedTextBoxCepCliente.Clear();
+            maskedTextBoxTelefoneCliente.Clear();
+            textBoxEmailCliente.Clear();
+                              
+        }
     }
 }
