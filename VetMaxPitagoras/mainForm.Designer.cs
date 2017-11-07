@@ -35,11 +35,13 @@
             this.animaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionárioDaClínicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.funcionárioVeterinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funcionarioVeterinárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +63,8 @@
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem,
             this.animaisToolStripMenuItem,
-            this.funcionárioDaClínicaToolStripMenuItem});
+            this.funcionárioDaClínicaToolStripMenuItem,
+            this.funcionárioVeterinarioToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -89,13 +92,11 @@
             // 
             // pesquisaToolStripMenuItem
             // 
+            this.pesquisaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.funcionarioVeterinárioToolStripMenuItem});
             this.pesquisaToolStripMenuItem.Name = "pesquisaToolStripMenuItem";
             this.pesquisaToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.pesquisaToolStripMenuItem.Text = "Pesquisa";
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // toolStripMenuItem1
             // 
@@ -109,16 +110,34 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // funcionárioVeterinarioToolStripMenuItem
+            // 
+            this.funcionárioVeterinarioToolStripMenuItem.Name = "funcionárioVeterinarioToolStripMenuItem";
+            this.funcionárioVeterinarioToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.funcionárioVeterinarioToolStripMenuItem.Text = "Funcionário Veterinário";
+            this.funcionárioVeterinarioToolStripMenuItem.Click += new System.EventHandler(this.funcionárioVeterinarioToolStripMenuItem_Click);
+            // 
+            // funcionarioVeterinárioToolStripMenuItem
+            // 
+            this.funcionarioVeterinárioToolStripMenuItem.Name = "funcionarioVeterinárioToolStripMenuItem";
+            this.funcionarioVeterinárioToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.funcionarioVeterinárioToolStripMenuItem.Text = "Funcionario Veterinário";
+            this.funcionarioVeterinárioToolStripMenuItem.Click += new System.EventHandler(this.funcionarioVeterinárioToolStripMenuItem_Click);
             // 
             // mainForm
             // 
@@ -156,6 +175,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funcionárioVeterinarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funcionarioVeterinárioToolStripMenuItem;
     }
 }
 

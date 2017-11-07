@@ -69,6 +69,12 @@
     <Compile Include="Foundation\historicoAtendimento.Designer.cs">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Foundation\Pesquisa\frmPesquisaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foundation\Pesquisa\frmPesquisaFuncionario.Designer.cs">
+      <DependentUpon>frmPesquisaFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Foundation\prontuarioDeAtendimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\historicoAtendimento.resx">
       <DependentUpon>historicoAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foundation\Pesquisa\frmPesquisaFuncionario.resx">
+      <DependentUpon>frmPesquisaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Foundation\prontuarioDeAtendimento.resx">
       <DependentUpon>prontuarioDeAtendimento.cs</DependentUpon>

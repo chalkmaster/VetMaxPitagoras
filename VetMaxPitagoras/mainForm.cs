@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VetMaxPitagoras.Foundation;
 using VetMaxPitagoras.Security;
+using VetMaxPitagoras.Foundation.Pesquisa;
 
 namespace VetMaxPitagoras
 {
@@ -68,6 +69,22 @@ namespace VetMaxPitagoras
             login.MdiParent = this;
             login.WindowState = FormWindowState.Maximized;
             login.Show();
+        }
+
+        private void funcionárioVeterinarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var funcionarioRegister = new cadastrarVeterinario();
+            funcionarioRegister.MdiParent = this;
+            funcionarioRegister.WindowState = FormWindowState.Maximized;
+            funcionarioRegister.Show();
+        }
+
+        private void funcionarioVeterinárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var funcionariopesquisa = new frmPesquisaFuncionario();
+            funcionariopesquisa.MdiParent = this;
+            funcionariopesquisa.WindowState = FormWindowState.Maximized;
+            funcionariopesquisa.Show();
         }
     }
 }

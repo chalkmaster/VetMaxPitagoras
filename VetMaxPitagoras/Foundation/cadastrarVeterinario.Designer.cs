@@ -46,21 +46,20 @@
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.gridCadastroFuncionario = new System.Windows.Forms.TableLayoutPanel();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.gridCadastroFuncionario.SuspendLayout();
             this.grupoCadAnimal.SuspendLayout();
             this.SuspendLayout();
@@ -216,12 +215,11 @@
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.57143F));
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.32653F));
             this.gridCadastroFuncionario.Controls.Add(this.grupoCadAnimal, 1, 0);
-            this.gridCadastroFuncionario.Controls.Add(this.label3, 0, 0);
-            this.gridCadastroFuncionario.Location = new System.Drawing.Point(-8, -19);
+            this.gridCadastroFuncionario.Location = new System.Drawing.Point(-42, 0);
             this.gridCadastroFuncionario.Name = "gridCadastroFuncionario";
             this.gridCadastroFuncionario.RowCount = 1;
             this.gridCadastroFuncionario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gridCadastroFuncionario.Size = new System.Drawing.Size(980, 647);
+            this.gridCadastroFuncionario.Size = new System.Drawing.Size(970, 609);
             this.gridCadastroFuncionario.TabIndex = 14;
             // 
             // grupoCadAnimal
@@ -258,75 +256,61 @@
             this.grupoCadAnimal.Controls.Add(this.lbNome);
             this.grupoCadAnimal.Controls.Add(this.lbRaça);
             this.grupoCadAnimal.Controls.Add(this.txtCpf);
-            this.grupoCadAnimal.Location = new System.Drawing.Point(151, 147);
+            this.grupoCadAnimal.Location = new System.Drawing.Point(150, 128);
             this.grupoCadAnimal.Name = "grupoCadAnimal";
-            this.grupoCadAnimal.Size = new System.Drawing.Size(665, 352);
+            this.grupoCadAnimal.Size = new System.Drawing.Size(658, 352);
             this.grupoCadAnimal.TabIndex = 11;
             this.grupoCadAnimal.TabStop = false;
             this.grupoCadAnimal.Text = "Cadastro de Veterinários ";
             // 
-            // label3
+            // textBox7
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
+            this.textBox7.Location = new System.Drawing.Point(451, 265);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(193, 20);
+            this.textBox7.TabIndex = 34;
             // 
-            // label4
+            // textBox6
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(359, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Titulação:";
+            this.textBox6.Location = new System.Drawing.Point(451, 228);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(193, 20);
+            this.textBox6.TabIndex = 33;
             // 
-            // label5
+            // textBox5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(359, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 13);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Especialidade:";
+            this.textBox5.Location = new System.Drawing.Point(451, 194);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(193, 20);
+            this.textBox5.TabIndex = 32;
             // 
-            // label6
+            // textBox4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Cargo:";
+            this.textBox4.Location = new System.Drawing.Point(451, 158);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(193, 20);
+            this.textBox4.TabIndex = 31;
             // 
-            // label7
+            // textBox3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(359, 158);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 13);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Departamento:";
+            this.textBox3.Location = new System.Drawing.Point(451, 118);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(193, 20);
+            this.textBox3.TabIndex = 30;
             // 
-            // label8
+            // textBox2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(359, 194);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Cidade:";
+            this.textBox2.Location = new System.Drawing.Point(451, 85);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(193, 20);
+            this.textBox2.TabIndex = 29;
             // 
-            // label9
+            // textBox1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(359, 231);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Bairro:";
+            this.textBox1.Location = new System.Drawing.Point(451, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(193, 20);
+            this.textBox1.TabIndex = 28;
             // 
             // label10
             // 
@@ -337,65 +321,69 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "Rua:";
             // 
-            // textBox1
+            // label9
             // 
-            this.textBox1.Location = new System.Drawing.Point(451, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
-            this.textBox1.TabIndex = 28;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(359, 231);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Bairro:";
             // 
-            // textBox2
+            // label8
             // 
-            this.textBox2.Location = new System.Drawing.Point(451, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 20);
-            this.textBox2.TabIndex = 29;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(359, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Cidade:";
             // 
-            // textBox3
+            // label7
             // 
-            this.textBox3.Location = new System.Drawing.Point(451, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 20);
-            this.textBox3.TabIndex = 30;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(359, 158);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 13);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Departamento:";
             // 
-            // textBox4
+            // label6
             // 
-            this.textBox4.Location = new System.Drawing.Point(451, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(193, 20);
-            this.textBox4.TabIndex = 31;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(359, 122);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Cargo:";
             // 
-            // textBox5
+            // label5
             // 
-            this.textBox5.Location = new System.Drawing.Point(451, 194);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 20);
-            this.textBox5.TabIndex = 32;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(359, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 13);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Especialidade:";
             // 
-            // textBox6
+            // label4
             // 
-            this.textBox6.Location = new System.Drawing.Point(451, 228);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 20);
-            this.textBox6.TabIndex = 33;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(451, 265);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(193, 20);
-            this.textBox7.TabIndex = 34;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(359, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Titulação:";
             // 
             // cadastrarVeterinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 609);
+            this.ClientSize = new System.Drawing.Size(892, 609);
             this.Controls.Add(this.gridCadastroFuncionario);
             this.Name = "cadastrarVeterinario";
             this.Text = "cadastrarVeterinario";
             this.gridCadastroFuncionario.ResumeLayout(false);
-            this.gridCadastroFuncionario.PerformLayout();
             this.grupoCadAnimal.ResumeLayout(false);
             this.grupoCadAnimal.PerformLayout();
             this.ResumeLayout(false);
@@ -423,7 +411,6 @@
         private System.Windows.Forms.TableLayoutPanel gridCadastroFuncionario;
         private System.Windows.Forms.GroupBox grupoCadAnimal;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;

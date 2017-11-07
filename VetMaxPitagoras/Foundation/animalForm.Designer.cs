@@ -38,6 +38,8 @@
             this.txtNomeDoDono = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
+            this.cbxEspecie = new System.Windows.Forms.ComboBox();
+            this.lblEspecie = new System.Windows.Forms.Label();
             this.cbxRaca = new System.Windows.Forms.ComboBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.dataCadAnimal = new System.Windows.Forms.DataGridView();
@@ -47,8 +49,6 @@
             this.telDono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.validacaoAnimalCampos = new System.Windows.Forms.ErrorProvider(this.components);
-            this.lblEspecie = new System.Windows.Forms.Label();
-            this.cbxEspecie = new System.Windows.Forms.ComboBox();
             this.grupoCadAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadAnimal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.validacaoAnimalCampos)).BeginInit();
@@ -154,6 +154,23 @@
             this.grupoCadAnimal.Text = "Cadastro de animal";
             this.grupoCadAnimal.Enter += new System.EventHandler(this.grupoCadAnimal_Enter);
             // 
+            // cbxEspecie
+            // 
+            this.cbxEspecie.FormattingEnabled = true;
+            this.cbxEspecie.Location = new System.Drawing.Point(374, 73);
+            this.cbxEspecie.Name = "cbxEspecie";
+            this.cbxEspecie.Size = new System.Drawing.Size(139, 21);
+            this.cbxEspecie.TabIndex = 17;
+            // 
+            // lblEspecie
+            // 
+            this.lblEspecie.AutoSize = true;
+            this.lblEspecie.Location = new System.Drawing.Point(322, 76);
+            this.lblEspecie.Name = "lblEspecie";
+            this.lblEspecie.Size = new System.Drawing.Size(48, 13);
+            this.lblEspecie.TabIndex = 16;
+            this.lblEspecie.Text = "Espécie:";
+            // 
             // cbxRaca
             // 
             this.cbxRaca.FormattingEnabled = true;
@@ -214,23 +231,6 @@
             // validacaoAnimalCampos
             // 
             this.validacaoAnimalCampos.ContainerControl = this;
-            // 
-            // lblEspecie
-            // 
-            this.lblEspecie.AutoSize = true;
-            this.lblEspecie.Location = new System.Drawing.Point(322, 76);
-            this.lblEspecie.Name = "lblEspecie";
-            this.lblEspecie.Size = new System.Drawing.Size(48, 13);
-            this.lblEspecie.TabIndex = 16;
-            this.lblEspecie.Text = "Espécie:";
-            // 
-            // cbxEspecie
-            // 
-            this.cbxEspecie.FormattingEnabled = true;
-            this.cbxEspecie.Location = new System.Drawing.Point(374, 73);
-            this.cbxEspecie.Name = "cbxEspecie";
-            this.cbxEspecie.Size = new System.Drawing.Size(139, 21);
-            this.cbxEspecie.TabIndex = 17;
             // 
             // animalForm
             // 
