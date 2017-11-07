@@ -10,14 +10,13 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
     public class Funcionario : Entity
     {
         public string Nome { get; set; }
-        public DateTime datanascimento { get; set; }
-        public int idade { get; set; }
-        public string funcao { get; set; }
         public string cargo { get; set; }
         public string departamento { get; set; }
+        public DateTime datanascimento { get; set; }
         public double telefone { get; set; }
         public Endereco endereco { get; set; }
         public string email { get; set; }
-        public string permissão { get; set; }
+        public string especialidade { get; set; }
+        public string titulacao { get; set; }
     }
 }
