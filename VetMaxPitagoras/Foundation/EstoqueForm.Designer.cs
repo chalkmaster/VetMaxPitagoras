@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControlEstoqueCadastroProdutos = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabControlPesquisaProdutos = new System.Windows.Forms.TabControl();
+            this.tabPagePesquisaEstoque = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBoxDgvDadosProdutos = new System.Windows.Forms.GroupBox();
             this.DgvListaEstoque = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.groupPesquisaNomeProd = new System.Windows.Forms.GroupBox();
+            this.btnPesquisarProduto = new System.Windows.Forms.Button();
+            this.txtNomeprodutopesquisar = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPageCadastroProdutos = new System.Windows.Forms.TabPage();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
@@ -83,40 +83,40 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.tabControlEstoqueCadastroProdutos.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabControlPesquisaProdutos.SuspendLayout();
+            this.tabPagePesquisaEstoque.SuspendLayout();
             this.groupBoxDgvDadosProdutos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaEstoque)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.groupPesquisaNomeProd.SuspendLayout();
             this.tabPageCadastroProdutos.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControlEstoqueCadastroProdutos
+            // tabControlPesquisaProdutos
             // 
-            this.tabControlEstoqueCadastroProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tabControlEstoqueCadastroProdutos.Controls.Add(this.tabPage2);
-            this.tabControlEstoqueCadastroProdutos.Controls.Add(this.tabPageCadastroProdutos);
-            this.tabControlEstoqueCadastroProdutos.Location = new System.Drawing.Point(19, 23);
-            this.tabControlEstoqueCadastroProdutos.Name = "tabControlEstoqueCadastroProdutos";
-            this.tabControlEstoqueCadastroProdutos.SelectedIndex = 0;
-            this.tabControlEstoqueCadastroProdutos.Size = new System.Drawing.Size(671, 461);
-            this.tabControlEstoqueCadastroProdutos.TabIndex = 0;
+            this.tabControlPesquisaProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tabControlPesquisaProdutos.Controls.Add(this.tabPagePesquisaEstoque);
+            this.tabControlPesquisaProdutos.Controls.Add(this.tabPageCadastroProdutos);
+            this.tabControlPesquisaProdutos.Location = new System.Drawing.Point(19, 23);
+            this.tabControlPesquisaProdutos.Name = "tabControlPesquisaProdutos";
+            this.tabControlPesquisaProdutos.SelectedIndex = 0;
+            this.tabControlPesquisaProdutos.Size = new System.Drawing.Size(671, 461);
+            this.tabControlPesquisaProdutos.TabIndex = 0;
             // 
-            // tabPage2
+            // tabPagePesquisaEstoque
             // 
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.groupBoxDgvDadosProdutos);
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(663, 435);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pesquisa Estoque";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPagePesquisaEstoque.Controls.Add(this.button5);
+            this.tabPagePesquisaEstoque.Controls.Add(this.button2);
+            this.tabPagePesquisaEstoque.Controls.Add(this.groupBoxDgvDadosProdutos);
+            this.tabPagePesquisaEstoque.Controls.Add(this.groupPesquisaNomeProd);
+            this.tabPagePesquisaEstoque.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePesquisaEstoque.Name = "tabPagePesquisaEstoque";
+            this.tabPagePesquisaEstoque.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePesquisaEstoque.Size = new System.Drawing.Size(663, 435);
+            this.tabPagePesquisaEstoque.TabIndex = 1;
+            this.tabPagePesquisaEstoque.Text = "Pesquisa Estoque";
+            this.tabPagePesquisaEstoque.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -160,37 +160,37 @@
             this.DgvListaEstoque.Size = new System.Drawing.Size(631, 300);
             this.DgvListaEstoque.TabIndex = 0;
             // 
-            // groupBox4
+            // groupPesquisaNomeProd
             // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.textBox10);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Location = new System.Drawing.Point(6, 8);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(651, 63);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Pesquisa Produtos";
+            this.groupPesquisaNomeProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupPesquisaNomeProd.Controls.Add(this.btnPesquisarProduto);
+            this.groupPesquisaNomeProd.Controls.Add(this.txtNomeprodutopesquisar);
+            this.groupPesquisaNomeProd.Controls.Add(this.label11);
+            this.groupPesquisaNomeProd.Location = new System.Drawing.Point(6, 8);
+            this.groupPesquisaNomeProd.Name = "groupPesquisaNomeProd";
+            this.groupPesquisaNomeProd.Size = new System.Drawing.Size(651, 63);
+            this.groupPesquisaNomeProd.TabIndex = 1;
+            this.groupPesquisaNomeProd.TabStop = false;
+            this.groupPesquisaNomeProd.Text = "Pesquisa Produtos";
             // 
-            // button1
+            // btnPesquisarProduto
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(499, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "PESQUISAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPesquisarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPesquisarProduto.Location = new System.Drawing.Point(499, 23);
+            this.btnPesquisarProduto.Name = "btnPesquisarProduto";
+            this.btnPesquisarProduto.Size = new System.Drawing.Size(146, 23);
+            this.btnPesquisarProduto.TabIndex = 3;
+            this.btnPesquisarProduto.Text = "PESQUISAR";
+            this.btnPesquisarProduto.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // txtNomeprodutopesquisar
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox10.Location = new System.Drawing.Point(60, 23);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(433, 23);
-            this.textBox10.TabIndex = 1;
+            this.txtNomeprodutopesquisar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeprodutopesquisar.Location = new System.Drawing.Point(60, 23);
+            this.txtNomeprodutopesquisar.Multiline = true;
+            this.txtNomeprodutopesquisar.Name = "txtNomeprodutopesquisar";
+            this.txtNomeprodutopesquisar.Size = new System.Drawing.Size(433, 23);
+            this.txtNomeprodutopesquisar.TabIndex = 1;
             // 
             // label11
             // 
@@ -220,9 +220,9 @@
             // btnCadastrarProduto
             // 
             this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(314, 350);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(381, 314);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
-            this.btnCadastrarProduto.Size = new System.Drawing.Size(125, 32);
+            this.btnCadastrarProduto.Size = new System.Drawing.Size(135, 25);
             this.btnCadastrarProduto.TabIndex = 20;
             this.btnCadastrarProduto.Text = "CADASTRAR";
             this.btnCadastrarProduto.UseVisualStyleBackColor = true;
@@ -230,9 +230,9 @@
             // btnSairCadastroProduto
             // 
             this.btnSairCadastroProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSairCadastroProduto.Location = new System.Drawing.Point(454, 350);
+            this.btnSairCadastroProduto.Location = new System.Drawing.Point(522, 314);
             this.btnSairCadastroProduto.Name = "btnSairCadastroProduto";
-            this.btnSairCadastroProduto.Size = new System.Drawing.Size(125, 32);
+            this.btnSairCadastroProduto.Size = new System.Drawing.Size(135, 25);
             this.btnSairCadastroProduto.TabIndex = 19;
             this.btnSairCadastroProduto.Text = "SAIR";
             this.btnSairCadastroProduto.UseVisualStyleBackColor = true;
@@ -630,16 +630,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 496);
-            this.Controls.Add(this.tabControlEstoqueCadastroProdutos);
+            this.Controls.Add(this.tabControlPesquisaProdutos);
             this.Name = "EstoqueForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EstoqueForm";
-            this.tabControlEstoqueCadastroProdutos.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.tabControlPesquisaProdutos.ResumeLayout(false);
+            this.tabPagePesquisaEstoque.ResumeLayout(false);
             this.groupBoxDgvDadosProdutos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaEstoque)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.groupPesquisaNomeProd.ResumeLayout(false);
+            this.groupPesquisaNomeProd.PerformLayout();
             this.tabPageCadastroProdutos.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -651,11 +651,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControlEstoqueCadastroProdutos;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TabControl tabControlPesquisaProdutos;
+        private System.Windows.Forms.TabPage tabPagePesquisaEstoque;
+        private System.Windows.Forms.GroupBox groupPesquisaNomeProd;
         private System.Windows.Forms.GroupBox groupBoxDgvDadosProdutos;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtNomeprodutopesquisar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView DgvListaEstoque;
         private System.Windows.Forms.TabPage tabPageCadastroProdutos;
@@ -702,7 +702,7 @@
         private System.Windows.Forms.TextBox txtNomeProd;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPesquisarProduto;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCadastrarProduto;

@@ -30,7 +30,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox10.Clear();
+            txtNomeprodutopesquisar.Clear();
             
         }
 
@@ -46,7 +46,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            textBox10.Clear();
+            txtNomeprodutopesquisar.Clear();
         }
     }
 }
