@@ -12,6 +12,11 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
     {
         private static List<Especie> _db;
 
+        public EspecieRepository()
+        {
+            PopularDadosEstaticosTemporariamente();
+        }
+
         public Especie FindByName(string nome)
         {
             return GetMemoryDatabase().FirstOrDefault(especie => especie.Nome.ToLower().Equals(nome.ToString().ToLower()));
@@ -20,6 +25,19 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
         protected override List<Especie> GetMemoryDatabase()
         {
             return _db ?? (_db = new List<Especie>());
+        }
+
+        
+        private void PopularDadosEstaticosTemporariamente()
+        {
+            _db = new List<Especie>();
+            string[] especies = { "Cachorro", "Gato", "Pássaro", "Porquinho", "Ranmster" };
+
+            for(var i = 0; i < especies.Length; i++)
+            {
+                Especie e = new Especie(i + 1, especies[i]);
+                _db.Add(e);
+            }
         }
     }
 }

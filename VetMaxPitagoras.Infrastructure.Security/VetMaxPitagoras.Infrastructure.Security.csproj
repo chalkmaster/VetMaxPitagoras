@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Animal.cs" />
+    <Compile Include="Entities\Endereco.cs" />
     <Compile Include="Entities\Especie.cs" />
+    <Compile Include="Entities\Funcionario.cs" />
     <Compile Include="Entities\Raca.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +52,8 @@
     <Compile Include="Repository\IRacaRepository.cs" />
     <Compile Include="Repository\IUserRepository.cs" />
     <Compile Include="Services\AuthService.cs" />
+    <Compile Include="Services\EspecieService.cs" />
+    <Compile Include="Services\RacaService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VetMaxPitagoras.Core\VetMaxPitagoras.Core.csproj">

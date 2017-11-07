@@ -29,7 +29,15 @@
         private void InitializeComponent()
         {
             this.gridCadastroFuncionario = new System.Windows.Forms.TableLayoutPanel();
-            this.grupoCadAnimal = new System.Windows.Forms.GroupBox();
+            this.grpCadFuncionario = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mtbCelular = new System.Windows.Forms.MaskedTextBox();
+            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.rdbFeminino = new System.Windows.Forms.RadioButton();
+            this.rdbMasculino = new System.Windows.Forms.RadioButton();
+            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.telefoneDono = new System.Windows.Forms.Label();
             this.lbNomeDono = new System.Windows.Forms.Label();
@@ -38,16 +46,8 @@
             this.lbNome = new System.Windows.Forms.Label();
             this.lbRaça = new System.Windows.Forms.Label();
             this.txtCpf = new System.Windows.Forms.TextBox();
-            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
-            this.rdbMasculino = new System.Windows.Forms.RadioButton();
-            this.rdbFeminino = new System.Windows.Forms.RadioButton();
-            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.mtbCelular = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.gridCadastroFuncionario.SuspendLayout();
-            this.grupoCadAnimal.SuspendLayout();
+            this.grpCadFuncionario.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridCadastroFuncionario
@@ -58,7 +58,7 @@
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.44898F));
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.28572F));
-            this.gridCadastroFuncionario.Controls.Add(this.grupoCadAnimal, 1, 0);
+            this.gridCadastroFuncionario.Controls.Add(this.grpCadFuncionario, 1, 0);
             this.gridCadastroFuncionario.Location = new System.Drawing.Point(-90, -38);
             this.gridCadastroFuncionario.Name = "gridCadastroFuncionario";
             this.gridCadastroFuncionario.RowCount = 1;
@@ -66,32 +66,105 @@
             this.gridCadastroFuncionario.Size = new System.Drawing.Size(980, 647);
             this.gridCadastroFuncionario.TabIndex = 13;
             // 
-            // grupoCadAnimal
+            // grpCadFuncionario
             // 
-            this.grupoCadAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.grupoCadAnimal.BackColor = System.Drawing.SystemColors.Control;
-            this.grupoCadAnimal.Controls.Add(this.txtEmail);
-            this.grupoCadAnimal.Controls.Add(this.label2);
-            this.grupoCadAnimal.Controls.Add(this.label1);
-            this.grupoCadAnimal.Controls.Add(this.mtbCelular);
-            this.grupoCadAnimal.Controls.Add(this.mtbTelefone);
-            this.grupoCadAnimal.Controls.Add(this.rdbFeminino);
-            this.grupoCadAnimal.Controls.Add(this.rdbMasculino);
-            this.grupoCadAnimal.Controls.Add(this.dtpDataNascimento);
-            this.grupoCadAnimal.Controls.Add(this.txtNome);
-            this.grupoCadAnimal.Controls.Add(this.telefoneDono);
-            this.grupoCadAnimal.Controls.Add(this.lbNomeDono);
-            this.grupoCadAnimal.Controls.Add(this.btnCadastrar);
-            this.grupoCadAnimal.Controls.Add(this.lbTipo);
-            this.grupoCadAnimal.Controls.Add(this.lbNome);
-            this.grupoCadAnimal.Controls.Add(this.lbRaça);
-            this.grupoCadAnimal.Controls.Add(this.txtCpf);
-            this.grupoCadAnimal.Location = new System.Drawing.Point(331, 153);
-            this.grupoCadAnimal.Name = "grupoCadAnimal";
-            this.grupoCadAnimal.Size = new System.Drawing.Size(356, 341);
-            this.grupoCadAnimal.TabIndex = 11;
-            this.grupoCadAnimal.TabStop = false;
-            this.grupoCadAnimal.Text = "Cadastro de Funcionários Administrativos da Clínica";
+            this.grpCadFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grpCadFuncionario.BackColor = System.Drawing.SystemColors.Control;
+            this.grpCadFuncionario.Controls.Add(this.txtEmail);
+            this.grpCadFuncionario.Controls.Add(this.label2);
+            this.grpCadFuncionario.Controls.Add(this.label1);
+            this.grpCadFuncionario.Controls.Add(this.mtbCelular);
+            this.grpCadFuncionario.Controls.Add(this.mtbTelefone);
+            this.grpCadFuncionario.Controls.Add(this.rdbFeminino);
+            this.grpCadFuncionario.Controls.Add(this.rdbMasculino);
+            this.grpCadFuncionario.Controls.Add(this.dtpDataNascimento);
+            this.grpCadFuncionario.Controls.Add(this.txtNome);
+            this.grpCadFuncionario.Controls.Add(this.telefoneDono);
+            this.grpCadFuncionario.Controls.Add(this.lbNomeDono);
+            this.grpCadFuncionario.Controls.Add(this.btnCadastrar);
+            this.grpCadFuncionario.Controls.Add(this.lbTipo);
+            this.grpCadFuncionario.Controls.Add(this.lbNome);
+            this.grpCadFuncionario.Controls.Add(this.lbRaça);
+            this.grpCadFuncionario.Controls.Add(this.txtCpf);
+            this.grpCadFuncionario.Location = new System.Drawing.Point(331, 153);
+            this.grpCadFuncionario.Name = "grpCadFuncionario";
+            this.grpCadFuncionario.Size = new System.Drawing.Size(356, 341);
+            this.grpCadFuncionario.TabIndex = 11;
+            this.grpCadFuncionario.TabStop = false;
+            this.grpCadFuncionario.Text = "Cadastro de Funcionários Administrativos da Clínica";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(129, 186);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(209, 20);
+            this.txtEmail.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 189);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Email:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 264);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Celular:";
+            // 
+            // mtbCelular
+            // 
+            this.mtbCelular.Location = new System.Drawing.Point(129, 261);
+            this.mtbCelular.Mask = "(99)99999-9999";
+            this.mtbCelular.Name = "mtbCelular";
+            this.mtbCelular.Size = new System.Drawing.Size(209, 20);
+            this.mtbCelular.TabIndex = 17;
+            // 
+            // mtbTelefone
+            // 
+            this.mtbTelefone.Location = new System.Drawing.Point(129, 223);
+            this.mtbTelefone.Mask = "(99)9999-9999";
+            this.mtbTelefone.Name = "mtbTelefone";
+            this.mtbTelefone.Size = new System.Drawing.Size(209, 20);
+            this.mtbTelefone.TabIndex = 16;
+            // 
+            // rdbFeminino
+            // 
+            this.rdbFeminino.AutoSize = true;
+            this.rdbFeminino.Location = new System.Drawing.Point(253, 153);
+            this.rdbFeminino.Name = "rdbFeminino";
+            this.rdbFeminino.Size = new System.Drawing.Size(67, 17);
+            this.rdbFeminino.TabIndex = 15;
+            this.rdbFeminino.TabStop = true;
+            this.rdbFeminino.Text = "Feminino";
+            this.rdbFeminino.UseVisualStyleBackColor = true;
+            // 
+            // rdbMasculino
+            // 
+            this.rdbMasculino.AutoSize = true;
+            this.rdbMasculino.Location = new System.Drawing.Point(129, 153);
+            this.rdbMasculino.Name = "rdbMasculino";
+            this.rdbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rdbMasculino.TabIndex = 14;
+            this.rdbMasculino.TabStop = true;
+            this.rdbMasculino.Text = "Masculino";
+            this.rdbMasculino.UseVisualStyleBackColor = true;
+            // 
+            // dtpDataNascimento
+            // 
+            this.dtpDataNascimento.Location = new System.Drawing.Point(129, 121);
+            this.dtpDataNascimento.MaxDate = new System.DateTime(9000, 12, 31, 0, 0, 0, 0);
+            this.dtpDataNascimento.MinDate = new System.DateTime(1850, 1, 1, 0, 0, 0, 0);
+            this.dtpDataNascimento.Name = "dtpDataNascimento";
+            this.dtpDataNascimento.Size = new System.Drawing.Size(209, 20);
+            this.dtpDataNascimento.TabIndex = 13;
+            this.dtpDataNascimento.Value = new System.DateTime(2017, 10, 17, 0, 0, 0, 0);
             // 
             // txtNome
             // 
@@ -163,79 +236,6 @@
             this.txtCpf.Size = new System.Drawing.Size(209, 20);
             this.txtCpf.TabIndex = 6;
             // 
-            // dtpDataNascimento
-            // 
-            this.dtpDataNascimento.Location = new System.Drawing.Point(129, 121);
-            this.dtpDataNascimento.MaxDate = new System.DateTime(9000, 12, 31, 0, 0, 0, 0);
-            this.dtpDataNascimento.MinDate = new System.DateTime(1850, 1, 1, 0, 0, 0, 0);
-            this.dtpDataNascimento.Name = "dtpDataNascimento";
-            this.dtpDataNascimento.Size = new System.Drawing.Size(209, 20);
-            this.dtpDataNascimento.TabIndex = 13;
-            this.dtpDataNascimento.Value = new System.DateTime(2017, 10, 17, 0, 0, 0, 0);
-            // 
-            // rdbMasculino
-            // 
-            this.rdbMasculino.AutoSize = true;
-            this.rdbMasculino.Location = new System.Drawing.Point(129, 153);
-            this.rdbMasculino.Name = "rdbMasculino";
-            this.rdbMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rdbMasculino.TabIndex = 14;
-            this.rdbMasculino.TabStop = true;
-            this.rdbMasculino.Text = "Masculino";
-            this.rdbMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rdbFeminino
-            // 
-            this.rdbFeminino.AutoSize = true;
-            this.rdbFeminino.Location = new System.Drawing.Point(253, 153);
-            this.rdbFeminino.Name = "rdbFeminino";
-            this.rdbFeminino.Size = new System.Drawing.Size(67, 17);
-            this.rdbFeminino.TabIndex = 15;
-            this.rdbFeminino.TabStop = true;
-            this.rdbFeminino.Text = "Feminino";
-            this.rdbFeminino.UseVisualStyleBackColor = true;
-            // 
-            // mtbTelefone
-            // 
-            this.mtbTelefone.Location = new System.Drawing.Point(129, 223);
-            this.mtbTelefone.Mask = "(99)9999-9999";
-            this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(209, 20);
-            this.mtbTelefone.TabIndex = 16;
-            // 
-            // mtbCelular
-            // 
-            this.mtbCelular.Location = new System.Drawing.Point(129, 261);
-            this.mtbCelular.Mask = "(99)99999-9999";
-            this.mtbCelular.Name = "mtbCelular";
-            this.mtbCelular.Size = new System.Drawing.Size(209, 20);
-            this.mtbCelular.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 264);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Celular:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 189);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Email:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(129, 186);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(209, 20);
-            this.txtEmail.TabIndex = 20;
-            // 
             // frmcadastrarfuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,8 +245,8 @@
             this.Name = "frmcadastrarfuncionario";
             this.Text = "Cadastrar Funcionários Administrativos da Clínica";
             this.gridCadastroFuncionario.ResumeLayout(false);
-            this.grupoCadAnimal.ResumeLayout(false);
-            this.grupoCadAnimal.PerformLayout();
+            this.grpCadFuncionario.ResumeLayout(false);
+            this.grpCadFuncionario.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -254,22 +254,22 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel gridCadastroFuncionario;
-        private System.Windows.Forms.GroupBox grupoCadAnimal;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label telefoneDono;
-        private System.Windows.Forms.Label lbNomeDono;
+        private System.Windows.Forms.GroupBox grpCadFuncionario;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Label lbTipo;
-        private System.Windows.Forms.Label lbNome;
-        private System.Windows.Forms.Label lbRaça;
-        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox mtbCelular;
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
         private System.Windows.Forms.RadioButton rdbFeminino;
         private System.Windows.Forms.RadioButton rdbMasculino;
         private System.Windows.Forms.DateTimePicker dtpDataNascimento;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label telefoneDono;
+        private System.Windows.Forms.Label lbNomeDono;
+        private System.Windows.Forms.Label lbTipo;
+        private System.Windows.Forms.Label lbNome;
+        private System.Windows.Forms.Label lbRaça;
+        private System.Windows.Forms.TextBox txtCpf;
     }
 }

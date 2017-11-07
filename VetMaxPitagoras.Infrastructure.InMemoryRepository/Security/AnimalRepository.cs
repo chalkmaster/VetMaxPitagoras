@@ -27,5 +27,7 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
         {
             return _db ?? (_db = new List<Animal>());
         }
+        
+        
     }
 }

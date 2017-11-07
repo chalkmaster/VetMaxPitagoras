@@ -21,9 +21,10 @@ namespace VetMaxPitagoras
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            var login = new frmLogin();
+            var login = new loginForm();
             login.MdiParent = this;
             login.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             login.Show();
         }
 
@@ -31,7 +32,7 @@ namespace VetMaxPitagoras
         {
             var userRegister = new userForm();
             userRegister.MdiParent = this;
-            userRegister.WindowState = FormWindowState.Maximized;
+            userRegister.WindowState = FormWindowState.Normal;
             userRegister.Show();
         }
 
@@ -43,7 +44,10 @@ namespace VetMaxPitagoras
             animalRegister.Show();
         }
 
-       
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
         private void funcionárioDaClínicaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -51,6 +55,19 @@ namespace VetMaxPitagoras
             funcionarioRegister.MdiParent = this;
             funcionarioRegister.WindowState = FormWindowState.Maximized;
             funcionarioRegister.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var login = new loginForm();
+            login.MdiParent = this;
+            login.WindowState = FormWindowState.Maximized;
+            login.Show();
         }
     }
 }

@@ -14,10 +14,10 @@ using VetMaxPitagoras.Infrastructure.Security.Services;
 
 namespace VetMaxPitagoras.Security
 {
-    public partial class frmLogin : Form
+    public partial class loginForm : Form
     {
         private AuthService _authService;
-        public frmLogin()
+        public loginForm()
         {
             InitializeComponent();
         }

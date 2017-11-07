@@ -9,7 +9,18 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
 {
     public class Especie : Entity
     {
-        //nome da especie
+        public Especie()
+        {
+
+        }
+      
+        public Especie(int id, string nome)
+        {
+            this.Id = id;
+            this.Nome = nome;
+        }
+
+        //nome da especie   
         public string Nome { get; set; }
     }
 }
