@@ -30,8 +30,6 @@
         {
             this.tabControlPesquisaProdutos = new System.Windows.Forms.TabControl();
             this.tabPagePesquisaEstoque = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBoxDgvDadosProdutos = new System.Windows.Forms.GroupBox();
             this.DgvListaEstoque = new System.Windows.Forms.DataGridView();
             this.groupPesquisaNomeProd = new System.Windows.Forms.GroupBox();
@@ -83,6 +81,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.btnSairCadastroProdutos = new System.Windows.Forms.Button();
+            this.btnSairPesquisaEstoque = new System.Windows.Forms.Button();
             this.tabControlPesquisaProdutos.SuspendLayout();
             this.tabPagePesquisaEstoque.SuspendLayout();
             this.groupBoxDgvDadosProdutos.SuspendLayout();
@@ -106,8 +105,7 @@
             // 
             // tabPagePesquisaEstoque
             // 
-            this.tabPagePesquisaEstoque.Controls.Add(this.button5);
-            this.tabPagePesquisaEstoque.Controls.Add(this.button2);
+            this.tabPagePesquisaEstoque.Controls.Add(this.btnSairPesquisaEstoque);
             this.tabPagePesquisaEstoque.Controls.Add(this.groupBoxDgvDadosProdutos);
             this.tabPagePesquisaEstoque.Controls.Add(this.groupPesquisaNomeProd);
             this.tabPagePesquisaEstoque.Location = new System.Drawing.Point(4, 22);
@@ -117,20 +115,6 @@
             this.tabPagePesquisaEstoque.TabIndex = 1;
             this.tabPagePesquisaEstoque.Text = "Pesquisa Estoque";
             this.tabPagePesquisaEstoque.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
             // 
             // groupBoxDgvDadosProdutos
             // 
@@ -615,6 +599,15 @@
             this.btnSairCadastroProdutos.Text = "SAIR";
             this.btnSairCadastroProdutos.UseVisualStyleBackColor = true;
             // 
+            // btnSairPesquisaEstoque
+            // 
+            this.btnSairPesquisaEstoque.Location = new System.Drawing.Point(498, 406);
+            this.btnSairPesquisaEstoque.Name = "btnSairPesquisaEstoque";
+            this.btnSairPesquisaEstoque.Size = new System.Drawing.Size(146, 23);
+            this.btnSairPesquisaEstoque.TabIndex = 3;
+            this.btnSairPesquisaEstoque.Text = "SAIR";
+            this.btnSairPesquisaEstoque.UseVisualStyleBackColor = true;
+            // 
             // EstoqueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -692,9 +685,8 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnPesquisarProduto;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCadastrarProduto;
         private System.Windows.Forms.Button btnSairCadastroProdutos;
+        private System.Windows.Forms.Button btnSairPesquisaEstoque;
     }
 }
