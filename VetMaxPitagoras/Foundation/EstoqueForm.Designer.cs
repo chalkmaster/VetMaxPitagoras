@@ -30,6 +30,7 @@
         {
             this.tabControlPesquisaProdutos = new System.Windows.Forms.TabControl();
             this.tabPagePesquisaEstoque = new System.Windows.Forms.TabPage();
+            this.btnSairPesquisaEstoque = new System.Windows.Forms.Button();
             this.groupBoxDgvDadosProdutos = new System.Windows.Forms.GroupBox();
             this.DgvListaEstoque = new System.Windows.Forms.DataGridView();
             this.groupPesquisaNomeProd = new System.Windows.Forms.GroupBox();
@@ -37,6 +38,7 @@
             this.txtNomeprodutopesquisar = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPageCadastroProdutos = new System.Windows.Forms.TabPage();
+            this.btnSairCadastroProdutos = new System.Windows.Forms.Button();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtEstoqueMaxProd = new System.Windows.Forms.TextBox();
@@ -80,8 +82,11 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.btnSairCadastroProdutos = new System.Windows.Forms.Button();
-            this.btnSairPesquisaEstoque = new System.Windows.Forms.Button();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlPesquisaProdutos.SuspendLayout();
             this.tabPagePesquisaEstoque.SuspendLayout();
             this.groupBoxDgvDadosProdutos.SuspendLayout();
@@ -116,6 +121,15 @@
             this.tabPagePesquisaEstoque.Text = "Pesquisa Estoque";
             this.tabPagePesquisaEstoque.UseVisualStyleBackColor = true;
             // 
+            // btnSairPesquisaEstoque
+            // 
+            this.btnSairPesquisaEstoque.Location = new System.Drawing.Point(498, 406);
+            this.btnSairPesquisaEstoque.Name = "btnSairPesquisaEstoque";
+            this.btnSairPesquisaEstoque.Size = new System.Drawing.Size(146, 23);
+            this.btnSairPesquisaEstoque.TabIndex = 3;
+            this.btnSairPesquisaEstoque.Text = "SAIR";
+            this.btnSairPesquisaEstoque.UseVisualStyleBackColor = true;
+            // 
             // groupBoxDgvDadosProdutos
             // 
             this.groupBoxDgvDadosProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -131,6 +145,12 @@
             // 
             this.DgvListaEstoque.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DgvListaEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvListaEstoque.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
+            this.Nome,
+            this.Categoria,
+            this.Valor,
+            this.Quantidade});
             this.DgvListaEstoque.Location = new System.Drawing.Point(7, 20);
             this.DgvListaEstoque.Name = "DgvListaEstoque";
             this.DgvListaEstoque.Size = new System.Drawing.Size(631, 300);
@@ -193,12 +213,21 @@
             this.tabPageCadastroProdutos.Text = "Cadastro Produtos";
             this.tabPageCadastroProdutos.UseVisualStyleBackColor = true;
             // 
+            // btnSairCadastroProdutos
+            // 
+            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(539, 299);
+            this.btnSairCadastroProdutos.Name = "btnSairCadastroProdutos";
+            this.btnSairCadastroProdutos.Size = new System.Drawing.Size(95, 25);
+            this.btnSairCadastroProdutos.TabIndex = 21;
+            this.btnSairCadastroProdutos.Text = "SAIR";
+            this.btnSairCadastroProdutos.UseVisualStyleBackColor = true;
+            // 
             // btnCadastrarProduto
             // 
             this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(375, 314);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(422, 299);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
-            this.btnCadastrarProduto.Size = new System.Drawing.Size(135, 25);
+            this.btnCadastrarProduto.Size = new System.Drawing.Size(102, 25);
             this.btnCadastrarProduto.TabIndex = 20;
             this.btnCadastrarProduto.Text = "CADASTRAR";
             this.btnCadastrarProduto.UseVisualStyleBackColor = true;
@@ -590,23 +619,30 @@
             this.textBox16.Size = new System.Drawing.Size(112, 20);
             this.textBox16.TabIndex = 27;
             // 
-            // btnSairCadastroProdutos
+            // Codigo
             // 
-            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(516, 314);
-            this.btnSairCadastroProdutos.Name = "btnSairCadastroProdutos";
-            this.btnSairCadastroProdutos.Size = new System.Drawing.Size(135, 25);
-            this.btnSairCadastroProdutos.TabIndex = 21;
-            this.btnSairCadastroProdutos.Text = "SAIR";
-            this.btnSairCadastroProdutos.UseVisualStyleBackColor = true;
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
             // 
-            // btnSairPesquisaEstoque
+            // Nome
             // 
-            this.btnSairPesquisaEstoque.Location = new System.Drawing.Point(498, 406);
-            this.btnSairPesquisaEstoque.Name = "btnSairPesquisaEstoque";
-            this.btnSairPesquisaEstoque.Size = new System.Drawing.Size(146, 23);
-            this.btnSairPesquisaEstoque.TabIndex = 3;
-            this.btnSairPesquisaEstoque.Text = "SAIR";
-            this.btnSairPesquisaEstoque.UseVisualStyleBackColor = true;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "Quantidade";
+            this.Quantidade.Name = "Quantidade";
             // 
             // EstoqueForm
             // 
@@ -688,5 +724,10 @@
         private System.Windows.Forms.Button btnCadastrarProduto;
         private System.Windows.Forms.Button btnSairCadastroProdutos;
         private System.Windows.Forms.Button btnSairPesquisaEstoque;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
     }
 }
