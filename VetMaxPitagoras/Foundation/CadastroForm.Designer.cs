@@ -231,9 +231,9 @@ namespace VetMaxPitagoras.Foundation
             // btnLimpar
             // 
             this.btnLimpar.AutoSize = true;
-            this.btnLimpar.Location = new System.Drawing.Point(331, 316);
+            this.btnLimpar.Location = new System.Drawing.Point(331, 314);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(134, 33);
+            this.btnLimpar.Size = new System.Drawing.Size(134, 26);
             this.btnLimpar.TabIndex = 29;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -242,9 +242,9 @@ namespace VetMaxPitagoras.Foundation
             // btnSairCadastroCliente
             // 
             this.btnSairCadastroCliente.AutoSize = true;
-            this.btnSairCadastroCliente.Location = new System.Drawing.Point(471, 316);
+            this.btnSairCadastroCliente.Location = new System.Drawing.Point(471, 314);
             this.btnSairCadastroCliente.Name = "btnSairCadastroCliente";
-            this.btnSairCadastroCliente.Size = new System.Drawing.Size(134, 33);
+            this.btnSairCadastroCliente.Size = new System.Drawing.Size(134, 26);
             this.btnSairCadastroCliente.TabIndex = 18;
             this.btnSairCadastroCliente.Text = "SAIR";
             this.btnSairCadastroCliente.UseVisualStyleBackColor = true;
@@ -253,9 +253,9 @@ namespace VetMaxPitagoras.Foundation
             // btnCadastrarCliente
             // 
             this.btnCadastrarCliente.AutoSize = true;
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(191, 316);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(191, 314);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
-            this.btnCadastrarCliente.Size = new System.Drawing.Size(134, 33);
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(134, 26);
             this.btnCadastrarCliente.TabIndex = 0;
             this.btnCadastrarCliente.Text = "CADASTRAR";
             this.btnCadastrarCliente.UseVisualStyleBackColor = true;
