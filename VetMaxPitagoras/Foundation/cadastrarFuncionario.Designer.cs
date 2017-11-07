@@ -32,20 +32,23 @@
             this.grpCadFuncionario = new System.Windows.Forms.GroupBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mtbCelular = new System.Windows.Forms.MaskedTextBox();
             this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.rdbFeminino = new System.Windows.Forms.RadioButton();
-            this.rdbMasculino = new System.Windows.Forms.RadioButton();
             this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.telefoneDono = new System.Windows.Forms.Label();
             this.lbNomeDono = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lbTipo = new System.Windows.Forms.Label();
             this.lbNome = new System.Windows.Forms.Label();
             this.lbRaça = new System.Windows.Forms.Label();
-            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.txtDepartamento = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEspecialidade = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTitulacao = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.gridCadastroFuncionario.SuspendLayout();
             this.grpCadFuncionario.SuspendLayout();
             this.SuspendLayout();
@@ -70,32 +73,36 @@
             // 
             this.grpCadFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpCadFuncionario.BackColor = System.Drawing.SystemColors.Control;
+            this.grpCadFuncionario.Controls.Add(this.txtTitulacao);
+            this.grpCadFuncionario.Controls.Add(this.label5);
+            this.grpCadFuncionario.Controls.Add(this.txtEspecialidade);
+            this.grpCadFuncionario.Controls.Add(this.label4);
+            this.grpCadFuncionario.Controls.Add(this.txtEndereco);
+            this.grpCadFuncionario.Controls.Add(this.label3);
+            this.grpCadFuncionario.Controls.Add(this.txtDepartamento);
+            this.grpCadFuncionario.Controls.Add(this.label1);
             this.grpCadFuncionario.Controls.Add(this.txtEmail);
             this.grpCadFuncionario.Controls.Add(this.label2);
-            this.grpCadFuncionario.Controls.Add(this.label1);
-            this.grpCadFuncionario.Controls.Add(this.mtbCelular);
             this.grpCadFuncionario.Controls.Add(this.mtbTelefone);
-            this.grpCadFuncionario.Controls.Add(this.rdbFeminino);
-            this.grpCadFuncionario.Controls.Add(this.rdbMasculino);
             this.grpCadFuncionario.Controls.Add(this.dtpDataNascimento);
             this.grpCadFuncionario.Controls.Add(this.txtNome);
-            this.grpCadFuncionario.Controls.Add(this.telefoneDono);
             this.grpCadFuncionario.Controls.Add(this.lbNomeDono);
             this.grpCadFuncionario.Controls.Add(this.btnCadastrar);
             this.grpCadFuncionario.Controls.Add(this.lbTipo);
             this.grpCadFuncionario.Controls.Add(this.lbNome);
             this.grpCadFuncionario.Controls.Add(this.lbRaça);
-            this.grpCadFuncionario.Controls.Add(this.txtCpf);
+            this.grpCadFuncionario.Controls.Add(this.txtCargo);
             this.grpCadFuncionario.Location = new System.Drawing.Point(331, 153);
             this.grpCadFuncionario.Name = "grpCadFuncionario";
             this.grpCadFuncionario.Size = new System.Drawing.Size(356, 341);
             this.grpCadFuncionario.TabIndex = 11;
             this.grpCadFuncionario.TabStop = false;
             this.grpCadFuncionario.Text = "Cadastro de Funcionários Administrativos da Clínica";
+            this.grpCadFuncionario.Enter += new System.EventHandler(this.grpCadFuncionario_Enter);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(129, 186);
+            this.txtEmail.Location = new System.Drawing.Point(127, 113);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(209, 20);
             this.txtEmail.TabIndex = 20;
@@ -103,62 +110,23 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 189);
+            this.label2.Location = new System.Drawing.Point(16, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 19;
             this.label2.Text = "Email:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 264);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Celular:";
-            // 
-            // mtbCelular
-            // 
-            this.mtbCelular.Location = new System.Drawing.Point(129, 261);
-            this.mtbCelular.Mask = "(99)99999-9999";
-            this.mtbCelular.Name = "mtbCelular";
-            this.mtbCelular.Size = new System.Drawing.Size(209, 20);
-            this.mtbCelular.TabIndex = 17;
-            // 
             // mtbTelefone
             // 
-            this.mtbTelefone.Location = new System.Drawing.Point(129, 223);
+            this.mtbTelefone.Location = new System.Drawing.Point(127, 139);
             this.mtbTelefone.Mask = "(99)9999-9999";
             this.mtbTelefone.Name = "mtbTelefone";
             this.mtbTelefone.Size = new System.Drawing.Size(209, 20);
             this.mtbTelefone.TabIndex = 16;
             // 
-            // rdbFeminino
-            // 
-            this.rdbFeminino.AutoSize = true;
-            this.rdbFeminino.Location = new System.Drawing.Point(253, 153);
-            this.rdbFeminino.Name = "rdbFeminino";
-            this.rdbFeminino.Size = new System.Drawing.Size(67, 17);
-            this.rdbFeminino.TabIndex = 15;
-            this.rdbFeminino.TabStop = true;
-            this.rdbFeminino.Text = "Feminino";
-            this.rdbFeminino.UseVisualStyleBackColor = true;
-            // 
-            // rdbMasculino
-            // 
-            this.rdbMasculino.AutoSize = true;
-            this.rdbMasculino.Location = new System.Drawing.Point(129, 153);
-            this.rdbMasculino.Name = "rdbMasculino";
-            this.rdbMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rdbMasculino.TabIndex = 14;
-            this.rdbMasculino.TabStop = true;
-            this.rdbMasculino.Text = "Masculino";
-            this.rdbMasculino.UseVisualStyleBackColor = true;
-            // 
             // dtpDataNascimento
             // 
-            this.dtpDataNascimento.Location = new System.Drawing.Point(129, 121);
+            this.dtpDataNascimento.Location = new System.Drawing.Point(129, 88);
             this.dtpDataNascimento.MaxDate = new System.DateTime(9000, 12, 31, 0, 0, 0, 0);
             this.dtpDataNascimento.MinDate = new System.DateTime(1850, 1, 1, 0, 0, 0, 0);
             this.dtpDataNascimento.Name = "dtpDataNascimento";
@@ -168,24 +136,15 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(129, 37);
+            this.txtNome.Location = new System.Drawing.Point(129, 31);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(209, 20);
             this.txtNome.TabIndex = 5;
             // 
-            // telefoneDono
-            // 
-            this.telefoneDono.AutoSize = true;
-            this.telefoneDono.Location = new System.Drawing.Point(16, 157);
-            this.telefoneDono.Name = "telefoneDono";
-            this.telefoneDono.Size = new System.Drawing.Size(34, 13);
-            this.telefoneDono.TabIndex = 12;
-            this.telefoneDono.Text = "Sexo:";
-            // 
             // lbNomeDono
             // 
             this.lbNomeDono.AutoSize = true;
-            this.lbNomeDono.Location = new System.Drawing.Point(16, 121);
+            this.lbNomeDono.Location = new System.Drawing.Point(16, 88);
             this.lbNomeDono.Name = "lbNomeDono";
             this.lbNomeDono.Size = new System.Drawing.Size(107, 13);
             this.lbNomeDono.TabIndex = 4;
@@ -204,7 +163,7 @@
             // lbTipo
             // 
             this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(16, 223);
+            this.lbTipo.Location = new System.Drawing.Point(14, 139);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(52, 13);
             this.lbTipo.TabIndex = 2;
@@ -214,7 +173,7 @@
             // lbNome
             // 
             this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(16, 44);
+            this.lbNome.Location = new System.Drawing.Point(16, 38);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(38, 13);
             this.lbNome.TabIndex = 0;
@@ -223,18 +182,82 @@
             // lbRaça
             // 
             this.lbRaça.AutoSize = true;
-            this.lbRaça.Location = new System.Drawing.Point(18, 84);
+            this.lbRaça.Location = new System.Drawing.Point(18, 66);
             this.lbRaça.Name = "lbRaça";
-            this.lbRaça.Size = new System.Drawing.Size(30, 13);
+            this.lbRaça.Size = new System.Drawing.Size(38, 13);
             this.lbRaça.TabIndex = 1;
-            this.lbRaça.Text = "CPF:";
+            this.lbRaça.Text = "Cargo:";
             // 
-            // txtCpf
+            // txtCargo
             // 
-            this.txtCpf.Location = new System.Drawing.Point(129, 77);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(209, 20);
-            this.txtCpf.TabIndex = 6;
+            this.txtCargo.Location = new System.Drawing.Point(129, 59);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(209, 20);
+            this.txtCargo.TabIndex = 6;
+            // 
+            // txtDepartamento
+            // 
+            this.txtDepartamento.Location = new System.Drawing.Point(130, 168);
+            this.txtDepartamento.Name = "txtDepartamento";
+            this.txtDepartamento.Size = new System.Drawing.Size(209, 20);
+            this.txtDepartamento.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Departamento:";
+            // 
+            // txtEndereco
+            // 
+            this.txtEndereco.Location = new System.Drawing.Point(130, 194);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(209, 20);
+            this.txtEndereco.TabIndex = 24;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Endereço:";
+            // 
+            // txtEspecialidade
+            // 
+            this.txtEspecialidade.Location = new System.Drawing.Point(130, 220);
+            this.txtEspecialidade.Name = "txtEspecialidade";
+            this.txtEspecialidade.Size = new System.Drawing.Size(209, 20);
+            this.txtEspecialidade.TabIndex = 26;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 227);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Especialidade:";
+            // 
+            // txtTitulacao
+            // 
+            this.txtTitulacao.Location = new System.Drawing.Point(131, 247);
+            this.txtTitulacao.Name = "txtTitulacao";
+            this.txtTitulacao.Size = new System.Drawing.Size(209, 20);
+            this.txtTitulacao.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Titulação:";
             // 
             // frmcadastrarfuncionario
             // 
@@ -258,18 +281,21 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox mtbCelular;
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
-        private System.Windows.Forms.RadioButton rdbFeminino;
-        private System.Windows.Forms.RadioButton rdbMasculino;
         private System.Windows.Forms.DateTimePicker dtpDataNascimento;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label telefoneDono;
         private System.Windows.Forms.Label lbNomeDono;
         private System.Windows.Forms.Label lbTipo;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label lbRaça;
-        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.TextBox txtTitulacao;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtEspecialidade;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDepartamento;
+        private System.Windows.Forms.Label label1;
     }
 }

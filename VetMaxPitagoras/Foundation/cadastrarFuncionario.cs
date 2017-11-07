@@ -26,5 +26,10 @@ namespace VetMaxPitagoras.Foundation
         {
 
         }
+
+        private void grpCadFuncionario_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
