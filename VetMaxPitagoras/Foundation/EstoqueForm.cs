@@ -27,5 +27,10 @@ namespace VetMaxPitagoras.Foundation
         {
 
         }
+
+        private void btnSairPesquisaEstoque_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

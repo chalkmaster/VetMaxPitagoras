@@ -129,6 +129,7 @@
             this.btnSairPesquisaEstoque.TabIndex = 3;
             this.btnSairPesquisaEstoque.Text = "SAIR";
             this.btnSairPesquisaEstoque.UseVisualStyleBackColor = true;
+            this.btnSairPesquisaEstoque.Click += new System.EventHandler(this.btnSairPesquisaEstoque_Click);
             // 
             // groupBoxDgvDadosProdutos
             // 
@@ -153,7 +154,7 @@
             this.Quantidade});
             this.DgvListaEstoque.Location = new System.Drawing.Point(7, 20);
             this.DgvListaEstoque.Name = "DgvListaEstoque";
-            this.DgvListaEstoque.Size = new System.Drawing.Size(631, 300);
+            this.DgvListaEstoque.Size = new System.Drawing.Size(638, 300);
             this.DgvListaEstoque.TabIndex = 0;
             // 
             // groupPesquisaNomeProd
@@ -182,10 +183,10 @@
             // txtNomeprodutopesquisar
             // 
             this.txtNomeprodutopesquisar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNomeprodutopesquisar.Location = new System.Drawing.Point(60, 23);
+            this.txtNomeprodutopesquisar.Location = new System.Drawing.Point(77, 23);
             this.txtNomeprodutopesquisar.Multiline = true;
             this.txtNomeprodutopesquisar.Name = "txtNomeprodutopesquisar";
-            this.txtNomeprodutopesquisar.Size = new System.Drawing.Size(433, 23);
+            this.txtNomeprodutopesquisar.Size = new System.Drawing.Size(418, 23);
             this.txtNomeprodutopesquisar.TabIndex = 1;
             // 
             // label11
@@ -193,11 +194,11 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(13, 26);
+            this.label11.Location = new System.Drawing.Point(4, 26);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 16);
+            this.label11.Size = new System.Drawing.Size(76, 16);
             this.label11.TabIndex = 0;
-            this.label11.Text = "NOME";
+            this.label11.Text = "PRODUTO";
             // 
             // tabPageCadastroProdutos
             // 
@@ -623,26 +624,31 @@
             // 
             this.Codigo.HeaderText = "Codigo";
             this.Codigo.Name = "Codigo";
+            this.Codigo.Width = 80;
             // 
             // Nome
             // 
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
+            this.Nome.Width = 200;
             // 
             // Categoria
             // 
             this.Categoria.HeaderText = "Categoria";
             this.Categoria.Name = "Categoria";
+            this.Categoria.Width = 150;
             // 
             // Valor
             // 
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
+            this.Valor.Width = 85;
             // 
             // Quantidade
             // 
             this.Quantidade.HeaderText = "Quantidade";
             this.Quantidade.Name = "Quantidade";
+            this.Quantidade.Width = 80;
             // 
             // EstoqueForm
             // 

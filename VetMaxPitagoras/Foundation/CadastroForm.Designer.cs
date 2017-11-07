@@ -40,6 +40,7 @@ namespace VetMaxPitagoras.Foundation
             this.dgvDadosCliente = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSairCadastroCliente = new System.Windows.Forms.Button();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@ namespace VetMaxPitagoras.Foundation
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.btnSairCadastroCliente = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -124,6 +124,7 @@ namespace VetMaxPitagoras.Foundation
             this.btnSairPesquisarCliente.TabIndex = 20;
             this.btnSairPesquisarCliente.Text = "SAIR";
             this.btnSairPesquisarCliente.UseVisualStyleBackColor = true;
+            this.btnSairPesquisarCliente.Click += new System.EventHandler(this.btnSairPesquisarCliente_Click);
             // 
             // groupBox4
             // 
@@ -223,6 +224,16 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastro do Cliente";
+            // 
+            // btnSairCadastroCliente
+            // 
+            this.btnSairCadastroCliente.Location = new System.Drawing.Point(471, 314);
+            this.btnSairCadastroCliente.Name = "btnSairCadastroCliente";
+            this.btnSairCadastroCliente.Size = new System.Drawing.Size(134, 26);
+            this.btnSairCadastroCliente.TabIndex = 29;
+            this.btnSairCadastroCliente.Text = "SAIR";
+            this.btnSairCadastroCliente.UseVisualStyleBackColor = true;
+            this.btnSairCadastroCliente.Click += new System.EventHandler(this.btnSairCadastroCliente_Click);
             // 
             // btnCadastrarCliente
             // 
@@ -483,16 +494,6 @@ namespace VetMaxPitagoras.Foundation
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(509, 22);
             this.txtNomeCliente.TabIndex = 0;
-            // 
-            // btnSairCadastroCliente
-            // 
-            this.btnSairCadastroCliente.Location = new System.Drawing.Point(471, 314);
-            this.btnSairCadastroCliente.Name = "btnSairCadastroCliente";
-            this.btnSairCadastroCliente.Size = new System.Drawing.Size(134, 26);
-            this.btnSairCadastroCliente.TabIndex = 29;
-            this.btnSairCadastroCliente.Text = "SAIR";
-            this.btnSairCadastroCliente.UseVisualStyleBackColor = true;
-            this.btnSairCadastroCliente.Click += new System.EventHandler(this.btnSairCadastroCliente_Click);
             // 
             // FrmCadastro
             // 
