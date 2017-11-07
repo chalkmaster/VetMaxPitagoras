@@ -76,7 +76,7 @@ namespace VetMaxPitagoras.Foundation
 
         private void button5_Click(object sender, EventArgs e)
         {
-            txtNomePesquisa.Clear();
+            txtNomePesquisaCliente.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e)

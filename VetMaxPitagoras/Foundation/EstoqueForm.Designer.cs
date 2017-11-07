@@ -28,42 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlEstoqueCadastroProdutos = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBoxDgvDadosProdutos = new System.Windows.Forms.GroupBox();
+            this.DgvListaEstoque = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.tabPageCadastroProdutos = new System.Windows.Forms.TabPage();
+            this.btnCadastrarProduto = new System.Windows.Forms.Button();
+            this.btnSairCadastroProduto = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.txtEstoqueMaxProd = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.txtEstoqueMinProd = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.txtQtdProdCadastrar = new System.Windows.Forms.TextBox();
+            this.txtValorPagoProd = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.txtCodProduto = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtFornecProd = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txtModeloProd = new System.Windows.Forms.TextBox();
+            this.txtMarcaProduto = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.comboBoxCategProd = new System.Windows.Forms.ComboBox();
+            this.txtNomeProd = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -84,46 +83,47 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.tabControl1.SuspendLayout();
+            this.tabControlEstoqueCadastroProdutos.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBoxDgvDadosProdutos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvListaEstoque)).BeginInit();
             this.groupBox4.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.tabPageCadastroProdutos.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControlEstoqueCadastroProdutos
             // 
-            this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(533, 444);
-            this.tabControl1.TabIndex = 0;
+            this.tabControlEstoqueCadastroProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tabControlEstoqueCadastroProdutos.Controls.Add(this.tabPage2);
+            this.tabControlEstoqueCadastroProdutos.Controls.Add(this.tabPageCadastroProdutos);
+            this.tabControlEstoqueCadastroProdutos.Location = new System.Drawing.Point(19, 23);
+            this.tabControlEstoqueCadastroProdutos.Name = "tabControlEstoqueCadastroProdutos";
+            this.tabControlEstoqueCadastroProdutos.SelectedIndex = 0;
+            this.tabControlEstoqueCadastroProdutos.Size = new System.Drawing.Size(671, 461);
+            this.tabControlEstoqueCadastroProdutos.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.groupBoxDgvDadosProdutos);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(525, 418);
+            this.tabPage2.Size = new System.Drawing.Size(663, 435);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Estoque";
+            this.tabPage2.Text = "Pesquisa Estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(420, 389);
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Location = new System.Drawing.Point(498, 406);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 23);
+            this.button5.Size = new System.Drawing.Size(139, 23);
             this.button5.TabIndex = 4;
             this.button5.Text = "SAIR";
             this.button5.UseVisualStyleBackColor = true;
@@ -131,318 +131,342 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(321, 389);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.Location = new System.Drawing.Point(353, 406);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 23);
+            this.button2.Size = new System.Drawing.Size(139, 23);
             this.button2.TabIndex = 3;
             this.button2.Text = "LIMPAR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // groupBox5
+            // groupBoxDgvDadosProdutos
             // 
-            this.groupBox5.Controls.Add(this.dataGridView1);
-            this.groupBox5.Location = new System.Drawing.Point(6, 108);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(516, 275);
-            this.groupBox5.TabIndex = 2;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Dados Produtos";
+            this.groupBoxDgvDadosProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBoxDgvDadosProdutos.Controls.Add(this.DgvListaEstoque);
+            this.groupBoxDgvDadosProdutos.Location = new System.Drawing.Point(6, 80);
+            this.groupBoxDgvDadosProdutos.Name = "groupBoxDgvDadosProdutos";
+            this.groupBoxDgvDadosProdutos.Size = new System.Drawing.Size(651, 326);
+            this.groupBoxDgvDadosProdutos.TabIndex = 2;
+            this.groupBoxDgvDadosProdutos.TabStop = false;
+            this.groupBoxDgvDadosProdutos.Text = "Dados Produtos";
             // 
-            // dataGridView1
+            // DgvListaEstoque
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(504, 259);
-            this.dataGridView1.TabIndex = 0;
+            this.DgvListaEstoque.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DgvListaEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvListaEstoque.Location = new System.Drawing.Point(7, 20);
+            this.DgvListaEstoque.Name = "DgvListaEstoque";
+            this.DgvListaEstoque.Size = new System.Drawing.Size(631, 300);
+            this.DgvListaEstoque.TabIndex = 0;
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.textBox10);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Location = new System.Drawing.Point(6, 8);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(516, 63);
+            this.groupBox4.Size = new System.Drawing.Size(651, 63);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Pesquisa Produtos";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(417, 23);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Location = new System.Drawing.Point(499, 23);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 23);
+            this.button1.Size = new System.Drawing.Size(146, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "PESQUISAR";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(53, 23);
+            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox10.Location = new System.Drawing.Point(60, 23);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(358, 23);
+            this.textBox10.Size = new System.Drawing.Size(433, 23);
             this.textBox10.TabIndex = 1;
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 26);
+            this.label11.Location = new System.Drawing.Point(13, 26);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 16);
             this.label11.TabIndex = 0;
             this.label11.Text = "NOME";
             // 
-            // tabPage3
+            // tabPageCadastroProdutos
             // 
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.groupBox7);
-            this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(525, 418);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Cadastro Produtos";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPageCadastroProdutos.Controls.Add(this.btnCadastrarProduto);
+            this.tabPageCadastroProdutos.Controls.Add(this.btnSairCadastroProduto);
+            this.tabPageCadastroProdutos.Controls.Add(this.groupBox7);
+            this.tabPageCadastroProdutos.Controls.Add(this.groupBox);
+            this.tabPageCadastroProdutos.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCadastroProdutos.Name = "tabPageCadastroProdutos";
+            this.tabPageCadastroProdutos.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCadastroProdutos.Size = new System.Drawing.Size(663, 435);
+            this.tabPageCadastroProdutos.TabIndex = 2;
+            this.tabPageCadastroProdutos.Text = "Cadastro Produtos";
+            this.tabPageCadastroProdutos.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnCadastrarProduto
             // 
-            this.button6.Location = new System.Drawing.Point(326, 261);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(87, 23);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "CADASTRAR";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(314, 350);
+            this.btnCadastrarProduto.Name = "btnCadastrarProduto";
+            this.btnCadastrarProduto.Size = new System.Drawing.Size(125, 32);
+            this.btnCadastrarProduto.TabIndex = 20;
+            this.btnCadastrarProduto.Text = "CADASTRAR";
+            this.btnCadastrarProduto.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSairCadastroProduto
             // 
-            this.button4.Location = new System.Drawing.Point(421, 261);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 23);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "SAIR";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnSairCadastroProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSairCadastroProduto.Location = new System.Drawing.Point(454, 350);
+            this.btnSairCadastroProduto.Name = "btnSairCadastroProduto";
+            this.btnSairCadastroProduto.Size = new System.Drawing.Size(125, 32);
+            this.btnSairCadastroProduto.TabIndex = 19;
+            this.btnSairCadastroProduto.Text = "SAIR";
+            this.btnSairCadastroProduto.UseVisualStyleBackColor = true;
+            this.btnSairCadastroProduto.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox25);
+            this.groupBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox7.Controls.Add(this.txtEstoqueMaxProd);
             this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.textBox26);
+            this.groupBox7.Controls.Add(this.txtEstoqueMinProd);
             this.groupBox7.Controls.Add(this.label29);
-            this.groupBox7.Controls.Add(this.textBox27);
-            this.groupBox7.Controls.Add(this.textBox28);
+            this.groupBox7.Controls.Add(this.txtQtdProdCadastrar);
+            this.groupBox7.Controls.Add(this.txtValorPagoProd);
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.label31);
-            this.groupBox7.Location = new System.Drawing.Point(6, 147);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(6, 155);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(513, 91);
+            this.groupBox7.Size = new System.Drawing.Size(651, 138);
             this.groupBox7.TabIndex = 17;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Valores do produto";
             // 
-            // textBox25
+            // txtEstoqueMaxProd
             // 
-            this.textBox25.Location = new System.Drawing.Point(379, 52);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(123, 20);
-            this.textBox25.TabIndex = 35;
+            this.txtEstoqueMaxProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEstoqueMaxProd.Location = new System.Drawing.Point(385, 75);
+            this.txtEstoqueMaxProd.Name = "txtEstoqueMaxProd";
+            this.txtEstoqueMaxProd.Size = new System.Drawing.Size(260, 22);
+            this.txtEstoqueMaxProd.TabIndex = 35;
             // 
             // label28
             // 
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(261, 55);
+            this.label28.Location = new System.Drawing.Point(250, 72);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(105, 13);
+            this.label28.Size = new System.Drawing.Size(129, 16);
             this.label28.TabIndex = 34;
             this.label28.Text = "ESTOQUE MÁXIMO";
             // 
-            // textBox26
+            // txtEstoqueMinProd
             // 
-            this.textBox26.Location = new System.Drawing.Point(114, 48);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(112, 20);
-            this.textBox26.TabIndex = 33;
+            this.txtEstoqueMinProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEstoqueMinProd.Location = new System.Drawing.Point(128, 72);
+            this.txtEstoqueMinProd.Name = "txtEstoqueMinProd";
+            this.txtEstoqueMinProd.Size = new System.Drawing.Size(102, 22);
+            this.txtEstoqueMinProd.TabIndex = 33;
             // 
             // label29
             // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(6, 52);
+            this.label29.Location = new System.Drawing.Point(3, 75);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(102, 13);
+            this.label29.Size = new System.Drawing.Size(125, 16);
             this.label29.TabIndex = 32;
             this.label29.Text = "ESTOQUE MÍNIMO";
             // 
-            // textBox27
+            // txtQtdProdCadastrar
             // 
-            this.textBox27.Location = new System.Drawing.Point(371, 18);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(131, 20);
-            this.textBox27.TabIndex = 31;
+            this.txtQtdProdCadastrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtQtdProdCadastrar.Location = new System.Drawing.Point(384, 41);
+            this.txtQtdProdCadastrar.Name = "txtQtdProdCadastrar";
+            this.txtQtdProdCadastrar.Size = new System.Drawing.Size(261, 22);
+            this.txtQtdProdCadastrar.TabIndex = 31;
             // 
-            // textBox28
+            // txtValorPagoProd
             // 
-            this.textBox28.Location = new System.Drawing.Point(114, 18);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(112, 20);
-            this.textBox28.TabIndex = 29;
+            this.txtValorPagoProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtValorPagoProd.Location = new System.Drawing.Point(128, 41);
+            this.txtValorPagoProd.Name = "txtValorPagoProd";
+            this.txtValorPagoProd.Size = new System.Drawing.Size(102, 22);
+            this.txtValorPagoProd.TabIndex = 29;
             // 
             // label30
             // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(288, 21);
+            this.label30.Location = new System.Drawing.Point(282, 44);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(78, 13);
+            this.label30.Size = new System.Drawing.Size(97, 16);
             this.label30.TabIndex = 30;
             this.label30.Text = "QUANTIDADE";
             // 
             // label31
             // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(32, 21);
+            this.label31.Location = new System.Drawing.Point(32, 44);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(76, 13);
+            this.label31.Size = new System.Drawing.Size(94, 16);
             this.label31.TabIndex = 28;
             this.label31.Text = "VALOR PAGO";
             // 
-            // groupBox6
+            // groupBox
             // 
-            this.groupBox6.Controls.Add(this.textBox20);
-            this.groupBox6.Controls.Add(this.label22);
-            this.groupBox6.Controls.Add(this.textBox21);
-            this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Controls.Add(this.textBox22);
-            this.groupBox6.Controls.Add(this.textBox23);
-            this.groupBox6.Controls.Add(this.label24);
-            this.groupBox6.Controls.Add(this.label25);
-            this.groupBox6.Controls.Add(this.comboBox3);
-            this.groupBox6.Controls.Add(this.textBox24);
-            this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.Controls.Add(this.label27);
-            this.groupBox6.Location = new System.Drawing.Point(6, 8);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(513, 133);
-            this.groupBox6.TabIndex = 9;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Informações Basicas";
-            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            this.groupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox.Controls.Add(this.txtCodProduto);
+            this.groupBox.Controls.Add(this.label22);
+            this.groupBox.Controls.Add(this.txtFornecProd);
+            this.groupBox.Controls.Add(this.label23);
+            this.groupBox.Controls.Add(this.txtModeloProd);
+            this.groupBox.Controls.Add(this.txtMarcaProduto);
+            this.groupBox.Controls.Add(this.label24);
+            this.groupBox.Controls.Add(this.label25);
+            this.groupBox.Controls.Add(this.comboBoxCategProd);
+            this.groupBox.Controls.Add(this.txtNomeProd);
+            this.groupBox.Controls.Add(this.label26);
+            this.groupBox.Controls.Add(this.label27);
+            this.groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox.Location = new System.Drawing.Point(6, 16);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(651, 133);
+            this.groupBox.TabIndex = 9;
+            this.groupBox.TabStop = false;
+            this.groupBox.Text = "Informações do Estoque";
+            this.groupBox.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
-            // textBox20
+            // txtCodProduto
             // 
-            this.textBox20.Location = new System.Drawing.Point(71, 25);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(102, 20);
-            this.textBox20.TabIndex = 31;
+            this.txtCodProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCodProduto.Location = new System.Drawing.Point(128, 28);
+            this.txtCodProduto.Name = "txtCodProduto";
+            this.txtCodProduto.Size = new System.Drawing.Size(102, 22);
+            this.txtCodProduto.TabIndex = 31;
             // 
             // label22
             // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(23, 28);
+            this.label22.Location = new System.Drawing.Point(62, 31);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 13);
+            this.label22.Size = new System.Drawing.Size(60, 16);
             this.label22.TabIndex = 30;
             this.label22.Text = "CÓDIGO";
             // 
-            // textBox21
+            // txtFornecProd
             // 
-            this.textBox21.Location = new System.Drawing.Point(295, 89);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(207, 20);
-            this.textBox21.TabIndex = 29;
+            this.txtFornecProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtFornecProd.Location = new System.Drawing.Point(385, 89);
+            this.txtFornecProd.Name = "txtFornecProd";
+            this.txtFornecProd.Size = new System.Drawing.Size(260, 22);
+            this.txtFornecProd.TabIndex = 29;
             // 
             // label23
             // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(207, 92);
+            this.label23.Location = new System.Drawing.Point(276, 92);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(82, 13);
+            this.label23.Size = new System.Drawing.Size(103, 16);
             this.label23.TabIndex = 28;
             this.label23.Text = "FORNECEDOR";
             // 
-            // textBox22
+            // txtModeloProd
             // 
-            this.textBox22.Location = new System.Drawing.Point(295, 56);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(207, 20);
-            this.textBox22.TabIndex = 27;
+            this.txtModeloProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtModeloProd.Location = new System.Drawing.Point(384, 56);
+            this.txtModeloProd.Name = "txtModeloProd";
+            this.txtModeloProd.Size = new System.Drawing.Size(261, 22);
+            this.txtModeloProd.TabIndex = 27;
             // 
-            // textBox23
+            // txtMarcaProduto
             // 
-            this.textBox23.Location = new System.Drawing.Point(71, 89);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(102, 20);
-            this.textBox23.TabIndex = 26;
+            this.txtMarcaProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMarcaProduto.Location = new System.Drawing.Point(128, 92);
+            this.txtMarcaProduto.Name = "txtMarcaProduto";
+            this.txtMarcaProduto.Size = new System.Drawing.Size(102, 22);
+            this.txtMarcaProduto.TabIndex = 26;
             // 
             // label24
             // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(236, 59);
+            this.label24.Location = new System.Drawing.Point(313, 59);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(53, 13);
+            this.label24.Size = new System.Drawing.Size(65, 16);
             this.label24.TabIndex = 25;
             this.label24.Text = "MODELO";
             // 
             // label25
             // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(23, 92);
+            this.label25.Location = new System.Drawing.Point(66, 95);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(45, 13);
+            this.label25.Size = new System.Drawing.Size(56, 16);
             this.label25.TabIndex = 24;
             this.label25.Text = "MARCA";
             // 
-            // comboBox3
+            // comboBoxCategProd
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxCategProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxCategProd.FormattingEnabled = true;
+            this.comboBoxCategProd.Items.AddRange(new object[] {
             "Alimentos",
             "Medicamentos",
             "Brinquedos",
             "Produtos de Higiene",
             "Coleiras/Guias"});
-            this.comboBox3.Location = new System.Drawing.Point(71, 56);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(102, 21);
-            this.comboBox3.TabIndex = 23;
+            this.comboBoxCategProd.Location = new System.Drawing.Point(128, 56);
+            this.comboBoxCategProd.Name = "comboBoxCategProd";
+            this.comboBoxCategProd.Size = new System.Drawing.Size(102, 24);
+            this.comboBoxCategProd.TabIndex = 23;
             // 
-            // textBox24
+            // txtNomeProd
             // 
-            this.textBox24.Location = new System.Drawing.Point(295, 25);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(207, 20);
-            this.textBox24.TabIndex = 22;
+            this.txtNomeProd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeProd.Location = new System.Drawing.Point(384, 28);
+            this.txtNomeProd.Name = "txtNomeProd";
+            this.txtNomeProd.Size = new System.Drawing.Size(261, 22);
+            this.txtNomeProd.TabIndex = 22;
             // 
             // label26
             // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(1, 60);
+            this.label26.Location = new System.Drawing.Point(36, 62);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(69, 13);
+            this.label26.Size = new System.Drawing.Size(86, 16);
             this.label26.TabIndex = 21;
             this.label26.Text = "CATEGORIA";
             // 
             // label27
             // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(174, 28);
+            this.label27.Location = new System.Drawing.Point(236, 31);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(115, 13);
+            this.label27.Size = new System.Drawing.Size(142, 16);
             this.label27.TabIndex = 20;
             this.label27.Text = "NOME DO PRODUTO";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(197, 28);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(8, 8);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // label17
             // 
@@ -605,40 +629,38 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 468);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(712, 496);
+            this.Controls.Add(this.tabControlEstoqueCadastroProdutos);
             this.Name = "EstoqueForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EstoqueForm";
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlEstoqueCadastroProdutos.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBoxDgvDadosProdutos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvListaEstoque)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.tabPageCadastroProdutos.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlEstoqueCadastroProdutos;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBoxDgvDadosProdutos;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView DgvListaEstoque;
+        private System.Windows.Forms.TabPage tabPageCadastroProdutos;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox15;
@@ -659,30 +681,30 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Button btnSairCadastroProduto;
+        private System.Windows.Forms.TextBox txtEstoqueMaxProd;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox txtEstoqueMinProd;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox txtQtdProdCadastrar;
+        private System.Windows.Forms.TextBox txtValorPagoProd;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txtCodProduto;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtFornecProd;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox txtModeloProd;
+        private System.Windows.Forms.TextBox txtMarcaProduto;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.ComboBox comboBoxCategProd;
+        private System.Windows.Forms.TextBox txtNomeProd;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnCadastrarProduto;
     }
 }
