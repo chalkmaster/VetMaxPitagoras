@@ -40,7 +40,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tabPageCadastroProdutos = new System.Windows.Forms.TabPage();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
-            this.btnSairCadastroProduto = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtEstoqueMaxProd = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -83,6 +82,7 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
+            this.btnSairCadastroProdutos = new System.Windows.Forms.Button();
             this.tabControlPesquisaProdutos.SuspendLayout();
             this.tabPagePesquisaEstoque.SuspendLayout();
             this.groupBoxDgvDadosProdutos.SuspendLayout();
@@ -120,25 +120,17 @@
             // 
             // button5
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Location = new System.Drawing.Point(505, 406);
+            this.button5.Location = new System.Drawing.Point(0, 0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "SAIR";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Location = new System.Drawing.Point(362, 406);
+            this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "LIMPAR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
             // 
             // groupBoxDgvDadosProdutos
             // 
@@ -205,8 +197,8 @@
             // 
             // tabPageCadastroProdutos
             // 
+            this.tabPageCadastroProdutos.Controls.Add(this.btnSairCadastroProdutos);
             this.tabPageCadastroProdutos.Controls.Add(this.btnCadastrarProduto);
-            this.tabPageCadastroProdutos.Controls.Add(this.btnSairCadastroProduto);
             this.tabPageCadastroProdutos.Controls.Add(this.groupBox7);
             this.tabPageCadastroProdutos.Controls.Add(this.groupBox);
             this.tabPageCadastroProdutos.Location = new System.Drawing.Point(4, 22);
@@ -220,23 +212,12 @@
             // btnCadastrarProduto
             // 
             this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(381, 314);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(375, 314);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
             this.btnCadastrarProduto.Size = new System.Drawing.Size(135, 25);
             this.btnCadastrarProduto.TabIndex = 20;
             this.btnCadastrarProduto.Text = "CADASTRAR";
             this.btnCadastrarProduto.UseVisualStyleBackColor = true;
-            // 
-            // btnSairCadastroProduto
-            // 
-            this.btnSairCadastroProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSairCadastroProduto.Location = new System.Drawing.Point(522, 314);
-            this.btnSairCadastroProduto.Name = "btnSairCadastroProduto";
-            this.btnSairCadastroProduto.Size = new System.Drawing.Size(135, 25);
-            this.btnSairCadastroProduto.TabIndex = 19;
-            this.btnSairCadastroProduto.Text = "SAIR";
-            this.btnSairCadastroProduto.UseVisualStyleBackColor = true;
-            this.btnSairCadastroProduto.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox7
             // 
@@ -431,10 +412,10 @@
             this.comboBoxCategProd.FormattingEnabled = true;
             this.comboBoxCategProd.Items.AddRange(new object[] {
             "Alimentos",
-            "Medicamentos",
             "Brinquedos",
-            "Produtos de Higiene",
-            "Coleiras/Guias"});
+            "Coleiras/Guias",
+            "Medicamentos",
+            "Produtos de Higiene"});
             this.comboBoxCategProd.Location = new System.Drawing.Point(128, 56);
             this.comboBoxCategProd.Name = "comboBoxCategProd";
             this.comboBoxCategProd.Size = new System.Drawing.Size(102, 24);
@@ -625,6 +606,15 @@
             this.textBox16.Size = new System.Drawing.Size(112, 20);
             this.textBox16.TabIndex = 27;
             // 
+            // btnSairCadastroProdutos
+            // 
+            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(516, 314);
+            this.btnSairCadastroProdutos.Name = "btnSairCadastroProdutos";
+            this.btnSairCadastroProdutos.Size = new System.Drawing.Size(135, 25);
+            this.btnSairCadastroProdutos.TabIndex = 21;
+            this.btnSairCadastroProdutos.Text = "SAIR";
+            this.btnSairCadastroProdutos.UseVisualStyleBackColor = true;
+            // 
             // EstoqueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -681,7 +671,6 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Button btnSairCadastroProduto;
         private System.Windows.Forms.TextBox txtEstoqueMaxProd;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtEstoqueMinProd;
@@ -706,5 +695,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCadastrarProduto;
+        private System.Windows.Forms.Button btnSairCadastroProdutos;
     }
 }

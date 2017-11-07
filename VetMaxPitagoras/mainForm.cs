@@ -55,27 +55,5 @@ namespace VetMaxPitagoras
             CadastroEstoque.Show();
         }
 
-
-
-
-        /*
-       private void animaisCadastradosToolStripMenuItem_Click(object sender, EventArgs e)
-       {
-           var ListaAnimais = new ListaAnimaisForm1();
-           ListaAnimais.MdiParent = this;
-           ListaAnimais.WindowState = FormWindowState.Maximized;
-           ListaAnimais.Show();
-       }
-       */
-        //NÃO EXISTE MAIS NO FORM
-        /*
-        private void usuárioSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var userRegister = new userForm();
-            userRegister.MdiParent = this;
-            userRegister.WindowState = FormWindowState.Maximized;
-            userRegister.Show();
-        }
-        */
     }
 }

@@ -33,69 +33,41 @@ namespace VetMaxPitagoras.Foundation
 
             //Limpar_dados();
             MessageBox.Show("Cadastro efetuado com sucesso");
-
-            
-            
+ 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        
+        private void Limpar_dados_Cadastro_Cliente()
+        {
+            txtNomeCliente.ResetText();
+            comboBoxSexoCliente.ResetText();
+            maskedTextBoxNascimentoCliente.ResetText();
+            maskedTextBoxCpfCliente.ResetText();
+            maskedTextBoxIdentidadeCliente.ResetText();
+            txtEnderecoCliente.ResetText();
+            txtCidadeCliente.ResetText();
+            comboBoxUfCliente.ResetText();
+            maskedTextBoxCepCliente.ResetText();
+            comboBoxTelefoneCliente.ResetText();
+            maskedTextBoxTelefoneCliente.ResetText();
+            txtBoxEmailCliente.ResetText();
+
+        }
+
+        private void btnCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            Limpar_dados_Cadastro_Cliente();
+        }
+
+        private void btnSairCadastroCliente_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        /*
-        private void Limpar_dados()
-        {
-            txNome.ResetText();
-            txCpf.ResetText();
-            txEndereco.ResetText();
-            txCidade.ResetText();  
-        }
-        */
-        
-
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-            //string[] dadosCadastro = { txNome.Text, txCpf.Text, txEndereco.Text, txCidade.Text };
-            
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            txtNomePesquisaCliente.Clear();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            txtNomeCliente.Clear();
-            maskedTextBoxCpfCliente.Clear();
-            maskedTextBoxNascimentoCliente.Clear();
-            maskedTextBoxIdentidadeCliente.Clear();
-            txtEnderecoCliente.Clear();
-            txtCidadeCliente.Clear();
-            maskedTextBoxCepCliente.Clear();
-            maskedTextBoxTelefoneCliente.Clear();
-            textBoxEmailCliente.Clear();
-                              
         }
     }
 }
