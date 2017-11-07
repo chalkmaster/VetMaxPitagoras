@@ -69,5 +69,15 @@ namespace VetMaxPitagoras.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grey_corporate_business_technology_background_free_34160 {
+            get {
+                object obj = ResourceManager.GetObject("grey-corporate-business-technology-background-free-34160", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
