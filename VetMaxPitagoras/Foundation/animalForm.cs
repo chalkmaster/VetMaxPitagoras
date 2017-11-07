@@ -88,8 +88,6 @@ namespace VetMaxPitagoras.Foundation
             animal.TelefoneTipo = this.txtTipo.Text;
             animalRepository.Insert(animal);
             this.dataCadAnimal.DataSource = animalRepository.FindAll();
-
-
         }
         
         // permitir somente letras,backspace e tecla espaço.
@@ -238,6 +236,16 @@ namespace VetMaxPitagoras.Foundation
         }
 
         private void grupoCadAnimal_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataCadAnimal_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

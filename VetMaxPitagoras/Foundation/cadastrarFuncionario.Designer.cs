@@ -49,8 +49,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTitulacao = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.dataCadFuncionario = new System.Windows.Forms.DataGridView();
             this.gridCadastroFuncionario.SuspendLayout();
             this.grpCadFuncionario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCadFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
             // gridCadastroFuncionario
@@ -73,6 +75,7 @@
             // 
             this.grpCadFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpCadFuncionario.BackColor = System.Drawing.SystemColors.Control;
+            this.grpCadFuncionario.Controls.Add(this.dataCadFuncionario);
             this.grpCadFuncionario.Controls.Add(this.txtTitulacao);
             this.grpCadFuncionario.Controls.Add(this.label5);
             this.grpCadFuncionario.Controls.Add(this.txtEspecialidade);
@@ -92,9 +95,9 @@
             this.grpCadFuncionario.Controls.Add(this.lbNome);
             this.grpCadFuncionario.Controls.Add(this.lbRaça);
             this.grpCadFuncionario.Controls.Add(this.txtCargo);
-            this.grpCadFuncionario.Location = new System.Drawing.Point(331, 153);
+            this.grpCadFuncionario.Location = new System.Drawing.Point(331, 50);
             this.grpCadFuncionario.Name = "grpCadFuncionario";
-            this.grpCadFuncionario.Size = new System.Drawing.Size(356, 341);
+            this.grpCadFuncionario.Size = new System.Drawing.Size(356, 547);
             this.grpCadFuncionario.TabIndex = 11;
             this.grpCadFuncionario.TabStop = false;
             this.grpCadFuncionario.Text = "Cadastro de Funcionários Administrativos da Clínica";
@@ -152,7 +155,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(263, 298);
+            this.btnCadastrar.Location = new System.Drawing.Point(265, 273);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 10;
@@ -168,7 +171,7 @@
             this.lbTipo.Size = new System.Drawing.Size(52, 13);
             this.lbTipo.TabIndex = 2;
             this.lbTipo.Text = "Telefone:";
-            this.lbTipo.Click += new System.EventHandler(this.lbTipo_Click);
+//            this.lbTipo.Click += new System.EventHandler(this.lbTipo_Click);
             // 
             // lbNome
             // 
@@ -259,6 +262,14 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Titulação:";
             // 
+            // dataCadFuncionario
+            // 
+            this.dataCadFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCadFuncionario.Location = new System.Drawing.Point(19, 307);
+            this.dataCadFuncionario.Name = "dataCadFuncionario";
+            this.dataCadFuncionario.Size = new System.Drawing.Size(320, 150);
+            this.dataCadFuncionario.TabIndex = 29;
+            // 
             // frmcadastrarfuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,9 +278,11 @@
             this.Controls.Add(this.gridCadastroFuncionario);
             this.Name = "frmcadastrarfuncionario";
             this.Text = "Cadastrar Funcionários Administrativos da Clínica";
+            this.Load += new System.EventHandler(this.frmcadastrarfuncionario_Load);
             this.gridCadastroFuncionario.ResumeLayout(false);
             this.grpCadFuncionario.ResumeLayout(false);
             this.grpCadFuncionario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCadFuncionario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +310,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDepartamento;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataCadFuncionario;
     }
 }

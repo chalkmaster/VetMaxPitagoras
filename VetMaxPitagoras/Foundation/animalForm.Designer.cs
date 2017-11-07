@@ -187,6 +187,7 @@
             this.btnSair.TabIndex = 14;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // dataCadAnimal
             // 
@@ -197,6 +198,7 @@
             this.dataCadAnimal.Name = "dataCadAnimal";
             this.dataCadAnimal.Size = new System.Drawing.Size(664, 381);
             this.dataCadAnimal.TabIndex = 12;
+            this.dataCadAnimal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCadAnimal_CellContentClick);
             // 
             // nome
             // 
