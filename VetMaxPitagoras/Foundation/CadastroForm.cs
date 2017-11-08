@@ -74,5 +74,22 @@ namespace VetMaxPitagoras.Foundation
         {
             this.Close();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            txtNomeCliente.Clear();
+            comboBoxSexoCliente.ResetText();
+            maskedTextBoxCpfCliente.Clear();
+            maskedTextBoxNascimentoCliente.Clear();
+            maskedTextBoxIdentidadeCliente.Clear();
+            txtEnderecoCliente.Clear();
+            txtCidadeCliente.Clear();
+            comboBoxUfCliente.ResetText();
+            maskedTextBoxCepCliente.Clear();
+            comboBoxTelefoneCliente.ResetText();
+            maskedTextBoxTelefoneCliente.Clear();
+            txtBoxEmailCliente.Clear();
+            
+        }
     }
 }

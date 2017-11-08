@@ -66,6 +66,7 @@ namespace VetMaxPitagoras.Foundation
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -204,6 +205,7 @@ namespace VetMaxPitagoras.Foundation
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnSairCadastroCliente);
             this.groupBox1.Controls.Add(this.btnCadastrarCliente);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -238,7 +240,7 @@ namespace VetMaxPitagoras.Foundation
             // btnCadastrarCliente
             // 
             this.btnCadastrarCliente.AutoSize = true;
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(331, 314);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(191, 314);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(134, 26);
             this.btnCadastrarCliente.TabIndex = 0;
@@ -495,6 +497,16 @@ namespace VetMaxPitagoras.Foundation
             this.txtNomeCliente.Size = new System.Drawing.Size(509, 22);
             this.txtNomeCliente.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(331, 314);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 26);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "CANCELAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -560,5 +572,6 @@ namespace VetMaxPitagoras.Foundation
         private System.Windows.Forms.Button btnSairPesquisarCliente;
         private System.Windows.Forms.Button btnPesquisarCliente;
         private System.Windows.Forms.Button btnSairCadastroCliente;
+        private System.Windows.Forms.Button button1;
     }
 }

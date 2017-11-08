@@ -33,6 +33,11 @@
             this.btnSairPesquisaEstoque = new System.Windows.Forms.Button();
             this.groupBoxDgvDadosProdutos = new System.Windows.Forms.GroupBox();
             this.DgvListaEstoque = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPesquisaNomeProd = new System.Windows.Forms.GroupBox();
             this.btnPesquisarProduto = new System.Windows.Forms.Button();
             this.txtNomeprodutopesquisar = new System.Windows.Forms.TextBox();
@@ -82,11 +87,7 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControlPesquisaProdutos.SuspendLayout();
             this.tabPagePesquisaEstoque.SuspendLayout();
             this.groupBoxDgvDadosProdutos.SuspendLayout();
@@ -157,6 +158,36 @@
             this.DgvListaEstoque.Size = new System.Drawing.Size(638, 300);
             this.DgvListaEstoque.TabIndex = 0;
             // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.Width = 80;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.Width = 200;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.Width = 150;
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            this.Valor.Width = 85;
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "Quantidade";
+            this.Quantidade.Name = "Quantidade";
+            this.Quantidade.Width = 80;
+            // 
             // groupPesquisaNomeProd
             // 
             this.groupPesquisaNomeProd.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -202,6 +233,7 @@
             // 
             // tabPageCadastroProdutos
             // 
+            this.tabPageCadastroProdutos.Controls.Add(this.button1);
             this.tabPageCadastroProdutos.Controls.Add(this.btnSairCadastroProdutos);
             this.tabPageCadastroProdutos.Controls.Add(this.btnCadastrarProduto);
             this.tabPageCadastroProdutos.Controls.Add(this.groupBox7);
@@ -216,7 +248,7 @@
             // 
             // btnSairCadastroProdutos
             // 
-            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(539, 299);
+            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(530, 299);
             this.btnSairCadastroProdutos.Name = "btnSairCadastroProdutos";
             this.btnSairCadastroProdutos.Size = new System.Drawing.Size(95, 25);
             this.btnSairCadastroProdutos.TabIndex = 21;
@@ -226,7 +258,7 @@
             // btnCadastrarProduto
             // 
             this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(422, 299);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(322, 299);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
             this.btnCadastrarProduto.Size = new System.Drawing.Size(102, 25);
             this.btnCadastrarProduto.TabIndex = 20;
@@ -620,35 +652,15 @@
             this.textBox16.Size = new System.Drawing.Size(112, 20);
             this.textBox16.TabIndex = 27;
             // 
-            // Codigo
+            // button1
             // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.Width = 80;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.Width = 200;
-            // 
-            // Categoria
-            // 
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.Name = "Categoria";
-            this.Categoria.Width = 150;
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            this.Valor.Width = 85;
-            // 
-            // Quantidade
-            // 
-            this.Quantidade.HeaderText = "Quantidade";
-            this.Quantidade.Name = "Quantidade";
-            this.Quantidade.Width = 80;
+            this.button1.Location = new System.Drawing.Point(430, 299);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 25);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "CANCELAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EstoqueForm
             // 
@@ -735,5 +747,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
+        private System.Windows.Forms.Button button1;
     }
 }

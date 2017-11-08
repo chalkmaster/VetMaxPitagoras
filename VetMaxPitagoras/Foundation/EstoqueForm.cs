@@ -32,5 +32,19 @@ namespace VetMaxPitagoras.Foundation
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtCodProduto.Clear();
+            txtNomeProd.Clear();
+            comboBoxCategProd.ResetText();
+            txtModeloProd.Clear();
+            txtMarcaProduto.Clear();
+            txtFornecProd.Clear();
+            txtValorPagoProd.Clear();
+            txtEstoqueMinProd.Clear();
+            txtQtdProdCadastrar.Clear();
+            txtEstoqueMaxProd.Clear();
+        }
     }
 }
