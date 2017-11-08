@@ -44,6 +44,7 @@
     <Compile Include="Repository.cs" />
     <Compile Include="Security\AnimalRepository.cs" />
     <Compile Include="Security\EspecieRepository.cs" />
+    <Compile Include="Security\FuncionarioRepository.cs" />
     <Compile Include="Security\RacaRepository.cs" />
     <Compile Include="Security\UserRepository.cs" />
   </ItemGroup>

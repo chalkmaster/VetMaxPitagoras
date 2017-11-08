@@ -13,8 +13,8 @@ namespace VetMaxPitagoras.Infrastructure.Security.Entities
         public string cargo { get; set; }
         public string departamento { get; set; }
         public DateTime datanascimento { get; set; }
-        public double telefone { get; set; }
-        public Endereco endereco { get; set; }
+        public string telefone { get; set; }
+        public string endereco { get; set; }
         public string email { get; set; }
         public string especialidade { get; set; }
         public string titulacao { get; set; }

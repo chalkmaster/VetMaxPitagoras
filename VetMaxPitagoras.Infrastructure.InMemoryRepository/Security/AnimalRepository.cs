@@ -12,7 +12,7 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
     public class AnimalRepository : Repository<Animal>, IAnimalRepository
     {
         private static List<Animal> _db;
-         
+
         public List<Animal> FindByName(string nome)
         {
             return GetMemoryDatabase().FindAll(animal => animal.Nome.ToLower().Equals(nome.ToLower()));
@@ -27,7 +27,7 @@ namespace VetMaxPitagoras.Infrastructure.InMemoryRepository.Security
         {
             return _db ?? (_db = new List<Animal>());
         }
-        
-        
+
+
     }
 }

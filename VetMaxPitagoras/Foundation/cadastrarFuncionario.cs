@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VetMaxPitagoras.Infrastructure.InMemoryRepository.Security;
+using VetMaxPitagoras.Infrastructure.Security.Entities;
+using VetMaxPitagoras.Infrastructure.Security.Services;
 
 namespace VetMaxPitagoras.Foundation
 {
@@ -36,16 +39,16 @@ namespace VetMaxPitagoras.Foundation
             }
 
             Funcionario funcionario = new Funcionario();
-            var funcionariolRepository = new FuncionarioRepository();
+            var funcionarioRepository = new FuncionarioRepository();
             funcionario.Nome = this.txtNome.Text;
-            funcionario.Cargo = this.txtCargo.Text;
-            funcionario.DataNascimento = this.dtpDataNascimento.Text;
-            funcionario.Email = this.txtEmail.Text;
-            funcionario.Telefone = this.mtbTelefone.Text;
-            funcionario.Departamento = this.txtDepartamento.Text;
-            funcionario.Endereco = this.txtEndereco.Text;
-            funcionario.Especialidade = this.txtEspecialidade.Text;
-            funcionario.Titulacao = this.txtTitulacao.Text;
+            funcionario.cargo = this.txtCargo.Text;
+            funcionario.datanascimento = this.dtpDataNascimento.MaxDate;
+            funcionario.email = this.txtEmail.Text;
+            funcionario.telefone = this.mtbTelefone.Mask;
+            funcionario.departamento = this.txtDepartamento.Text;
+            funcionario.endereco = this.txtEndereco.Text;
+            funcionario.especialidade = this.txtEspecialidade.Text;
+            funcionario.titulacao = this.txtTitulacao.Text;
             funcionarioRepository.Insert(funcionario);
             this.dataCadFuncionario.DataSource = funcionarioRepository.FindAll();
 
@@ -57,5 +60,9 @@ namespace VetMaxPitagoras.Foundation
 
         }
 
+        private void txtEspecialidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

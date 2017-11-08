@@ -30,6 +30,15 @@
         {
             this.gridCadastroFuncionario = new System.Windows.Forms.TableLayoutPanel();
             this.grpCadFuncionario = new System.Windows.Forms.GroupBox();
+            this.dataCadFuncionario = new System.Windows.Forms.DataGridView();
+            this.txtTitulacao = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEspecialidade = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDepartamento = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -41,15 +50,6 @@
             this.lbNome = new System.Windows.Forms.Label();
             this.lbRaça = new System.Windows.Forms.Label();
             this.txtCargo = new System.Windows.Forms.TextBox();
-            this.txtDepartamento = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEspecialidade = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTitulacao = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataCadFuncionario = new System.Windows.Forms.DataGridView();
             this.gridCadastroFuncionario.SuspendLayout();
             this.grpCadFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCadFuncionario)).BeginInit();
@@ -103,6 +103,79 @@
             this.grpCadFuncionario.Text = "Cadastro de Funcionários Administrativos da Clínica";
             this.grpCadFuncionario.Enter += new System.EventHandler(this.grpCadFuncionario_Enter);
             // 
+            // dataCadFuncionario
+            // 
+            this.dataCadFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCadFuncionario.Location = new System.Drawing.Point(19, 307);
+            this.dataCadFuncionario.Name = "dataCadFuncionario";
+            this.dataCadFuncionario.Size = new System.Drawing.Size(320, 150);
+            this.dataCadFuncionario.TabIndex = 29;
+            // 
+            // txtTitulacao
+            // 
+            this.txtTitulacao.Location = new System.Drawing.Point(131, 247);
+            this.txtTitulacao.Name = "txtTitulacao";
+            this.txtTitulacao.Size = new System.Drawing.Size(209, 20);
+            this.txtTitulacao.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Titulação:";
+            // 
+            // txtEspecialidade
+            // 
+            this.txtEspecialidade.Location = new System.Drawing.Point(130, 220);
+            this.txtEspecialidade.Name = "txtEspecialidade";
+            this.txtEspecialidade.Size = new System.Drawing.Size(209, 20);
+            this.txtEspecialidade.TabIndex = 26;
+            this.txtEspecialidade.TextChanged += new System.EventHandler(this.txtEspecialidade_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 227);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Especialidade:";
+            // 
+            // txtEndereco
+            // 
+            this.txtEndereco.Location = new System.Drawing.Point(130, 194);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(209, 20);
+            this.txtEndereco.TabIndex = 24;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Endereço:";
+            // 
+            // txtDepartamento
+            // 
+            this.txtDepartamento.Location = new System.Drawing.Point(130, 168);
+            this.txtDepartamento.Name = "txtDepartamento";
+            this.txtDepartamento.Size = new System.Drawing.Size(209, 20);
+            this.txtDepartamento.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Departamento:";
+            // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(127, 113);
@@ -121,6 +194,7 @@
             // 
             // mtbTelefone
             // 
+            this.mtbTelefone.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.mtbTelefone.Location = new System.Drawing.Point(127, 139);
             this.mtbTelefone.Mask = "(99)9999-9999";
             this.mtbTelefone.Name = "mtbTelefone";
@@ -171,7 +245,6 @@
             this.lbTipo.Size = new System.Drawing.Size(52, 13);
             this.lbTipo.TabIndex = 2;
             this.lbTipo.Text = "Telefone:";
-//            this.lbTipo.Click += new System.EventHandler(this.lbTipo_Click);
             // 
             // lbNome
             // 
@@ -197,78 +270,6 @@
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(209, 20);
             this.txtCargo.TabIndex = 6;
-            // 
-            // txtDepartamento
-            // 
-            this.txtDepartamento.Location = new System.Drawing.Point(130, 168);
-            this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(209, 20);
-            this.txtDepartamento.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Departamento:";
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Location = new System.Drawing.Point(130, 194);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(209, 20);
-            this.txtEndereco.TabIndex = 24;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 201);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Endereço:";
-            // 
-            // txtEspecialidade
-            // 
-            this.txtEspecialidade.Location = new System.Drawing.Point(130, 220);
-            this.txtEspecialidade.Name = "txtEspecialidade";
-            this.txtEspecialidade.Size = new System.Drawing.Size(209, 20);
-            this.txtEspecialidade.TabIndex = 26;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 227);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Especialidade:";
-            // 
-            // txtTitulacao
-            // 
-            this.txtTitulacao.Location = new System.Drawing.Point(131, 247);
-            this.txtTitulacao.Name = "txtTitulacao";
-            this.txtTitulacao.Size = new System.Drawing.Size(209, 20);
-            this.txtTitulacao.TabIndex = 28;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 254);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Titulação:";
-            // 
-            // dataCadFuncionario
-            // 
-            this.dataCadFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCadFuncionario.Location = new System.Drawing.Point(19, 307);
-            this.dataCadFuncionario.Name = "dataCadFuncionario";
-            this.dataCadFuncionario.Size = new System.Drawing.Size(320, 150);
-            this.dataCadFuncionario.TabIndex = 29;
             // 
             // frmcadastrarfuncionario
             // 

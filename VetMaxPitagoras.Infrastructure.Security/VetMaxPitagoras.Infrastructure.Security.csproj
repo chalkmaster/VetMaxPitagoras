@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IAnimalRepository.cs" />
     <Compile Include="Repository\IEspecieRepository.cs" />
+    <Compile Include="Repository\IFuncionarioRepository.cs" />
     <Compile Include="Repository\IRacaRepository.cs" />
     <Compile Include="Repository\IUserRepository.cs" />
     <Compile Include="Services\AuthService.cs" />
