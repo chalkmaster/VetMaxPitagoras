@@ -40,6 +40,7 @@ namespace VetMaxPitagoras.Foundation
             this.dgvDadosCliente = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSairCadastroCliente = new System.Windows.Forms.Button();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -66,7 +67,9 @@ namespace VetMaxPitagoras.Foundation
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Endereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -186,6 +189,10 @@ namespace VetMaxPitagoras.Foundation
             // 
             this.dgvDadosCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvDadosCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDadosCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nome,
+            this.Telefone,
+            this.Endereço});
             this.dgvDadosCliente.Location = new System.Drawing.Point(6, 21);
             this.dgvDadosCliente.Name = "dgvDadosCliente";
             this.dgvDadosCliente.Size = new System.Drawing.Size(622, 300);
@@ -226,6 +233,16 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastro do Cliente";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(331, 314);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 26);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "CANCELAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnSairCadastroCliente
             // 
@@ -497,15 +514,20 @@ namespace VetMaxPitagoras.Foundation
             this.txtNomeCliente.Size = new System.Drawing.Size(509, 22);
             this.txtNomeCliente.TabIndex = 0;
             // 
-            // button1
+            // Nome
             // 
-            this.button1.Location = new System.Drawing.Point(331, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 26);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "CANCELAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            // 
+            // Endereço
+            // 
+            this.Endereço.HeaderText = "Endereço";
+            this.Endereço.Name = "Endereço";
             // 
             // FrmCadastro
             // 
@@ -573,5 +595,8 @@ namespace VetMaxPitagoras.Foundation
         private System.Windows.Forms.Button btnPesquisarCliente;
         private System.Windows.Forms.Button btnSairCadastroCliente;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Endereço;
     }
 }
