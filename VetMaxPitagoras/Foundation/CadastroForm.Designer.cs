@@ -518,16 +518,19 @@ namespace VetMaxPitagoras.Foundation
             // 
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
+            this.Nome.Width = 250;
             // 
             // Telefone
             // 
             this.Telefone.HeaderText = "Telefone";
             this.Telefone.Name = "Telefone";
+            this.Telefone.Width = 150;
             // 
             // Endereço
             // 
             this.Endereço.HeaderText = "Endereço";
             this.Endereço.Name = "Endereço";
+            this.Endereço.Width = 178;
             // 
             // FrmCadastro
             // 
