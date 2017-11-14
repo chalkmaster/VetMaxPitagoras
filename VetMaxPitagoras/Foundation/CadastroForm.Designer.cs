@@ -47,6 +47,8 @@ namespace VetMaxPitagoras.Foundation
             this.btnSairCadastroCliente = new System.Windows.Forms.Button();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtNumeroCliente = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxEmailCliente = new System.Windows.Forms.TextBox();
             this.comboBoxUfCliente = new System.Windows.Forms.ComboBox();
@@ -70,8 +72,6 @@ namespace VetMaxPitagoras.Foundation
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNumeroCliente = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -87,10 +87,11 @@ namespace VetMaxPitagoras.Foundation
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(24, 23);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(12, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(657, 458);
+            this.tabControl1.Size = new System.Drawing.Size(690, 458);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -99,12 +100,12 @@ namespace VetMaxPitagoras.Foundation
             this.tabPage1.Controls.Add(this.btnSairPesquisarCliente);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(649, 432);
+            this.tabPage1.Size = new System.Drawing.Size(682, 429);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Pesquisar";
+            this.tabPage1.Text = "Pesquisar Cliente";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnLimparDvgCliente
@@ -112,7 +113,7 @@ namespace VetMaxPitagoras.Foundation
             this.btnLimparDvgCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLimparDvgCliente.AutoSize = true;
             this.btnLimparDvgCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimparDvgCliente.Location = new System.Drawing.Point(363, 398);
+            this.btnLimparDvgCliente.Location = new System.Drawing.Point(380, 396);
             this.btnLimparDvgCliente.Name = "btnLimparDvgCliente";
             this.btnLimparDvgCliente.Size = new System.Drawing.Size(134, 25);
             this.btnLimparDvgCliente.TabIndex = 21;
@@ -124,7 +125,7 @@ namespace VetMaxPitagoras.Foundation
             this.btnSairPesquisarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSairPesquisarCliente.AutoSize = true;
             this.btnSairPesquisarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSairPesquisarCliente.Location = new System.Drawing.Point(503, 398);
+            this.btnSairPesquisarCliente.Location = new System.Drawing.Point(520, 396);
             this.btnSairPesquisarCliente.Name = "btnSairPesquisarCliente";
             this.btnSairPesquisarCliente.Size = new System.Drawing.Size(134, 25);
             this.btnSairPesquisarCliente.TabIndex = 20;
@@ -139,7 +140,7 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox4.Controls.Add(this.txtNomePesquisaCliente);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(9, 6);
+            this.groupBox4.Location = new System.Drawing.Point(26, 4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(634, 69);
             this.groupBox4.TabIndex = 5;
@@ -180,7 +181,7 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.Controls.Add(this.dgvDadosCliente);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(9, 81);
+            this.groupBox3.Location = new System.Drawing.Point(26, 79);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(634, 311);
             this.groupBox3.TabIndex = 4;
@@ -224,7 +225,7 @@ namespace VetMaxPitagoras.Foundation
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(649, 432);
+            this.tabPage2.Size = new System.Drawing.Size(682, 432);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cadastrar Cliente";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -247,9 +248,9 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txtNomeCliente);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 13);
+            this.groupBox1.Location = new System.Drawing.Point(25, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(633, 407);
+            this.groupBox1.Size = new System.Drawing.Size(635, 407);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastro do Cliente";
@@ -309,6 +310,22 @@ namespace VetMaxPitagoras.Foundation
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados para Contato";
+            // 
+            // txtNumeroCliente
+            // 
+            this.txtNumeroCliente.Location = new System.Drawing.Point(514, 23);
+            this.txtNumeroCliente.Name = "txtNumeroCliente";
+            this.txtNumeroCliente.Size = new System.Drawing.Size(91, 22);
+            this.txtNumeroCliente.TabIndex = 28;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(478, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 16);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Nº";
             // 
             // label3
             // 
@@ -535,22 +552,6 @@ namespace VetMaxPitagoras.Foundation
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(509, 22);
             this.txtNomeCliente.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(478, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 16);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Nº";
-            // 
-            // txtNumeroCliente
-            // 
-            this.txtNumeroCliente.Location = new System.Drawing.Point(514, 23);
-            this.txtNumeroCliente.Name = "txtNumeroCliente";
-            this.txtNumeroCliente.Size = new System.Drawing.Size(91, 22);
-            this.txtNumeroCliente.TabIndex = 28;
             // 
             // FrmCadastro
             // 
