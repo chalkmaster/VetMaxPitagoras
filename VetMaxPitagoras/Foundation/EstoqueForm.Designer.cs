@@ -33,6 +33,11 @@
             this.btnSairPesquisaEstoque = new System.Windows.Forms.Button();
             this.groupBoxDgvDadosProdutos = new System.Windows.Forms.GroupBox();
             this.DgvListaEstoque = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPesquisaNomeProd = new System.Windows.Forms.GroupBox();
             this.btnPesquisarProduto = new System.Windows.Forms.Button();
             this.txtNomeprodutopesquisar = new System.Windows.Forms.TextBox();
@@ -82,11 +87,6 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlPesquisaProdutos.SuspendLayout();
             this.tabPagePesquisaEstoque.SuspendLayout();
             this.groupBoxDgvDadosProdutos.SuspendLayout();
@@ -157,6 +157,36 @@
             this.DgvListaEstoque.Size = new System.Drawing.Size(638, 300);
             this.DgvListaEstoque.TabIndex = 0;
             // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.Width = 80;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.Width = 200;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.Width = 150;
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            this.Valor.Width = 85;
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "Quantidade";
+            this.Quantidade.Name = "Quantidade";
+            this.Quantidade.Width = 80;
+            // 
             // groupPesquisaNomeProd
             // 
             this.groupPesquisaNomeProd.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -173,9 +203,9 @@
             // btnPesquisarProduto
             // 
             this.btnPesquisarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPesquisarProduto.Location = new System.Drawing.Point(499, 23);
+            this.btnPesquisarProduto.Location = new System.Drawing.Point(536, 21);
             this.btnPesquisarProduto.Name = "btnPesquisarProduto";
-            this.btnPesquisarProduto.Size = new System.Drawing.Size(146, 23);
+            this.btnPesquisarProduto.Size = new System.Drawing.Size(102, 23);
             this.btnPesquisarProduto.TabIndex = 3;
             this.btnPesquisarProduto.Text = "PESQUISAR";
             this.btnPesquisarProduto.UseVisualStyleBackColor = true;
@@ -619,36 +649,6 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(112, 20);
             this.textBox16.TabIndex = 27;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.Width = 80;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.Width = 200;
-            // 
-            // Categoria
-            // 
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.Name = "Categoria";
-            this.Categoria.Width = 150;
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            this.Valor.Width = 85;
-            // 
-            // Quantidade
-            // 
-            this.Quantidade.HeaderText = "Quantidade";
-            this.Quantidade.Name = "Quantidade";
-            this.Quantidade.Width = 80;
             // 
             // EstoqueForm
             // 
