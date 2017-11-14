@@ -56,11 +56,15 @@
             this.Coluna_NomeCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Coluna_Nome_Animal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Coluna_Data_Entrada_Animal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -77,16 +81,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.btnPesquisarProntuario);
-            this.tabPage1.Controls.Add(this.txtPesquisaNumeroPront);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.maskeddataPesquisaProntuario);
-            this.tabPage1.Controls.Add(this.txtNomeClientePesquisaPront);
-            this.tabPage1.Controls.Add(this.txtNomePesquisaAnimalPront);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -98,9 +95,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(19, 140);
+            this.groupBox1.Location = new System.Drawing.Point(19, 151);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(640, 240);
+            this.groupBox1.Size = new System.Drawing.Size(640, 229);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Histórico de Prontuário";
@@ -116,16 +113,16 @@
             // 
             // txtPesquisaNumeroPront
             // 
-            this.txtPesquisaNumeroPront.Location = new System.Drawing.Point(338, 30);
+            this.txtPesquisaNumeroPront.Location = new System.Drawing.Point(324, 20);
             this.txtPesquisaNumeroPront.Name = "txtPesquisaNumeroPront";
-            this.txtPesquisaNumeroPront.Size = new System.Drawing.Size(321, 22);
+            this.txtPesquisaNumeroPront.Size = new System.Drawing.Size(310, 22);
             this.txtPesquisaNumeroPront.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(234, 33);
+            this.label4.Location = new System.Drawing.Point(220, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 16);
             this.label4.TabIndex = 6;
@@ -134,7 +131,7 @@
             // maskeddataPesquisaProntuario
             // 
             this.maskeddataPesquisaProntuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskeddataPesquisaProntuario.Location = new System.Drawing.Point(152, 30);
+            this.maskeddataPesquisaProntuario.Location = new System.Drawing.Point(138, 20);
             this.maskeddataPesquisaProntuario.Mask = "00/00/0000";
             this.maskeddataPesquisaProntuario.Name = "maskeddataPesquisaProntuario";
             this.maskeddataPesquisaProntuario.Size = new System.Drawing.Size(76, 22);
@@ -143,14 +140,14 @@
             // 
             // txtNomeClientePesquisaPront
             // 
-            this.txtNomeClientePesquisaPront.Location = new System.Drawing.Point(152, 101);
+            this.txtNomeClientePesquisaPront.Location = new System.Drawing.Point(138, 82);
             this.txtNomeClientePesquisaPront.Name = "txtNomeClientePesquisaPront";
-            this.txtNomeClientePesquisaPront.Size = new System.Drawing.Size(507, 22);
+            this.txtNomeClientePesquisaPront.Size = new System.Drawing.Size(496, 22);
             this.txtNomeClientePesquisaPront.TabIndex = 4;
             // 
             // txtNomePesquisaAnimalPront
             // 
-            this.txtNomePesquisaAnimalPront.Location = new System.Drawing.Point(152, 65);
+            this.txtNomePesquisaAnimalPront.Location = new System.Drawing.Point(138, 51);
             this.txtNomePesquisaAnimalPront.Name = "txtNomePesquisaAnimalPront";
             this.txtNomePesquisaAnimalPront.Size = new System.Drawing.Size(507, 22);
             this.txtNomePesquisaAnimalPront.TabIndex = 3;
@@ -158,7 +155,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 104);
+            this.label3.Location = new System.Drawing.Point(2, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 16);
             this.label3.TabIndex = 2;
@@ -167,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 68);
+            this.label2.Location = new System.Drawing.Point(9, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 16);
             this.label2.TabIndex = 1;
@@ -176,7 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(101, 33);
+            this.label1.Location = new System.Drawing.Point(87, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 0;
@@ -184,16 +181,11 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.btnCancelarCadastroProntuari);
             this.tabPage2.Controls.Add(this.btnSalvarCadastroProntuario);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.txtAnamneseProntuarioAnimal);
-            this.tabPage2.Controls.Add(this.maskedBoxDataEntradaCadastroAnimal);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.txtNomeClienteCadastroProtuario);
-            this.tabPage2.Controls.Add(this.txtNomeAnimalCadastroProntuario);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -239,7 +231,7 @@
             // 
             // maskedBoxDataEntradaCadastroAnimal
             // 
-            this.maskedBoxDataEntradaCadastroAnimal.Location = new System.Drawing.Point(142, 85);
+            this.maskedBoxDataEntradaCadastroAnimal.Location = new System.Drawing.Point(157, 75);
             this.maskedBoxDataEntradaCadastroAnimal.Mask = "00/00/0000 90:00";
             this.maskedBoxDataEntradaCadastroAnimal.Name = "maskedBoxDataEntradaCadastroAnimal";
             this.maskedBoxDataEntradaCadastroAnimal.Size = new System.Drawing.Size(109, 22);
@@ -249,7 +241,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(0, 88);
+            this.label7.Location = new System.Drawing.Point(15, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 16);
             this.label7.TabIndex = 4;
@@ -258,7 +250,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 32);
+            this.label6.Location = new System.Drawing.Point(21, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 16);
             this.label6.TabIndex = 3;
@@ -267,7 +259,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 60);
+            this.label5.Location = new System.Drawing.Point(28, 47);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 16);
             this.label5.TabIndex = 2;
@@ -275,16 +267,16 @@
             // 
             // txtNomeClienteCadastroProtuario
             // 
-            this.txtNomeClienteCadastroProtuario.Location = new System.Drawing.Point(142, 57);
+            this.txtNomeClienteCadastroProtuario.Location = new System.Drawing.Point(157, 47);
             this.txtNomeClienteCadastroProtuario.Name = "txtNomeClienteCadastroProtuario";
-            this.txtNomeClienteCadastroProtuario.Size = new System.Drawing.Size(315, 22);
+            this.txtNomeClienteCadastroProtuario.Size = new System.Drawing.Size(502, 22);
             this.txtNomeClienteCadastroProtuario.TabIndex = 1;
             // 
             // txtNomeAnimalCadastroProntuario
             // 
-            this.txtNomeAnimalCadastroProntuario.Location = new System.Drawing.Point(142, 26);
+            this.txtNomeAnimalCadastroProntuario.Location = new System.Drawing.Point(157, 19);
             this.txtNomeAnimalCadastroProntuario.Name = "txtNomeAnimalCadastroProntuario";
-            this.txtNomeAnimalCadastroProntuario.Size = new System.Drawing.Size(315, 22);
+            this.txtNomeAnimalCadastroProntuario.Size = new System.Drawing.Size(502, 22);
             this.txtNomeAnimalCadastroProntuario.TabIndex = 0;
             // 
             // dataGridView1
@@ -307,20 +299,52 @@
             // 
             // Coluna_NomeCliente
             // 
-            this.Coluna_NomeCliente.HeaderText = "Nome Cliente";
+            this.Coluna_NomeCliente.HeaderText = "Nome do Cliente";
             this.Coluna_NomeCliente.Name = "Coluna_NomeCliente";
             this.Coluna_NomeCliente.Width = 175;
             // 
             // Coluna_Nome_Animal
             // 
-            this.Coluna_Nome_Animal.HeaderText = "Nome Animal";
+            this.Coluna_Nome_Animal.HeaderText = "Nome do Animal";
             this.Coluna_Nome_Animal.Name = "Coluna_Nome_Animal";
-            this.Coluna_Nome_Animal.Width = 130;
+            this.Coluna_Nome_Animal.Width = 135;
             // 
             // Coluna_Data_Entrada_Animal
             // 
             this.Coluna_Data_Entrada_Animal.HeaderText = "Data de Admissão";
             this.Coluna_Data_Entrada_Animal.Name = "Coluna_Data_Entrada_Animal";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtPesquisaNumeroPront);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.maskeddataPesquisaProntuario);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.txtNomeClientePesquisaPront);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtNomePesquisaAnimalPront);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(19, 17);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(640, 128);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Dados Pesquisa Prontuário";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtNomeAnimalCadastroProntuario);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.txtNomeClienteCadastroProtuario);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.maskedBoxDataEntradaCadastroAnimal);
+            this.groupBox3.Location = new System.Drawing.Point(6, 14);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(665, 116);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Dados de Cadastro de Prontuário";
             // 
             // ProntuarioForm
             // 
@@ -333,11 +357,14 @@
             this.Text = "ProntuarioForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -372,5 +399,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_NomeCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_Nome_Animal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_Data_Entrada_Animal;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
