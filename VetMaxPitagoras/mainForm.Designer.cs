@@ -80,6 +80,7 @@
             // 
             this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
             this.animaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.animaisToolStripMenuItem.Text = "Prontuário";
             // 
             // usuárioSistemaToolStripMenuItem
             // 
