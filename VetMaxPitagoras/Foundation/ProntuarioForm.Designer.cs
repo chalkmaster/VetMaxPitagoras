@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPesquisarProntuario = new System.Windows.Forms.Button();
             this.txtPesquisaNumeroPront = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.maskeddataPesquisaProntuario = new System.Windows.Forms.MaskedTextBox();
@@ -39,23 +41,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtNomeAnimalCadastroProntuario = new System.Windows.Forms.TextBox();
-            this.txtNomeClienteCadastroProtuario = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.maskedBoxDataEntradaCadastroAnimal = new System.Windows.Forms.MaskedTextBox();
-            this.btnPesquisarProntuario = new System.Windows.Forms.Button();
-            this.txtAnamneseProntuarioAnimal = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnSalvarCadastroProntuario = new System.Windows.Forms.Button();
             this.btnCancelarCadastroProntuari = new System.Windows.Forms.Button();
-            this.lstBoxProntuarioPesquisa = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSalvarCadastroProntuario = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtAnamneseProntuarioAnimal = new System.Windows.Forms.TextBox();
+            this.maskedBoxDataEntradaCadastroAnimal = new System.Windows.Forms.MaskedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNomeClienteCadastroProtuario = new System.Windows.Forms.TextBox();
+            this.txtNomeAnimalCadastroProntuario = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Coluna_Prontuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Coluna_NomeCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Coluna_Nome_Animal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Coluna_Data_Entrada_Animal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -67,7 +72,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(685, 365);
+            this.tabControl1.Size = new System.Drawing.Size(685, 446);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -85,10 +90,29 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(677, 336);
+            this.tabPage1.Size = new System.Drawing.Size(677, 417);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pesquisar Prontuário";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Location = new System.Drawing.Point(19, 140);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(640, 240);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Histórico de Prontuário";
+            // 
+            // btnPesquisarProntuario
+            // 
+            this.btnPesquisarProntuario.Location = new System.Drawing.Point(529, 386);
+            this.btnPesquisarProntuario.Name = "btnPesquisarProntuario";
+            this.btnPesquisarProntuario.Size = new System.Drawing.Size(130, 25);
+            this.btnPesquisarProntuario.TabIndex = 8;
+            this.btnPesquisarProntuario.Text = "PESQUISAR";
+            this.btnPesquisarProntuario.UseVisualStyleBackColor = true;
             // 
             // txtPesquisaNumeroPront
             // 
@@ -173,77 +197,28 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(677, 336);
+            this.tabPage2.Size = new System.Drawing.Size(677, 417);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cadastrar Prontuário";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txtNomeAnimalCadastroProntuario
+            // btnCancelarCadastroProntuari
             // 
-            this.txtNomeAnimalCadastroProntuario.Location = new System.Drawing.Point(142, 26);
-            this.txtNomeAnimalCadastroProntuario.Name = "txtNomeAnimalCadastroProntuario";
-            this.txtNomeAnimalCadastroProntuario.Size = new System.Drawing.Size(315, 22);
-            this.txtNomeAnimalCadastroProntuario.TabIndex = 0;
+            this.btnCancelarCadastroProntuari.Location = new System.Drawing.Point(487, 388);
+            this.btnCancelarCadastroProntuari.Name = "btnCancelarCadastroProntuari";
+            this.btnCancelarCadastroProntuari.Size = new System.Drawing.Size(89, 23);
+            this.btnCancelarCadastroProntuari.TabIndex = 9;
+            this.btnCancelarCadastroProntuari.Text = "CANCELAR";
+            this.btnCancelarCadastroProntuari.UseVisualStyleBackColor = true;
             // 
-            // txtNomeClienteCadastroProtuario
+            // btnSalvarCadastroProntuario
             // 
-            this.txtNomeClienteCadastroProtuario.Location = new System.Drawing.Point(142, 57);
-            this.txtNomeClienteCadastroProtuario.Name = "txtNomeClienteCadastroProtuario";
-            this.txtNomeClienteCadastroProtuario.Size = new System.Drawing.Size(315, 22);
-            this.txtNomeClienteCadastroProtuario.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 16);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "NOME DO ANIMAL";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 16);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "NOME DO CLIENTE";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(0, 88);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "DATA DE ENTRADA";
-            // 
-            // maskedBoxDataEntradaCadastroAnimal
-            // 
-            this.maskedBoxDataEntradaCadastroAnimal.Location = new System.Drawing.Point(142, 85);
-            this.maskedBoxDataEntradaCadastroAnimal.Mask = "00/00/0000 90:00";
-            this.maskedBoxDataEntradaCadastroAnimal.Name = "maskedBoxDataEntradaCadastroAnimal";
-            this.maskedBoxDataEntradaCadastroAnimal.Size = new System.Drawing.Size(109, 22);
-            this.maskedBoxDataEntradaCadastroAnimal.TabIndex = 5;
-            this.maskedBoxDataEntradaCadastroAnimal.ValidatingType = typeof(System.DateTime);
-            // 
-            // btnPesquisarProntuario
-            // 
-            this.btnPesquisarProntuario.Location = new System.Drawing.Point(529, 309);
-            this.btnPesquisarProntuario.Name = "btnPesquisarProntuario";
-            this.btnPesquisarProntuario.Size = new System.Drawing.Size(130, 25);
-            this.btnPesquisarProntuario.TabIndex = 8;
-            this.btnPesquisarProntuario.Text = "PESQUISAR";
-            this.btnPesquisarProntuario.UseVisualStyleBackColor = true;
-            // 
-            // txtAnamneseProntuarioAnimal
-            // 
-            this.txtAnamneseProntuarioAnimal.Location = new System.Drawing.Point(6, 152);
-            this.txtAnamneseProntuarioAnimal.Multiline = true;
-            this.txtAnamneseProntuarioAnimal.Name = "txtAnamneseProntuarioAnimal";
-            this.txtAnamneseProntuarioAnimal.Size = new System.Drawing.Size(665, 153);
-            this.txtAnamneseProntuarioAnimal.TabIndex = 6;
+            this.btnSalvarCadastroProntuario.Location = new System.Drawing.Point(582, 388);
+            this.btnSalvarCadastroProntuario.Name = "btnSalvarCadastroProntuario";
+            this.btnSalvarCadastroProntuario.Size = new System.Drawing.Size(89, 23);
+            this.btnSalvarCadastroProntuario.TabIndex = 8;
+            this.btnSalvarCadastroProntuario.Text = "SALVAR";
+            this.btnSalvarCadastroProntuario.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -254,42 +229,98 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "ANAMNESE";
             // 
-            // btnSalvarCadastroProntuario
+            // txtAnamneseProntuarioAnimal
             // 
-            this.btnSalvarCadastroProntuario.Location = new System.Drawing.Point(582, 311);
-            this.btnSalvarCadastroProntuario.Name = "btnSalvarCadastroProntuario";
-            this.btnSalvarCadastroProntuario.Size = new System.Drawing.Size(89, 23);
-            this.btnSalvarCadastroProntuario.TabIndex = 8;
-            this.btnSalvarCadastroProntuario.Text = "SALVAR";
-            this.btnSalvarCadastroProntuario.UseVisualStyleBackColor = true;
+            this.txtAnamneseProntuarioAnimal.Location = new System.Drawing.Point(6, 152);
+            this.txtAnamneseProntuarioAnimal.Multiline = true;
+            this.txtAnamneseProntuarioAnimal.Name = "txtAnamneseProntuarioAnimal";
+            this.txtAnamneseProntuarioAnimal.Size = new System.Drawing.Size(665, 230);
+            this.txtAnamneseProntuarioAnimal.TabIndex = 6;
             // 
-            // btnCancelarCadastroProntuari
+            // maskedBoxDataEntradaCadastroAnimal
             // 
-            this.btnCancelarCadastroProntuari.Location = new System.Drawing.Point(487, 311);
-            this.btnCancelarCadastroProntuari.Name = "btnCancelarCadastroProntuari";
-            this.btnCancelarCadastroProntuari.Size = new System.Drawing.Size(89, 23);
-            this.btnCancelarCadastroProntuari.TabIndex = 9;
-            this.btnCancelarCadastroProntuari.Text = "CANCELAR";
-            this.btnCancelarCadastroProntuari.UseVisualStyleBackColor = true;
+            this.maskedBoxDataEntradaCadastroAnimal.Location = new System.Drawing.Point(142, 85);
+            this.maskedBoxDataEntradaCadastroAnimal.Mask = "00/00/0000 90:00";
+            this.maskedBoxDataEntradaCadastroAnimal.Name = "maskedBoxDataEntradaCadastroAnimal";
+            this.maskedBoxDataEntradaCadastroAnimal.Size = new System.Drawing.Size(109, 22);
+            this.maskedBoxDataEntradaCadastroAnimal.TabIndex = 5;
+            this.maskedBoxDataEntradaCadastroAnimal.ValidatingType = typeof(System.DateTime);
             // 
-            // lstBoxProntuarioPesquisa
+            // label7
             // 
-            this.lstBoxProntuarioPesquisa.FormattingEnabled = true;
-            this.lstBoxProntuarioPesquisa.ItemHeight = 16;
-            this.lstBoxProntuarioPesquisa.Location = new System.Drawing.Point(7, 22);
-            this.lstBoxProntuarioPesquisa.Name = "lstBoxProntuarioPesquisa";
-            this.lstBoxProntuarioPesquisa.Size = new System.Drawing.Size(627, 132);
-            this.lstBoxProntuarioPesquisa.TabIndex = 9;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(0, 88);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 16);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "DATA DE ENTRADA";
             // 
-            // groupBox1
+            // label6
             // 
-            this.groupBox1.Controls.Add(this.lstBoxProntuarioPesquisa);
-            this.groupBox1.Location = new System.Drawing.Point(19, 140);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(640, 163);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Histórico de Prontuário";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 16);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "NOME DO CLIENTE";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(123, 16);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "NOME DO ANIMAL";
+            // 
+            // txtNomeClienteCadastroProtuario
+            // 
+            this.txtNomeClienteCadastroProtuario.Location = new System.Drawing.Point(142, 57);
+            this.txtNomeClienteCadastroProtuario.Name = "txtNomeClienteCadastroProtuario";
+            this.txtNomeClienteCadastroProtuario.Size = new System.Drawing.Size(315, 22);
+            this.txtNomeClienteCadastroProtuario.TabIndex = 1;
+            // 
+            // txtNomeAnimalCadastroProntuario
+            // 
+            this.txtNomeAnimalCadastroProntuario.Location = new System.Drawing.Point(142, 26);
+            this.txtNomeAnimalCadastroProntuario.Name = "txtNomeAnimalCadastroProntuario";
+            this.txtNomeAnimalCadastroProntuario.Size = new System.Drawing.Size(315, 22);
+            this.txtNomeAnimalCadastroProntuario.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Coluna_Prontuario,
+            this.Coluna_NomeCliente,
+            this.Coluna_Nome_Animal,
+            this.Coluna_Data_Entrada_Animal});
+            this.dataGridView1.Location = new System.Drawing.Point(7, 21);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(627, 213);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Coluna_Prontuario
+            // 
+            this.Coluna_Prontuario.HeaderText = "Prontuário";
+            this.Coluna_Prontuario.Name = "Coluna_Prontuario";
+            // 
+            // Coluna_NomeCliente
+            // 
+            this.Coluna_NomeCliente.HeaderText = "Nome Cliente";
+            this.Coluna_NomeCliente.Name = "Coluna_NomeCliente";
+            this.Coluna_NomeCliente.Width = 175;
+            // 
+            // Coluna_Nome_Animal
+            // 
+            this.Coluna_Nome_Animal.HeaderText = "Nome Animal";
+            this.Coluna_Nome_Animal.Name = "Coluna_Nome_Animal";
+            this.Coluna_Nome_Animal.Width = 130;
+            // 
+            // Coluna_Data_Entrada_Animal
+            // 
+            this.Coluna_Data_Entrada_Animal.HeaderText = "Data de Admissão";
+            this.Coluna_Data_Entrada_Animal.Name = "Coluna_Data_Entrada_Animal";
             // 
             // ProntuarioForm
             // 
@@ -298,13 +329,15 @@
             this.ClientSize = new System.Drawing.Size(709, 495);
             this.Controls.Add(this.tabControl1);
             this.Name = "ProntuarioForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProntuarioForm";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -333,7 +366,11 @@
         private System.Windows.Forms.TextBox txtAnamneseProntuarioAnimal;
         private System.Windows.Forms.Button btnCancelarCadastroProntuari;
         private System.Windows.Forms.Button btnSalvarCadastroProntuario;
-        private System.Windows.Forms.ListBox lstBoxProntuarioPesquisa;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_Prontuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_NomeCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_Nome_Animal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Coluna_Data_Entrada_Animal;
     }
 }
