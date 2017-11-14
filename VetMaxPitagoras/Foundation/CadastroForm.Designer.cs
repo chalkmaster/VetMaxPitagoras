@@ -38,6 +38,9 @@ namespace VetMaxPitagoras.Foundation
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvDadosCliente = new System.Windows.Forms.DataGridView();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Endereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,9 +70,8 @@ namespace VetMaxPitagoras.Foundation
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Endereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNumeroCliente = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -198,6 +200,24 @@ namespace VetMaxPitagoras.Foundation
             this.dgvDadosCliente.Size = new System.Drawing.Size(622, 300);
             this.dgvDadosCliente.TabIndex = 0;
             // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.Width = 250;
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            this.Telefone.Width = 150;
+            // 
+            // Endereço
+            // 
+            this.Endereço.HeaderText = "Endereço";
+            this.Endereço.Name = "Endereço";
+            this.Endereço.Width = 178;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox1);
@@ -267,6 +287,8 @@ namespace VetMaxPitagoras.Foundation
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtNumeroCliente);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtBoxEmailCliente);
             this.groupBox2.Controls.Add(this.comboBoxUfCliente);
@@ -414,7 +436,7 @@ namespace VetMaxPitagoras.Foundation
             // 
             this.txtEnderecoCliente.Location = new System.Drawing.Point(96, 25);
             this.txtEnderecoCliente.Name = "txtEnderecoCliente";
-            this.txtEnderecoCliente.Size = new System.Drawing.Size(509, 22);
+            this.txtEnderecoCliente.Size = new System.Drawing.Size(369, 22);
             this.txtEnderecoCliente.TabIndex = 10;
             // 
             // label8
@@ -514,23 +536,21 @@ namespace VetMaxPitagoras.Foundation
             this.txtNomeCliente.Size = new System.Drawing.Size(509, 22);
             this.txtNomeCliente.TabIndex = 0;
             // 
-            // Nome
+            // label2
             // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.Width = 250;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(478, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 16);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Nº";
             // 
-            // Telefone
+            // txtNumeroCliente
             // 
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.Width = 150;
-            // 
-            // Endereço
-            // 
-            this.Endereço.HeaderText = "Endereço";
-            this.Endereço.Name = "Endereço";
-            this.Endereço.Width = 178;
+            this.txtNumeroCliente.Location = new System.Drawing.Point(514, 23);
+            this.txtNumeroCliente.Name = "txtNumeroCliente";
+            this.txtNumeroCliente.Size = new System.Drawing.Size(91, 22);
+            this.txtNumeroCliente.TabIndex = 28;
             // 
             // FrmCadastro
             // 
@@ -601,5 +621,7 @@ namespace VetMaxPitagoras.Foundation
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Endereço;
+        private System.Windows.Forms.TextBox txtNumeroCliente;
+        private System.Windows.Forms.Label label2;
     }
 }
