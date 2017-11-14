@@ -16,5 +16,25 @@ namespace VetMaxPitagoras.Foundation
         {
             InitializeComponent();
         }
+
+
+        public void Limpar_Dados_Cadastro_Prontuario()
+        {
+            txtNomeClienteCadastroProntuario.ResetText();
+            txtNomeAnimalCadastroProntuario.ResetText();
+            maskedBoxDataEntradaCadastroAnimal.ResetText();
+            txtAnamneseProntuarioAnimal.ResetText();
+        }
+
+        private void btnCancelarCadastroProntuari_Click(object sender, EventArgs e)
+        {
+            Limpar_Dados_Cadastro_Prontuario();
+        }
+
+        private void btnSalvarCadastroProntuario_Click(object sender, EventArgs e)
+        {
+            Limpar_Dados_Cadastro_Prontuario();
+            MessageBox.Show("Operação realizada com sucesso !");
+        }
     }
 }
