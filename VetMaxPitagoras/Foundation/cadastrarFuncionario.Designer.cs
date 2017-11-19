@@ -64,11 +64,11 @@
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.44898F));
             this.gridCadastroFuncionario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.28572F));
             this.gridCadastroFuncionario.Controls.Add(this.grpCadFuncionario, 1, 0);
-            this.gridCadastroFuncionario.Location = new System.Drawing.Point(-90, -38);
+            this.gridCadastroFuncionario.Location = new System.Drawing.Point(2, -1);
             this.gridCadastroFuncionario.Name = "gridCadastroFuncionario";
             this.gridCadastroFuncionario.RowCount = 1;
             this.gridCadastroFuncionario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gridCadastroFuncionario.Size = new System.Drawing.Size(980, 647);
+            this.gridCadastroFuncionario.Size = new System.Drawing.Size(1267, 613);
             this.gridCadastroFuncionario.TabIndex = 13;
             // 
             // grpCadFuncionario
@@ -95,9 +95,9 @@
             this.grpCadFuncionario.Controls.Add(this.lbNome);
             this.grpCadFuncionario.Controls.Add(this.lbRaça);
             this.grpCadFuncionario.Controls.Add(this.txtCargo);
-            this.grpCadFuncionario.Location = new System.Drawing.Point(331, 50);
+            this.grpCadFuncionario.Location = new System.Drawing.Point(425, 32);
             this.grpCadFuncionario.Name = "grpCadFuncionario";
-            this.grpCadFuncionario.Size = new System.Drawing.Size(356, 547);
+            this.grpCadFuncionario.Size = new System.Drawing.Size(468, 549);
             this.grpCadFuncionario.TabIndex = 11;
             this.grpCadFuncionario.TabStop = false;
             this.grpCadFuncionario.Text = "Cadastro de Funcionários Administrativos da Clínica";
@@ -106,9 +106,9 @@
             // dataCadFuncionario
             // 
             this.dataCadFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCadFuncionario.Location = new System.Drawing.Point(19, 307);
+            this.dataCadFuncionario.Location = new System.Drawing.Point(0, 321);
             this.dataCadFuncionario.Name = "dataCadFuncionario";
-            this.dataCadFuncionario.Size = new System.Drawing.Size(320, 150);
+            this.dataCadFuncionario.Size = new System.Drawing.Size(468, 222);
             this.dataCadFuncionario.TabIndex = 29;
             // 
             // txtTitulacao
@@ -275,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 571);
+            this.ClientSize = new System.Drawing.Size(1269, 615);
             this.Controls.Add(this.gridCadastroFuncionario);
             this.Name = "frmcadastrarfuncionario";
             this.Text = "Cadastrar Funcionários Administrativos da Clínica";
