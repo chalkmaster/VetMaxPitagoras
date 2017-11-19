@@ -75,7 +75,7 @@
             // lbTipo
             // 
             this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(327, 112);
+            this.lbTipo.Location = new System.Drawing.Point(21, 116);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(31, 13);
             this.lbTipo.TabIndex = 2;
@@ -102,9 +102,9 @@
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(374, 109);
+            this.txtTipo.Location = new System.Drawing.Point(127, 113);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(139, 20);
+            this.txtTipo.Size = new System.Drawing.Size(174, 20);
             this.txtTipo.TabIndex = 7;
             this.txtTipo.Enter += new System.EventHandler(this.txtTipo_Enter);
             this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTipo_KeyPress);

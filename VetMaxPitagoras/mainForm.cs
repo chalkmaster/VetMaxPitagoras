@@ -86,5 +86,13 @@ namespace VetMaxPitagoras
             funcionariopesquisa.WindowState = FormWindowState.Maximized;
             funcionariopesquisa.Show();
         }
+
+        private void cartaoDeVacinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var cartaoVacina = new fr();
+            cartaoVacina.MdiParent = this;
+            cartaoVacina.WindowState = FormWindowState.Maximized;
+            cartaoVacina.Show();
+        }
     }
 }
