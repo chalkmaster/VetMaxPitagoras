@@ -55,5 +55,12 @@ namespace VetMaxPitagoras
             CadastroEstoque.Show();
         }
 
+        private void ProntuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var CadastroProntuario = new ProntuarioForm();
+            CadastroProntuario.MdiParent = this;
+            CadastroProntuario.WindowState = FormWindowState.Maximized;
+            CadastroProntuario.Show();
+        }
     }
 }

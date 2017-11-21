@@ -32,7 +32,7 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.animaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProntuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animaisCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +55,7 @@
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.animaisToolStripMenuItem,
+            this.ProntuarioToolStripMenuItem,
             this.usuárioSistemaToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
@@ -76,10 +76,12 @@
             this.toolStripMenuItem1.Text = "Estoque";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // animaisToolStripMenuItem
+            // ProntuarioToolStripMenuItem
             // 
-            this.animaisToolStripMenuItem.Name = "animaisToolStripMenuItem";
-            this.animaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ProntuarioToolStripMenuItem.Name = "ProntuarioToolStripMenuItem";
+            this.ProntuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ProntuarioToolStripMenuItem.Text = "Prontuário";
+            this.ProntuarioToolStripMenuItem.Click += new System.EventHandler(this.ProntuarioToolStripMenuItem_Click);
             // 
             // usuárioSistemaToolStripMenuItem
             // 
@@ -117,7 +119,7 @@
 
         #endregion
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem animaisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ProntuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem animaisCadastradosToolStripMenuItem;
         public System.Windows.Forms.MenuStrip menuStrip1;
         public System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;

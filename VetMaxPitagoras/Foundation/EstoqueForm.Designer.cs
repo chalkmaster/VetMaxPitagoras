@@ -43,6 +43,7 @@
             this.txtNomeprodutopesquisar = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPageCadastroProdutos = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSairCadastroProdutos = new System.Windows.Forms.Button();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -102,10 +103,11 @@
             this.tabControlPesquisaProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tabControlPesquisaProdutos.Controls.Add(this.tabPagePesquisaEstoque);
             this.tabControlPesquisaProdutos.Controls.Add(this.tabPageCadastroProdutos);
+            this.tabControlPesquisaProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlPesquisaProdutos.Location = new System.Drawing.Point(19, 23);
             this.tabControlPesquisaProdutos.Name = "tabControlPesquisaProdutos";
             this.tabControlPesquisaProdutos.SelectedIndex = 0;
-            this.tabControlPesquisaProdutos.Size = new System.Drawing.Size(671, 461);
+            this.tabControlPesquisaProdutos.Size = new System.Drawing.Size(681, 461);
             this.tabControlPesquisaProdutos.TabIndex = 0;
             // 
             // tabPagePesquisaEstoque
@@ -113,10 +115,10 @@
             this.tabPagePesquisaEstoque.Controls.Add(this.btnSairPesquisaEstoque);
             this.tabPagePesquisaEstoque.Controls.Add(this.groupBoxDgvDadosProdutos);
             this.tabPagePesquisaEstoque.Controls.Add(this.groupPesquisaNomeProd);
-            this.tabPagePesquisaEstoque.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePesquisaEstoque.Location = new System.Drawing.Point(4, 25);
             this.tabPagePesquisaEstoque.Name = "tabPagePesquisaEstoque";
             this.tabPagePesquisaEstoque.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePesquisaEstoque.Size = new System.Drawing.Size(663, 435);
+            this.tabPagePesquisaEstoque.Size = new System.Drawing.Size(673, 432);
             this.tabPagePesquisaEstoque.TabIndex = 1;
             this.tabPagePesquisaEstoque.Text = "Pesquisa Estoque";
             this.tabPagePesquisaEstoque.UseVisualStyleBackColor = true;
@@ -135,7 +137,8 @@
             // 
             this.groupBoxDgvDadosProdutos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBoxDgvDadosProdutos.Controls.Add(this.DgvListaEstoque);
-            this.groupBoxDgvDadosProdutos.Location = new System.Drawing.Point(6, 80);
+            this.groupBoxDgvDadosProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDgvDadosProdutos.Location = new System.Drawing.Point(11, 79);
             this.groupBoxDgvDadosProdutos.Name = "groupBoxDgvDadosProdutos";
             this.groupBoxDgvDadosProdutos.Size = new System.Drawing.Size(651, 326);
             this.groupBoxDgvDadosProdutos.TabIndex = 2;
@@ -193,7 +196,8 @@
             this.groupPesquisaNomeProd.Controls.Add(this.btnPesquisarProduto);
             this.groupPesquisaNomeProd.Controls.Add(this.txtNomeprodutopesquisar);
             this.groupPesquisaNomeProd.Controls.Add(this.label11);
-            this.groupPesquisaNomeProd.Location = new System.Drawing.Point(6, 8);
+            this.groupPesquisaNomeProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupPesquisaNomeProd.Location = new System.Drawing.Point(11, 7);
             this.groupPesquisaNomeProd.Name = "groupPesquisaNomeProd";
             this.groupPesquisaNomeProd.Size = new System.Drawing.Size(651, 63);
             this.groupPesquisaNomeProd.TabIndex = 1;
@@ -232,6 +236,7 @@
             // 
             // tabPageCadastroProdutos
             // 
+            this.tabPageCadastroProdutos.Controls.Add(this.button1);
             this.tabPageCadastroProdutos.Controls.Add(this.btnSairCadastroProdutos);
             this.tabPageCadastroProdutos.Controls.Add(this.btnCadastrarProduto);
             this.tabPageCadastroProdutos.Controls.Add(this.groupBox7);
@@ -239,14 +244,24 @@
             this.tabPageCadastroProdutos.Location = new System.Drawing.Point(4, 22);
             this.tabPageCadastroProdutos.Name = "tabPageCadastroProdutos";
             this.tabPageCadastroProdutos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCadastroProdutos.Size = new System.Drawing.Size(663, 435);
+            this.tabPageCadastroProdutos.Size = new System.Drawing.Size(673, 435);
             this.tabPageCadastroProdutos.TabIndex = 2;
             this.tabPageCadastroProdutos.Text = "Cadastro Produtos";
             this.tabPageCadastroProdutos.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(430, 299);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 25);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "CANCELAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnSairCadastroProdutos
             // 
-            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(539, 299);
+            this.btnSairCadastroProdutos.Location = new System.Drawing.Point(530, 299);
             this.btnSairCadastroProdutos.Name = "btnSairCadastroProdutos";
             this.btnSairCadastroProdutos.Size = new System.Drawing.Size(95, 25);
             this.btnSairCadastroProdutos.TabIndex = 21;
@@ -256,7 +271,7 @@
             // btnCadastrarProduto
             // 
             this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(422, 299);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(327, 299);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
             this.btnCadastrarProduto.Size = new System.Drawing.Size(102, 25);
             this.btnCadastrarProduto.TabIndex = 20;
@@ -275,7 +290,7 @@
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(6, 155);
+            this.groupBox7.Location = new System.Drawing.Point(11, 155);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(651, 138);
             this.groupBox7.TabIndex = 17;
@@ -370,7 +385,7 @@
             this.groupBox.Controls.Add(this.label26);
             this.groupBox.Controls.Add(this.label27);
             this.groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox.Location = new System.Drawing.Point(6, 16);
+            this.groupBox.Location = new System.Drawing.Point(11, 16);
             this.groupBox.Name = "groupBox";
             this.groupBox.Size = new System.Drawing.Size(651, 133);
             this.groupBox.TabIndex = 9;
@@ -735,5 +750,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
+        private System.Windows.Forms.Button button1;
     }
 }

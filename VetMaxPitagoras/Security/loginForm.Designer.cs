@@ -103,7 +103,6 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::VetMaxPitagoras.Properties.Resources.grey_corporate_business_technology_background_free_34160;
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Name = "panel4";
